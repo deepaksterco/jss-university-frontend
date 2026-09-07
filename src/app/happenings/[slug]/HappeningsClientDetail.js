@@ -10,6 +10,7 @@ import styles from "./page.module.css";
 import { usePathname, useRouter } from "next/navigation";
 import HappeningsGallery from "@/component/happening-components/happeningsGallery/HappeningsGallery";
 import ReadMore from "@/component/common/readMore/ReadMore";
+import Image from "next/image";
 
 const icons = [
   { src: "/images/custom-page/printIcon.svg" },
@@ -87,10 +88,14 @@ export default function HappeningsClientDetail({ happeningsData }) {
         <div className="col-lg-12 mx-auto">
           <div className={styles.banner}>
             <figure>
-              <img
+              <Image
                 src={happeningsData.mainBanner?.img}
                 alt={happeningsData.mainBanner?.alt}
                 className="img-fluid w-100"
+                priority
+                fetchPriority="high"
+                width={1640}
+                height={578}
               />
             </figure>
           </div>
@@ -101,10 +106,13 @@ export default function HappeningsClientDetail({ happeningsData }) {
 
                 <div className={styles.Grid2}>
                   <figure>
-                    <img
+                    <Image
                       src={section.smallImg}
                       alt="Section Image"
                       className="img-fluid w-100"
+                      width={705}
+                      height={567}
+                      loading="lazy"
                     />
                   </figure>
                   <div className={`${styles.happContant}`} >
@@ -136,10 +144,13 @@ export default function HappeningsClientDetail({ happeningsData }) {
                 <div className={styles.relecol} key={idx}>
                   <Link href={`${WEB_URL}happenings/${item.slug}`}>
                     <figure>
-                      <img
+                      <Image
                         src={item.img}
                         alt={item.alt}
                         className="img-fluid w-100"
+                        width={518}
+                        height={417}
+                        loading="lazy"
                       />
                       <figcaption>
                         <h4>{item.title}</h4>
