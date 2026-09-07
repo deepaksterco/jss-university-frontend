@@ -10603,7 +10603,7 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 
 @media (max-width: 575px) {
 .icge-about .about_subtitle {text-align: center;}
-.ab_jss_coutsec {grid-template-columns: repeat(2, 1fr);}
+.icge-about .internation-vision .ab_jss_coutsec {display: grid; grid-template-columns: repeat(2, 1fr);}
 .icge-about06 h5 {margin-bottom: 1rem;}
 .icge-about06 > .container > p { font: var(--font-18);}
 .icge-about05 .about-icge-left h5 {font: var(--font-18);}
