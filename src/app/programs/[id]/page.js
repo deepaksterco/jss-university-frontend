@@ -84,6 +84,24 @@ function buildCourseSchema(id, data, seoData) {
   };
 }
 
+function buildFAQSchema(data) {
+  const faqs = data?.faqs;
+  if (!Array.isArray(faqs) || faqs.length === 0) return null;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs.map((faq) => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.answer,
+      },
+    })),
+  };
+}
+
 export async function generateMetadata({ params }) {
   const { id } = await params;
   return await getPageSEO(`programs/${id}`);
@@ -97,7 +115,10 @@ export default async function ProgramDetail({ params }) {
     getCourseDetail(id),
   ]);
 
+  // console.log('courseData',courseData.faqs);
+
   const courseSchema = courseData ? buildCourseSchema(id, courseData, seoData) : null;
+  const faqSchema = courseData ? buildFAQSchema(courseData) : null;
 
   return (
     <>
@@ -114,6 +135,13 @@ export default async function ProgramDetail({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
         />
       )}
+
+      {faqSchema && (
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}} />
+      )}
+
+      
+
       <h1 style={{
         display:'none'
       }}>{courseData.name}</h1>
