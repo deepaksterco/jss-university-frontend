@@ -6650,6 +6650,639 @@ ul.comon_list li:before {
 .department_society_happenings .latest-event{top:0; padding-block: 10rem 10rem;}
 .department_society_happenings .latest-event .about_subtitle{margin-bottom: 7rem;}
 
+
+.icge-about .placement-module__VSLvPW__testimonialSwiper p{
+  -webkit-box-orient: inherit;
+}
+
+
+.icge-about h3,
+.icge-about h5,
+.icge-about p {
+margin-top: 0;
+}
+
+
+
+
+
+
+
+/* new page css 07/08/1989 */
+
+
+.icge-about .internation-about h3 {
+  margin-bottom: 3rem;
+  }
+  
+  .icge-about .internation-about i {
+  font: var(--font-18);
+  text-align: center;
+  font-weight: 400;
+  padding-bottom: 2rem;
+  display: block;
+  font-style: italic;
+  color: var(--color-black);
+  }
+  
+  .icge-about .internation-about .abt_cntnt h3 {
+  font: var(--font-34);
+  color: var(--color-4e);
+  font-family: var(--font-Condensed);
+  margin-bottom: 3rem;
+  }
+  
+  .icge-about .internation-about .abt_cntnt h3 > span {
+  color: var(--color-ff);
+  }
+  
+  
+  /* =========================================================
+  02. VISION
+  HTML: .about_four.heritage.internation-vision.icge-about01
+  ========================================================= */
+  
+  .about_four.heritage.icge-about01 .about_f_value {
+  padding-top: 4rem;
+  }
+  
+  .icge-about01 .about_f_value .ab_f_content h3 {
+  padding-bottom: 2rem;
+  color: #333;
+  font: var(--font-21);
+  }
+  
+  .icge-about01 .about_f_value .ab_f_content h5 {
+  font: var(--font-24);
+  color: var(--color-4e);
+  font-weight: 500;
+  margin-bottom: 3.2rem;
+  }
+  
+  .icge-about01 .vision-gray {
+  background-color: #dfebf3;
+  padding: 3rem 10rem 1rem 3rem;
+  }
+  
+  .icge-about01 .vision-gray i {
+  font: var(--font-18);
+  font-weight: 300;
+  padding-bottom: 2rem;
+  display: block;
+  font-style: italic;
+  color: #19334d;
+  }
+  
+  
+  .icge-about01 .internation-vision {
+  padding-bottom: 10rem;
+  }
+  
+  
+  /* =========================================================
+  03. STATISTICS DASHBOARD
+  HTML: .internation-vision.international-statis-dashboard.icge-about03
+  ========================================================= */
+  
+  .icge-about03.international-statis-dashboard {
+  margin: 0 0 10rem;
+  padding: 10rem 0;
+  background-color: var(--color-9a);
+  }
+  
+  .icge-about03.international-statis-dashboard p {
+  color: #fff;
+  font: var(--font-16);
+  }
+  .icge-about03.international-statis-dashboard h3 {
+  font: var(--font-60);
+  color: var(--color-white);
+  letter-spacing: -2.88px;
+  margin-bottom: 5rem;
+  }
+  
+  .icge-about03.international-statis-dashboard h5{
+  font: var(--font-24);
+  color: var(--color-white);
+  margin-bottom: 3.2rem;
+  font-weight: 300;
+  }
+  .icge-about03.international-statis-dashboard i {
+  font: var(--font-14);
+  font-style: italic;
+  margin-top: 4rem;
+  display: block;
+  color: #fff;
+  }
+  
+  .icge-about03 .ab_jss_c_col.dashboard h4 {
+  color: #fff;
+  }
+  
+  
+  /* =========================================================
+  04. FEATURED HIGHLIGHTS
+  HTML: .highlights-sec.icge-about04
+  ========================================================= */
+  
+  .icge-about04.highlights-sec {
+  padding: 0 0 10rem;
+  }
+  
+  .icge-about04.highlights-sec h3 {
+  padding: 0;
+  font: var(--font-24);
+  font-weight: 400;
+  line-height: 1.4;
+  padding-bottom: 2rem;
+  text-align: left;
+  text-transform: capitalize;
+  color: var(--color-4e);
+  }
+  
+  .icge-about04.highlights-sec h5 {
+  padding-bottom: 2rem;
+  font: var(--font-26);
+  color: var(--color-4e);
+  text-transform: uppercase;
+  }
+  
+  .icge-about04.highlights-sec ul {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2rem;
+  padding-left: 0;
+  margin-top: 3rem;
+  }
+  
+  .icge-about04.highlights-sec ul li {
+  list-style: none;
+  padding: 3rem;
+  background-color:var(--color-white);
+  text-align: center;
+  }
+  
+  .icge-about04.highlights-sec ul li h4 {
+  font: var(--font-18);
+  margin-bottom: 3rem;
+  }
+  
+  .icge-about04.highlights-sec ul li p {
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  }
+  
+  .icge-about04.highlights-sec ul li .highlight-icon {
+  background:var(--color-9a);
+  display: inline-block;
+  margin-bottom: 3rem;
+  border-radius: 60px;
+  width: 70px;
+  height: 70px;
+  }
+  
+  .icge-about04.highlights-sec ul li .highlight-icon img {
+  margin-top: 1rem;
+  }
+  
+  .icge-why-jss01 ul li {
+  list-style: none;
+  padding: 3rem;
+  background-color:var(--color-white);
+  text-align: center;
+  }
+  
+  .icge-why-jss01 ul li h4 {
+  font: var(--font-18);
+  margin-bottom: 3rem;
+  }
+  
+  .icge-why-jss01 ul li p {
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
+  }
+  
+  .icge-why-jss01 ul li .highlight-icon {
+  background:var(--color-9a);
+  display: inline-block;
+  margin-bottom: 3rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  }
+  
+  .icge-why-jss01 ul li .highlight-icon img {
+  margin-top: 1rem;
+  }
+  .why-study-sec.icge-why-jss02{padding-top: 6rem;}
+  
+  .why-study-sec.icge-why-jss02 h3 {
+  font: var(--font-24);
+  text-align: left;
+  text-transform: capitalize;
+  color: var(--color-4e);
+  font-weight: 400;
+  line-height: 1.4;
+  padding-bottom: 1.5rem;
+  }
+  .why-study-sec.icge-why-jss02 h5 {
+  font: var(--font-26);
+  color: var(--color-4e);
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+  }
+  .why-study-sec.icge-why-jss02 .why-icon {
+  background: #b08f29;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  }
+  .why-study-sec.icge-why-jss02 .estab_slide_item h5 {
+  font: var(--font-18);
+  text-transform: capitalize;
+  margin-top: 3rem;
+  color: var(--color-black);
+  }
+  .why-welcome.icge-why-jss03{padding-block: 6rem;}
+  .why-welcome.icge-why-jss03 h3{
+  font: var(--font-26);
+  color: var(--color-4e);
+  margin-bottom: 3rem;
+  }
+  .why-welcome.icge-why-jss03 .placement_stats h3{
+  margin-bottom: 2rem;
+  }
+  .icge-why-jss03 .curriculum_box .box_ul li:before{
+  content: "";
+  background-color: var(--color-36);
+  border-radius: 5rem;
+  width: .7rem;
+  height: .7rem;
+  position: absolute;
+  top: .8rem;
+  left: 0;
+  }
+  .icge-why-jss03 .curriculum_box .box_ul {
+  margin: 3rem 0 0;
+  padding: 0;
+  }
+  .icge-why-jss03 .curriculum_box h5 {
+  font: var(--font-18);
+  color: var(--color-2e);
+  margin-bottom: 2.3rem;
+  font-weight: 400;
+  }
+  .icge-why-jss03 .curriculum_box {
+  background-color: var(--color-white);
+  padding: 4rem;
+  border-bottom: .1rem solid var(--color-100);
+  }
+  .contact-igce-left {
+  background-color: #fff;
+  height: 100%;
+  padding: 5rem 5rem 3rem 2rem;
+  }
+  .internation-about.jss-contact .about_top h3{
+  font: var(--font-34);
+  color: var(--color-4e);
+  font-family: var(--font-Condensed);
+  margin-bottom: 3rem;
+  }
+  
+  .internation-about.jss-contact .about_top h3>span{
+  color: var(--color-ff);
+  }
+  
+  .internation-about.jss-contact .abt_cntnt > i {
+  font: var(--font-18);
+  text-align: center;
+  color: var(--color-black);
+  margin: 0 auto;
+  padding-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+  }
+  
+  
+  
+  
+  .contact-igce {
+  margin: 7rem 0 10rem
+  }
+  
+  .contact-igce ul li {
+  margin-bottom: 2rem;
+  list-style: none;
+  display: flex;
+  font: var(--font-16);
+  color: #000;
+  font-weight: 400
+  }
+  
+  .contact-igce ul li a span {
+  color: #000
+  }
+  
+  .contact-igce ul li a span:hover {
+  color: var(--color-100)
+  }
+  
+  .contact-igce ul li svg {
+  margin-right: 2rem
+  }
+  
+  .contact-igce ul li span {
+  display: block
+  }
+  
+  .contact-igce-left {
+  background-color: #fff;
+  height: 100%;
+  padding: 5rem 5rem 3rem 2rem
+  }
+  .page-module__IEM2ma__ContactIcons {
+  background-color: #018ce833;
+  border-radius: 5rem;
+  width: 5rem;
+  height: 5rem;
+  padding: 1.5rem
+  }
+  /* =========================================================
+  05. ABOUT ICGE
+  HTML: .about-icge-sec.icge-about05
+  ========================================================= */
+  
+  .icge-about05.about-icge-sec {
+  background-color: #fff;
+  padding: 10rem 0;
+  }
+  
+  .icge-about05 .about-icge-left {
+  padding-right: 3rem;
+  }
+  
+  .icge-about05 .about-icge-left h3 {
+  font: var(--font-24);
+  text-align: left;
+  text-transform: capitalize;
+  padding: 0 0 2rem;
+  font-weight: 400;
+  line-height: 1.4;
+  color: var(--color-4e);
+  }
+  
+  .icge-about05 .about-icge-left h5 {
+  font: var(--font-26);
+  color: var(--color-4e);
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+  }
+  .gate-way-row {
+  grid-template-columns: 47% auto;
+  gap: 12rem;
+  display: grid;
+  }
+  .icge-about05 .about-icge-right {
+  padding: 5rem;
+  background-color: #16344ec7;
+  }
+  
+  .icge-about05 .about-icge-right span {
+  display: block;
+  font: var(--font-20);
+  color: #fff;
+  margin-bottom: 2rem;
+  }
+  
+  .icge-about05 .about-icge-right p {
+  display: block;
+  color: #fff;
+  }
+  
+  .icge-about05 .about-icge-right img {
+  filter: invert(1);
+  margin-bottom: 1rem;
+  }
+  
+  
+  /* =========================================================
+  06. GLOBAL PARTNERSHIPS
+  HTML: .why-study-sec.partner.icge-about06
+  ========================================================= */
+  
+  .icge-about06.why-study-sec.partner {
+  padding: 10rem 0;
+  }
+  
+  .icge-about06 h3 {
+  padding-bottom: 2rem;
+  color:var(--color-4e);
+  font: var(--font-18);
+  text-align: center;
+  
+  }
+  
+  .icge-about06 h5 {
+  font: var(--font-26);
+  color: var(--color-4e);
+  margin-bottom: 3rem;
+  text-align: center;
+  text-transform: uppercase;
+  }
+  
+  .icge-about06 > .container> p {
+  margin-bottom: 5rem;
+  font: var(--font-24);
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  font-weight: 300;
+  line-height: 1.4;
+  }
+  
+  .icge-about06 .estab_slide_item h5 {
+  font: var(--font-21);
+  margin-top: 3rem;
+  color:var(--color-4e);
+  font-weight: 600;
+  }
+  
+  .icge-about06 .estab_slide_item figure img{max-width: 25rem;}
+  .icge-about06 .estab_slide_item p {
+  font: var(--font-16);
+  font-weight: 400;
+  font-family: var(--font-Roboto);
+  color: var(--color-black);
+  }
+  
+  .icge-about06 .why-icon {
+  background: #b08f29;
+  display: inline-block;
+  margin-bottom: 1rem;
+  border-radius: 60px;
+  width: 70px;
+  height: 70px;
+  }
+  
+  .icge-about06 .why-icon img {
+  margin-top: 1rem;
+  }
+  .icge-why-jss .abt_cntnt>h3{
+  font: var(--font-34);
+  color: var(--color-4e);
+  font-family: var(--font-Condensed);
+  margin-bottom: 3rem;
+  }
+  .icge-why-jss .abt_cntnt>h3>span{
+  color: var(--color-ff);
+  }
+  .icge-why-jss .abt_cntnt>i{
+  font: var(--font-18);
+  text-align: center;
+  color: var(--color-black);
+  padding-bottom: 2rem;
+  font-style: italic;
+  font-weight: 400;
+  display: block;
+  max-width: 70%;
+  margin: 0 auto;
+  }
+  /* =========================================================
+  07. TESTIMONIAL / GALLERY
+  HTML: .about-testimonial.icge-about07
+  ========================================================= */
+  
+  .icge-about07.about-testimonial {
+  background-color: #fff;
+  padding: 10rem 0;
+  }
+  
+  .icge-about07 h3 {
+  font: var(--font-24);
+  text-align: left;
+  text-transform: capitalize;
+  color: var(--color-4e);
+  padding: 0 0 4rem;
+  font-weight: 400;
+  line-height: 1.4;
+  }
+  
+  
+  /* =========================================================
+  TESTIMONIAL SLIDER
+  ========================================================= */
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialSwiper {
+  position: relative;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__eachSlide {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImageContainer {
+  position: relative;
+  flex: 0 0 216px;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImage {
+  object-fit: cover;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialContent {
+  flex: 1;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialContent p {
+  margin-bottom: 1.5rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__username {
+  margin-bottom: 0.5rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialIconContainer {
+  margin-top: 2rem;
+  }
+  
+  
+  /* =========================================================
+  QUOTE ICONS
+  ========================================================= */
+  
+  .icge-about07
+  .placement-module__VSLvPW__desktopQuoteIcon {
+  margin-bottom: 1.5rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__mobileQuoteIcon {
+  display: none;
+  }
+  
+  
+  /* =========================================================
+  GALLERY
+  ========================================================= */
+  
+  .icge-about07 .gallery-slider {
+  position: relative;
+  overflow: hidden;
+  }
+  
+  .icge-about07 .gallery-slider .swiper-slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  }
+  
+  .icge-about07 .gallery-navigation {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  }
+  
+  .icge-about07 .gallery-navigation button,
+  .icge-about07
+  .placement-module__VSLvPW__testimonialIconContainer button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  }
+  
+  .icge-about07 .gallery-navigation img,
+  .icge-about07
+  .placement-module__VSLvPW__testimonialIconContainer img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  }
+  .icge-why-jss01 ul {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 3rem;
+  padding-left: 0;
+  display: grid;
+  }
+  
+
 /* Responsive */
 
 @media (min-width: 2550px) {
@@ -9915,6 +10548,19 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 }
 }
 
+@media (max-width: 1199px) {
+
+  .icge-about04.highlights-sec ul {
+  grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__eachSlide {
+  gap: 2rem;
+  }
+  
+}
+
 @media(max-width:1024px) {
   .cus-profile-text {
     height: auto;
@@ -10501,6 +11147,34 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .aiml_soc_bg_white .labs_group_section {margin-top: 6rem;}
 .accordion_title {padding-block: 2rem;}
 .oorja_gallery_grid{grid-template-columns: repeat(2, 1fr);gap: 3rem 2rem;}
+
+  
+.icge-about01 .about_f_value {
+  padding-top: 2rem;
+  }
+  
+  .icge-about05.about-icge-sec {
+  padding: 7rem 0;
+  }
+  
+  .icge-about05 .about-icge-left {
+  padding-right: 0;
+  margin-bottom: 4rem;
+  }
+  
+  .icge-about06.why-study-sec.partner {
+  padding: 7rem 0;
+  }
+  
+  .icge-about07.about-testimonial {
+  padding: 7rem 0;
+  }
+  
+  .icge-about04.highlights-sec ul {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
 @media(max-width:767px){
 .oorja_gallery_grid{grid-template-columns: 1fr;}
@@ -10515,10 +11189,101 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .benefit_item:last-child {border-bottom: none;}
 .left_side_content h2 {font: var(--font-22);font-weight: 300;line-height: normal;text-align: left;}
 .left_side_content h1,.left_side_content .heading {font: var(--font-30);letter-spacing: 0;margin-top: 3rem;text-align: left;}
+
+  
+.icge-about .internation-about .abt_cntnt h3 {
+  font: var(--font-28);
+  }
+  
+  .icge-about .internation-about i {
+  font: var(--font-16);
+  }
+  
+  .icge-about01 .vision-gray {
+  padding: 2rem;
+  }
+  
+  .icge-about03.international-statis-dashboard {
+  margin-bottom: 6rem;
+  padding: 6rem 0;
+  }
+  
+  .icge-about04.highlights-sec {
+  padding-bottom: 6rem;
+  }
+  
+  .icge-about04.highlights-sec ul {
+  grid-template-columns: 1fr;
+  }
+  
+  .icge-about04.highlights-sec ul li {
+  padding: 2rem;
+  }
+  
+  .icge-about05.about-icge-sec {
+  padding: 6rem 0;
+  }
+  
+  .icge-about06.why-study-sec.partner {
+  padding: 6rem 0;
+  }
+  
+  .icge-about07.about-testimonial {
+  padding: 6rem 0;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__eachSlide {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImageContainer {
+  width: 216px;
+  max-width: 100%;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__desktopQuoteIcon {
+  display: none;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__mobileQuoteIcon {
+  display: block;
+  }
+
 }
 @media(max-width:575px){
 .internal_soc_content .achievements_li_grid {    grid-template-columns: 1fr;}
 .internal_soc_content h5{font:var(--font-18);font-weight: 600;}
+
+
+.icge-about .internation-about h3 {
+  margin-bottom: 2rem;
+  }
+  
+  .icge-about01 .about_f_value {
+  padding-top: 1rem;
+  }
+  
+  .icge-about03.international-statis-dashboard {
+  padding: 5rem 0;
+  }
+  
+  .icge-about04.highlights-sec ul li {
+  padding: 2rem 1.5rem;
+  }
+  
+  .icge-about05 .about-icge-right {
+  padding: 2rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImageContainer {
+  width: 180px;
+  }
 
 }
 
