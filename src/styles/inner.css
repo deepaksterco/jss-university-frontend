@@ -7321,7 +7321,10 @@ margin-top: 0;
   .department-master-of-computer-applications-about-us .grid_card_design1_section {
     padding-block: 5rem;
   }
-
+.icge-about .icge-about07 h3  {
+    text-align: center;
+    padding-bottom: 0;
+  }
   .grands_maingrid {
     grid-template-columns: repeat(1, 1fr);
     padding-bottom: 4rem;
@@ -7581,6 +7584,8 @@ margin-top: 0;
   .eligi_tab_con .growth-item .program_tabs .courses {
     margin: 2rem 0 0;
   }
+  .icge-about .gate-way-row {grid-template-columns: 100% auto;gap: 0;display: block;}
+ 
 }
 
 @media (max-width: 600px) {
@@ -10173,9 +10178,11 @@ margin-top: 0;
   }
 
   .about_one .abt_cntnt p {
-    font: var(--font-18);
+    font: var(--font-16);
     font-weight: 300;
     line-height: 1.4;
+    text-align: center;
+    
   }
 
   .sports_fac_slider .spo_fa_content {
@@ -10937,7 +10944,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .admission .about_f_value {padding-top: 4rem;}
 .best-practices .image_content_repeat_section {padding-block: 4rem 0;}
 .campus-facilities .image_content_repeat_section.hostel_repeatsec .hostel_list {margin: 2rem 0 0;}
-
+ .icge-about .icge-about07 .placement-module__VSLvPW__testimonialImageContainer {width: 150px;height: 150px;margin-bottom: 3rem!important;}
 }
 
 @media(max-width:575px) {
@@ -11284,7 +11291,7 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
   .placement-module__VSLvPW__testimonialImageContainer {
   width: 180px;
   }
-
+.icge-about .internation-about .abt_cntnt h3{font: var(--font-21);font-weight: bold;margin-bottom: 1.5rem;}
 }
 
 .about-iic .grid_card_design1_section h4{text-align: center;font: var(--font-18);font-weight: 500;}
