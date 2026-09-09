@@ -10569,9 +10569,7 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .icge-about .placement-module__VSLvPW__testimonialSwiper p.small{text-align: center;-webkit-box-orient: vertical;}
 .icge-about07 .gallery-navigation {display: block;  text-align: center;margin-bottom: 5rem;}
     .icge-about .internation-vision .ab_jss_coutsec {display: grid; grid-template-columns: repeat(3, 1fr);gap: 2rem;}
-    .icge-about .internation-vision .ab_jss_c_col:last-child {
-    border-left: 1px solid var(--color-d4);
-}
+    .icge-about .internation-vision .ab_jss_c_col:last-child {border-left: 1px solid var(--color-d4);}
 
 }
 @media (max-width: 767px) {
