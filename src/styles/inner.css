@@ -9849,6 +9849,10 @@ margin-top: 0;
   .about_three .vsn_msn_grid .miss-rgt p {
     font: var(--font-18);
   }
+   .icge-contact .internation-about .abt_cntnt h3 {  font: var(--font-28);  }
+   .contact-igce {margin: 3rem 0 6rem;}
+
+
 }
 
 @media (max-width: 640px) {
@@ -9971,6 +9975,24 @@ margin-top: 0;
   .leadership-page .leadership_dtls_two{
     padding-top: 2rem;
   }
+  .about_one .abt_cntnt p {
+    font: var(--font-16);
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    
+  }
+  .icge-why-jss .abt_cntnt > h3 {
+        font: var(--font-21);
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+    .icge-why-jss .abt_cntnt > i {font: var(--font-16);text-align: center;font-weight: 300;line-height: 1.4;max-width: 100%;}
+    .icge-why-jss .why-study-sec.icge-why-jss02 h5 {font: var(--font-21);}
+    .icge-why-jss .why-welcome.icge-why-jss03 h3 {font: var(--font-21);}
+    .icge-why-jss .why-welcome.icge-why-jss03 h5{margin-bottom:1rem;}
+      
+
 }
 
 @media (max-width: 480px) {
@@ -10177,13 +10199,7 @@ margin-top: 0;
     margin-bottom: 2rem;
   }
 
-  .about_one .abt_cntnt p {
-    font: var(--font-16);
-    font-weight: 300;
-    line-height: 1.4;
-    text-align: center;
-    
-  }
+  
 
   .sports_fac_slider .spo_fa_content {
     padding-block: 3rem;
@@ -10945,6 +10961,8 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .best-practices .image_content_repeat_section {padding-block: 4rem 0;}
 .campus-facilities .image_content_repeat_section.hostel_repeatsec .hostel_list {margin: 2rem 0 0;}
  .icge-about .icge-about07 .placement-module__VSLvPW__testimonialImageContainer {width: 150px;height: 150px;margin-bottom: 3rem!important;}
+   .icge-contact .internation-about.jss-contact .abt_cntnt > i {  font: var(--font-16);  }
+   
 }
 
 @media(max-width:575px) {
@@ -10982,7 +11000,10 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .campus-facilities .atm_fac_grid h5 {margin-bottom: 2rem;}
 .campus-facilities .about_two.labs_group_section {padding-bottom: 4rem;}
 .about_subHeading {text-align: left;max-width: 100%;padding-inline: 0;}
-.about_subtitle{text-align: left;}
+.about_subtitle{text-align: center;}
+.icge-contact.about_subtitle{text-align: center;}
+.icge-contact .internation-about .abt_cntnt h3{ font: var(--font-21);  margin-bottom: 1.5rem; font-weight: bold;  }
+.icge-contact .about_one {padding-block:4rem 0;}
 
 }
 
@@ -10995,6 +11016,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
   .research .publi_title h4 {margin-bottom: 2rem;}
   .publi_content h6 {margin-bottom: 2rem;}
   .campus-facilities .academic-facilities .academic_labmain, .sports_fac_slider .spo_fa_content {padding-block: 2rem;}
+.icge-contact .about_one {padding-block: 2rem 0;}
 }
 
 .ac_pagination .ac_swi_btn img:hover {
