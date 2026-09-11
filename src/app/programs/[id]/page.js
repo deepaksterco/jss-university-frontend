@@ -1,6 +1,7 @@
 import { getPageSEO } from "@/lib/seo";
 import { BASE_URL, WEB_URL } from "@/config/config.mjs";
-import ProgramDetailClient from "./ProgramDetailClient";
+import ProgramDetailContent from "./ProgramDetailContent";
+import Link from "next/link";
 
 async function getCourseDetail(id) {
   try {
@@ -17,56 +18,32 @@ async function getCourseDetail(id) {
 
 function buildCourseSchema(id, data, seoData) {
   const pageUrl = `${WEB_URL}programs/${id}`;
-
   const name = data.name ?? id;
-
-  const description =
-    seoData?.description ??
-    data.overview?.overview_desc ??
-    "";
-
+  const description = seoData?.description ?? data.overview?.overview_desc ?? "";
   const duration = data.admissionSection?.course_duration ?? "4 Years";
-
-  // Extract number from "2 Years", "3 Years", etc.
   const durationYears = parseInt(duration.match(/\d+/)?.[0] ?? "4", 10);
-
   const durationISO = `P${durationYears}Y`;
-
-  // One semester = 6 months
   const repeatCount = durationYears * 2;
 
   return {
     "@context": "https://schema.org",
     "@type": "Course",
     "@id": pageUrl,
-
     name,
-
     description,
-
     provider: {
       "@type": "Organization",
       name: "JSS University, Noida",
       sameAs: WEB_URL,
-      logo: {
-        "@type": "ImageObject",
-        url: `${WEB_URL}images/header/homenew.png`,
-      },
+      logo: { "@type": "ImageObject", url: `${WEB_URL}images/header/homenew.png` },
     },
-
     hasCourseInstance: {
       "@type": "CourseInstance",
-
       name,
-
       url: pageUrl,
-
       description,
-
       courseMode: "onsite",
-
       courseWorkload: `35 hours per week`,
-
       courseSchedule: {
         "@type": "Schedule",
         duration: durationISO,
@@ -74,7 +51,6 @@ function buildCourseSchema(id, data, seoData) {
         repeatCount,
       },
     },
-
     offers: {
       "@type": "Offer",
       url: pageUrl,
@@ -94,10 +70,7 @@ function buildFAQSchema(data) {
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.question,
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: faq.answer,
-      },
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
     })),
   };
 }
@@ -115,8 +88,6 @@ export default async function ProgramDetail({ params }) {
     getCourseDetail(id),
   ]);
 
-  // console.log('courseData',courseData.faqs);
-
   const courseSchema = courseData ? buildCourseSchema(id, courseData, seoData) : null;
   const faqSchema = courseData ? buildFAQSchema(courseData) : null;
 
@@ -128,24 +99,42 @@ export default async function ProgramDetail({ params }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(seoData.schema) }}
         />
       )}
-
       {courseSchema && (
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(courseSchema) }}
         />
       )}
-
       {faqSchema && (
-        <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(faqSchema)}} />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
       )}
 
-      
-
-      <h1 style={{
-        display:'none'
-      }}>{courseData.name}</h1>
-      <ProgramDetailClient params={id} />
+      {!courseData ? (
+        <div
+          className="error-container"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            height: "50vh",
+            textAlign: "center",
+          }}
+        >
+          <div style={{ fontSize: "24px", marginBottom: "20px", color: "#d32f2f" }}>
+            No Sections Found For This Program. Please Add Sections To Display
+            Program Details.
+          </div>
+          <Link href="/programs" className="apply-btn1">
+            Back to Programs
+          </Link>
+        </div>
+      ) : (
+        <ProgramDetailContent data={courseData} />
+      )}
     </>
   );
 }

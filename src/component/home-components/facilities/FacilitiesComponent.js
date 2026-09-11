@@ -23,7 +23,7 @@ export default function FacilitiesComponent({ data }) {
                   <Link href={WEB_URL + card?.main_link ?? "#"}>
                     <Image
                       src={card.image}
-                      alt={''}
+                      alt={`${card.title || `Facilities Image ${index}`}`}
                       aria-hidden="true"
                       width={320}
                       height={290}
@@ -93,7 +93,7 @@ export default function FacilitiesComponent({ data }) {
                   <Image
                     className="img-fluid image"
                     src={panel.image}
-                    alt={``}
+                    alt={`${panel.title || `Facilities Image ${index}`}`}
                     aria-hidden="true"
                     style={{ width: "100%", objectFit: "cover" }}
                     loading="lazy"

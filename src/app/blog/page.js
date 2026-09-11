@@ -1,10 +1,14 @@
 import { getPageSEO } from "@/lib/seo";
 import Script from "next/script";
-import BlogsClient from "./BlogsClient";
+import TabSection from "@/component/sections/TabSection";
+import BlogsGrid from "@/component/blogs/Blogs";
+import styles from "./page.module.css";
 import { BASE_URL } from "@/config/config.mjs";
 
+import '@/styles/inner.css';
+
 export async function generateMetadata() {
-  return await getPageSEO('blog');
+  return await getPageSEO("blog");
 }
 
 const isDev = process.env.NODE_ENV === "development";
@@ -34,15 +38,18 @@ export const getBlogData = async (page = 1) => {
 };
 
 export default async function BlogsPage({ searchParams }) {
-  const params = await searchParams; // Next 15 - searchParams is a promise
+  const params = await searchParams;
   const page = Number(params?.page) || 1;
 
-  const seoData = await getPageSEO('blog');
+  const seoData = await getPageSEO("blog");
 
   const [blogPageData, blogData] = await Promise.all([
     getBlogPageData(),
     getBlogData(page),
   ]);
+
+  const data = blogPageData?.data ?? blogPageData; // adjust to your actual API shape
+  const hasTabs = !!data?.tabs;
 
   return (
     <>
@@ -53,7 +60,21 @@ export default async function BlogsPage({ searchParams }) {
           strategy="beforeInteractive"
         />
       )}
-      <BlogsClient data={blogPageData} blogs={blogData} />
+
+      <div className={styles.happeningsContainer}>
+        {hasTabs && (
+          <TabSection
+            title={data.tabs.title}
+            subtitle={data.tabs.subTitle}
+            tabs={data.tabs.tabs}
+            slug={data.slug}
+          />
+        )}
+
+        <div className={styles.tabContent}>
+          <BlogsGrid blogs={blogData} />
+        </div>
+      </div>
     </>
   );
 }

@@ -7308,6 +7308,7 @@ hr {
 @media (max-width: 575px) {
   .program-detail-text .innnr_head .heading {
     margin-block: 0;
+    text-align: center;
   }
 
   .about_two.labs_group_section .early-slide .early_rgt h4 {
