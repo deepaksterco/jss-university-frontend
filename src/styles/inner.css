@@ -1404,8 +1404,287 @@ ul.comon_list li:before { content: ""; background-color: var(--color-100); borde
 /* .department-master-of-computer-applications-about-us .estab_slide_item { min-height: 25rem; }
 */ }
 @media (max-width: 1024px) {
- .grands_content { padding-left: 5.3rem; padding-right: 1rem; }
- }
+  .grands_content {
+    padding-left: 5.3rem;
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .inner-title {
+    padding-top: 10rem;
+  }
+
+  .department-master-of-computer-applications-about-us .grid_card_design1_section {
+    padding-block: 5rem;
+  }
+.icge-about .icge-about07 h3  {
+    text-align: center;
+    padding-bottom: 0;
+  }
+  .grands_maingrid {
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 4rem;
+  }
+
+  .placement_stats.column-3 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grands_content {
+    padding-inline: 0;
+    padding-block: 4rem 0;
+  }
+
+  .table_section thead th:first-child {
+    width: 6rem;
+  }
+
+  .student-life .campu_grid_main.capus_grid_two .campu_con_rgt {
+    max-width: 100%;
+  }
+
+  .department-chemistry-research.department-research .tabs_content_section .table_section:last-child {
+    padding-bottom: 5rem;
+  }
+
+  .department-chemistry-research .res_table_maincms .table_section:last-child {
+    padding-block: 0 0rem;
+  }
+
+  .campu_grid_main {
+    display: block;
+  }
+
+  .lib_cen_main .ab_jss_coutsec {
+    margin-block: 4rem;
+  }
+
+  .campu_grid_main.capus_grid_two {
+    padding-bottom: 4rem;
+  }
+
+  .scu_gridmain {
+    display: block;
+  }
+
+  .scu_content {
+    margin-top: 4rem;
+  }
+
+  .student_clubsmain {
+    padding-block: 4rem;
+  }
+
+  .scu_benift_grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3.4rem;
+  }
+
+  .grands_mainsec {
+    padding-block: 4rem 0;
+  }
+
+  /* .inner-title .innnr_head h2,.inner-title .innnr_head h3, .inner-title .innnr_head .heading  {
+    font: var(--font-20);
+    letter-spacing: -1.30px;
+} */
+
+  .about_four .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_four .value-box {
+    border-right: 1px solid rgb(255 255 255 / 10%);
+    border-bottom: 1px solid rgb(255 255 255 / 10%);
+  }
+
+  .about_four .value-box:nth-child(2n) {
+    border-right: none;
+  }
+
+  .about_four .value-box:nth-last-child(-n + 2) {
+    border-bottom: none;
+  }
+
+  .about_two {
+    padding-bottom: 8rem;
+  }
+
+  .ab_estab_slider {
+    padding-top: 3rem;
+  }
+
+  .about_two .early-slide .early_rgt {
+    padding-left: 4.4rem;
+    padding-top: 0rem;
+  }
+
+  .academic-council .table_section+.table_section {
+    padding-top: 5rem;
+  }
+
+  .campus-facilities .ameminites_listmain {
+    padding-block: 5rem;
+  }
+
+  .spo_fa_content h6 {
+    font: var(--font-18);
+  }
+
+  .uni_boa_grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .campus-facilities .labs_group_section.about_two .about_two {
+    padding-bottom: 5rem;
+  }
+
+  .academic-facilities .labs_group_section.about_two .about_two {
+    padding-bottom: 5rem;
+  }
+
+  .grand_tabs_main .growth-tabs {
+    margin-bottom: 3rem;
+  }
+
+  .amenities_section .grid_group {
+    grid-template-columns: 1fr;
+  }
+
+  .mentoring-scheme .about_one {
+    padding-block: 5rem 5rem;
+  }
+
+  .alumni .labs_group_section.about_two {
+    padding-bottom: 5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .add_of_context h5 {
+    font: var(--font-20);
+    margin-bottom: 1.5rem;
+  }
+
+  .about_one .estblish {
+    max-width: 100%;
+  }
+
+  .careers .add_of_context {
+    max-height: 30rem;
+  }
+
+  .about_two .early-slide {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about_two .early-slide .early_rgt {
+    padding-left: 0;
+  }
+
+  .placement_stats.column-3 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .abou_t_sec {
+    padding-top: 3rem;
+  }
+
+  .scu_benift_grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3.4rem;
+  }
+
+  .growth-tabs ul li:not(:last-child) {
+    margin-right: 0;
+  }
+
+  .about_two .early-slide .early_rgt h4 {
+    font: var(--font-18);
+    line-height: 1.4;
+  }
+
+
+  .grands_content {
+    padding-right: 0rem;
+  }
+
+  .uni_boa_grid {
+    grid-template-columns: 1fr;
+  }
+
+  .phd_duration_section {
+    padding-block: 4rem 5rem;
+  }
+
+  .tabs_group_section .early-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about_three .vsn_msn_grid {
+    flex-flow: column-reverse wrap;
+    display: flex;
+    gap: 0;
+  }
+
+
+
+  .eligi_tab_con .growth-item .program_tabs .courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+
+  .eligibilty_main .eligib_grid_ad.programs {
+    padding: 0;
+    padding-top: 3rem;
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .program_box {
+    padding: 3rem 0;
+    border-bottom: 1px solid #ddd;
+    border-radius: 0;
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .degree_name {
+    color: var(--color-4e);
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .courses li {
+    color: var(--color-2e);
+    margin-bottom: 0.8rem;
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .eligibility {
+    font: var(--font-16);
+    color: var(--color-2e)
+  }
+
+  .eligi_tab_con .growth-item {
+    padding: 0;
+  }
+
+  .eligibilty_main .edigiblity_tabs .eligi_tab_con {
+    margin: 0;
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .program_box:not(:first-child) {
+    margin: 0;
+  }
+
+  .eligibilty_main .eligi_tab_con .growth-item .program_tabs {
+    margin: 0;
+  }
+
+  .eligi_tab_con .growth-item .program_tabs .courses {
+    margin: 2rem 0 0;
+  }
+  .icge-about .gate-way-row {grid-template-columns: 100% auto;gap: 0;display: block;}
+ 
+}
+
 @media (max-width: 600px) {
  .about_four .values-grid { grid-template-columns: 1fr; }
 .inner-title { padding-top: 6rem; padding-bottom: 3.5rem; }
@@ -1612,140 +1891,777 @@ ul.comon_list li:before { content: ""; background-color: var(--color-100); borde
 .academic-collaborations-mou .container .row { padding-block:4rem; }
  }
 @media (max-width: 768px) {
- .leadership_dtls_one .top_img figure figcaption { display: block; }
-.about-jssmvp .about_jsstwo { padding-top: 5rem; }
-.about-jss .about_three .vsn_msn_grid { grid-template-columns: 1fr; gap: 3rem; }
-.about_three .vsn_msn_grid .miss-rgt h4 { letter-spacing: -0.88px; font: var(--font-30); }
-.academic-council .table_section thead th:first-child { min-width: auto; }
-.academic-council .table_section .table-lab tbody td:nth-child(3) { min-width: 35rem; }
-.tesIcon { margin-left: 3rem; }
-.leadership_dtls_two { padding-block: 1rem; }
-.testimonials-page .leadership_dtls_two { padding-top: 5rem; padding-bottom: 5rem; }
-.message_img figure img { margin-top: 2rem; }
-.message_footer_section { margin-top: 1rem; padding-top: 2rem; padding-inline: 3rem; }
-.biographi_section p { font: var(--font-16); color: var(--color-black); font-weight: 300; line-height: 1.4; }
-/* Ensure the top image and caption stack vertically and occupy full width */
-  .leadership_one .top_img>div { display: flex !important; flex-direction: column !important; gap: 1rem; align-items: stretch; }
-.leadership_one .top_img figure figcaption h3 { font: var(--font-21); letter-spacing: -1.2px; color: var(--color-white); word-break: break-word; line-height: 1.3; font-weight: 600; }
-.leadership_one .top_img figure figcaption { padding-left: 1rem; padding-bottom: 0rem; }
-.leadership_one .top_img figure figcaption p { display: flex; gap: 1rem; color: var(--color-white); font: var(--font-12); }
-.arrow-icon { position: relative; top: 1px; width: 1.5rem; height: 1.5rem; right: 6px; }
-.leadership_grid_Bx .arrow-icon { width: 2rem; height: 2rem; left: 0rem; top: 0; }
-.leadership_one .top_img>div>figure { flex: 0 0 auto; width: 100%; margin: 0; }
-.leadership_one .top_img>div>figure img,
-  .leadership_one .top_img>div>figure .img-fluid { margin-top: 0 !important; /* override inline negative margin */
-    width: 100% !important; height: auto !important; object-fit: cover; }
-.leadership_one .top_img>div>figcaption { flex: 0 0 auto; width: 100%; padding: 1.25rem !important; text-align: left; background: transparent; }
-.leadership_one .top_img>div>figcaption h3 { font: var(--font-30); line-height: 1.2; margin-bottom: 0.5rem; }
-.leadership_one .top_img>div>figcaption p { font: var(--font-24); margin: 0; }
-.leadership_one .top_img figure { display: grid; align-items: end; position: relative; margin-top: 0px; }
-.leadership_two .leadership_grid figure figcaption h3 { font: var(--font-18); font-weight: bold; color: var(--color-4e); }
-.leadership_two .leadership_grid figure figcaption p { display: flex; flex-direction: column; font: var(--font-12); color: var(--color-e8); gap: 0.5rem; }
-.leadership_two .leadership_grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem 3rem; }
-.leadership_dtls_one .top_img figure { align-items: center; position: relative; justify-content: end; margin-top: 0px; }
-.leadership_dtls_one .top_img figure figcaption { padding-bottom: 0; max-width: 24rem; margin-inline: auto 3.1rem; position: absolute; z-index: 1; top: 0; bottom: 0; right: 0; display: flex; align-items: center; }
-.leadership_dtls_one .top_img figure figcaption h3 { font: var(--font-16); letter-spacing: -1.2px; color: var(--color-white); margin-bottom: 0.5rem; font-family: var(--font-Condensed); }
-.leadership_dtls_one .top_img figure figcaption h5 { color: var(--color-white); font: var(--font-10); letter-spacing: -0.28px; border-bottom: 1px solid #ffffff73; padding-bottom: 1.7rem; margin-bottom: 1.7rem; }
-.leadership_dtls_one .top_img figure figcaption .desgtn p { position: relative; font: var(--font-8); }
-.leadership_dtls_one .top_img figure figcaption { display: none; }
-.leadership_two_cnt2 { padding-right: 1rem; position: relative; display: flex; flex-direction: column; }
-.leadership_two_cnt2::before { content: none; }
-.leadership_two_cnt2 h3 { font: var(--font-20); font-weight: 900; color: var(--color-black); padding-block: 2rem; }
-.leadership_two_cnt2 h5 { font: var(--font-14); font-weight: 300; color: var(--color-black); }
-.leadership_two_cnt2 p { font: var(--font-16); color: var(--color-black); line-height: 1.5; }
-.leadership_two_cnt h5 { font: var(--font-18); font-weight: 300; color: var(--color-black); }
-.leadership_two_cnt p { font: var(--font-16); color: var(--color-black); line-height: 1.5; }
-.leadership_two_img { padding-left: 0rem; }
-.message_img { padding-left: 0rem; padding-bottom: 1.5rem; padding-inline: 3rem; }
-.message_img figure img { width: 100%; height: 100%; object-fit: cover; object-position: center; border-radius: 8px; }
-.message_warpper::before { display: none; }
-.message_warpper::after { display: none; }
-.message_warpper { background-color: var(--color-9a); padding: 2rem 1rem; border-radius: 50px 8px 50px 8px; position: relative; z-index: 1; }
-.message_warpper p { font: var(--font-18); color: var(--color-white); line-height: 1.5; font-weight: 300; }
-.message_text h3 { font: var(--font-24); color: var(--color-100); margin-bottom: 3rem; font-weight: 500; margin-top: 2rem; }
-.inner-title .innnr_head h2,.inner-title .innnr_head h3, .inner-title .innnr_head .heading { font: var(--font-30); margin-bottom: -0.2rem; }
-.res_table_maincms .table_section:last-child { padding-block: 2rem; }
-.res_table_maincms .table_section:first-child { padding-block: 2rem; }
-.testimonial-filter .filter-tabs { flex-wrap: wrap; gap: 1rem; }
-.testimonial-filter .filter-tabs button { width: 47%; }
-.program-list-boxs { gap: 3.5rem; }
-.department-master-of-computer-applications-about-us .estab_slide_item { min-height: auto; }
- }
+  .leadership_dtls_one .top_img figure figcaption {
+    display: block;
+  }
+
+  .about-jssmvp .about_jsstwo {
+    padding-top: 5rem;
+  }
+
+  .about-jss .about_three .vsn_msn_grid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about_three .vsn_msn_grid .miss-rgt h4 {
+    letter-spacing: -0.88px;
+    font: var(--font-30);
+  }
+
+  .academic-council .table_section thead th:first-child {
+    min-width: auto;
+  }
+
+  .academic-council .table_section .table-lab tbody td:nth-child(3) {
+    min-width: 35rem;
+  }
+
+  .tesIcon {
+    margin-left: 3rem;
+  }
+
+  .leadership_dtls_two {
+    padding-block: 1rem;
+  }
+
+  .testimonials-page .leadership_dtls_two {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .message_img figure img {
+    margin-top: 2rem;
+  }
+
+  .message_footer_section {
+    margin-top: 1rem;
+    padding-top: 2rem;
+    padding-inline: 3rem;
+  }
+
+  .biographi_section p {
+    font: var(--font-16);
+    color: var(--color-black);
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  /* Ensure the top image and caption stack vertically and occupy full width */
+  .leadership_one .top_img>div {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem;
+    align-items: stretch;
+  }
+
+  .leadership_one .top_img figure figcaption h3 {
+    font: var(--font-21);
+    letter-spacing: -1.2px;
+    color: var(--color-white);
+    word-break: break-word;
+    line-height: 1.3;
+    font-weight: 600;
+  }
+
+  .leadership_one .top_img figure figcaption {
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .leadership_one .top_img figure figcaption p {
+    display: flex;
+    gap: 1rem;
+    color: var(--color-white);
+    font: var(--font-12);
+  }
+
+  .arrow-icon {
+    position: relative;
+    top: 1px;
+    width: 1.5rem;
+    height: 1.5rem;
+    right: 6px;
+  }
+
+  .leadership_grid_Bx .arrow-icon {
+    width: 2rem;
+    height: 2rem;
+    left: 0rem;
+    top: 0;
+  }
+
+  .leadership_one .top_img>div>figure {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0;
+  }
+
+  .leadership_one .top_img>div>figure img,
+  .leadership_one .top_img>div>figure .img-fluid {
+    margin-top: 0 !important;
+    /* override inline negative margin */
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+  }
+
+  .leadership_one .top_img>div>figcaption {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 1.25rem !important;
+    text-align: left;
+    background: transparent;
+  }
+
+  .leadership_one .top_img>div>figcaption h3 {
+    font: var(--font-30);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+  }
+
+  .leadership_one .top_img>div>figcaption p {
+    font: var(--font-24);
+    margin: 0;
+  }
+
+  .leadership_one .top_img figure {
+    display: grid;
+    align-items: end;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .leadership_two .leadership_grid figure figcaption h3 {
+    font: var(--font-18);
+    font-weight: bold;
+    color: var(--color-4e);
+  }
+
+  .leadership_two .leadership_grid figure figcaption p {
+    display: flex;
+    flex-direction: column;
+    font: var(--font-12);
+    color: var(--color-e8);
+    gap: 0.5rem;
+  }
+
+  .leadership_two .leadership_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+  }
+
+  .leadership_dtls_one .top_img figure {
+    align-items: center;
+    position: relative;
+    justify-content: end;
+    margin-top: 0px;
+  }
+
+  .leadership_dtls_one .top_img figure figcaption {
+    padding-bottom: 0;
+    max-width: 24rem;
+    margin-inline: auto 3.1rem;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .leadership_dtls_one .top_img figure figcaption h3 {
+    font: var(--font-16);
+    letter-spacing: -1.2px;
+    color: var(--color-white);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-Condensed);
+  }
+
+  .leadership_dtls_one .top_img figure figcaption h5 {
+    color: var(--color-white);
+    font: var(--font-10);
+    letter-spacing: -0.28px;
+    border-bottom: 1px solid #ffffff73;
+    padding-bottom: 1.7rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .leadership_dtls_one .top_img figure figcaption .desgtn p {
+    position: relative;
+    font: var(--font-8);
+  }
+
+  .leadership_dtls_one .top_img figure figcaption {
+    display: none;
+  }
+
+  .leadership_two_cnt2 {
+    padding-right: 1rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leadership_two_cnt2::before {
+    content: none;
+  }
+
+  .leadership_two_cnt2 h3 {
+    font: var(--font-20);
+    font-weight: 900;
+    color: var(--color-black);
+    padding-block: 2rem;
+  }
+
+  .leadership_two_cnt2 h5 {
+    font: var(--font-14);
+    font-weight: 300;
+    color: var(--color-black);
+  }
+
+  .leadership_two_cnt2 p {
+    font: var(--font-16);
+    color: var(--color-black);
+    line-height: 1.5;
+  }
+
+  .leadership_two_cnt h5 {
+    font: var(--font-18);
+    font-weight: 300;
+    color: var(--color-black);
+  }
+
+  .leadership_two_cnt p {
+    font: var(--font-16);
+    color: var(--color-black);
+    line-height: 1.5;
+  }
+
+  .leadership_two_img {
+    padding-left: 0rem;
+  }
+
+  .message_img {
+    padding-left: 0rem;
+    padding-bottom: 1.5rem;
+    padding-inline: 3rem;
+  }
+
+  .message_img figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+  }
+
+  .message_warpper::before {
+    display: none;
+  }
+
+  .message_warpper::after {
+    display: none;
+  }
+
+  .message_warpper {
+    background-color: var(--color-9a);
+    padding: 2rem 1rem;
+    border-radius: 50px 8px 50px 8px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .message_warpper p {
+    font: var(--font-18);
+    color: var(--color-white);
+    line-height: 1.5;
+    font-weight: 300;
+  }
+
+  .message_text h3 {
+    font: var(--font-24);
+    color: var(--color-100);
+    margin-bottom: 3rem;
+    font-weight: 500;
+    margin-top: 2rem;
+  }
+
+  .inner-title .innnr_head h2,.inner-title .innnr_head h3, .inner-title .innnr_head .heading {
+    font: var(--font-30);
+    margin-bottom: -0.2rem;
+  }
+
+  .res_table_maincms .table_section:last-child {
+    padding-block: 2rem;
+  }
+
+  .res_table_maincms .table_section:first-child {
+    padding-block: 2rem;
+  }
+
+  .testimonial-filter .filter-tabs {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .testimonial-filter .filter-tabs button {
+    width: 47%;
+  }
+
+  .program-list-boxs {
+    gap: 3.5rem;
+  }
+
+  .department-master-of-computer-applications-about-us .estab_slide_item {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .about_three .vsn_msn_grid .miss-rgt h4 {
+    font: var(--font-20)
+  }
+
+  .about_three .vsn_msn_grid .miss-rgt p {
+    font: var(--font-18);
+  }
+   .icge-contact .internation-about .abt_cntnt h3 {  font: var(--font-28);  }
+   .contact-igce {margin: 3rem 0 6rem;}
+
+
+}
+
 @media (max-width: 640px) {
- .leadership_two .leadership_grid { grid-template-columns: repeat(1, 1fr); }
-.leadership_one .top_img figure>img { min-height: 30rem; object-fit: cover; }
-.leadership_one .top_img figure figcaption h3 { max-width: 100%; }
-.placement_procedure { grid-template-columns: repeat(1, 1fr); }
-.procedure_box { padding: 3rem; }
-.popup-modal { top: 20%; }
-.early-slide .imgsli_left { border-radius: 3rem .2rem .2rem; }
-.leadership-page .leadership_dtls_two { padding-top: 4rem; }
- }
+  .leadership_two .leadership_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .leadership_one .top_img figure>img {
+    min-height: 30rem;
+    object-fit: cover;
+  }
+
+  .leadership_one .top_img figure figcaption h3 {
+    max-width: 100%;
+  }
+
+  .placement_procedure {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .procedure_box {
+    padding: 3rem;
+  }
+
+  .popup-modal {
+    top: 20%;
+  }
+
+  .early-slide .imgsli_left {
+    border-radius: 3rem .2rem .2rem;
+  }
+  .leadership-page .leadership_dtls_two{
+    padding-top: 4rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .ad_selec_grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ad_selec_grid .ad_sel_col {
+    padding: 2.7rem 2.5rem;
+  }
+  .student-life .grands_mainsec {
+        padding-block: 2rem 0;
+    }
+.student-life .stu_clubs_title p {
+    margin-bottom: 3rem;
+}
+  .recent-audit-observations .ad_sel_col li {
+    margin-bottom: 1.5rem;
+  }
+
+  .ad_selec_procss {
+    padding-block: 6rem;
+  }
+
+  .recent-audit-observations .table_section {
+    padding-block: 3rem;
+  }
+
+  .admission-selection-process.ad_selec_procss {
+    padding-bottom: 4rem;
+  }
+
+  .eligibilty_main {
+    padding-block: 3rem;
+  }
+
+  .eligib_cont h5 {
+    font: var(--font-20);
+    color: var(--color-white);
+    margin-bottom: 1.5rem;
+  }
+
+  .fee_stru_title p {
+    color: var(--color-44);
+    margin-bottom: 2rem;
+  }
+
+  .fee_sturc_admain {
+    background-color: var(--color-white);
+    padding-block: 3rem;
+  }
+
+  .about_f_value {
+    padding-top: 3rem;
+  }
+
+  .procedure_box {
+    padding: 2rem;
+  }
+
+  .placement_proSec {
+    padding-block: 3rem;
+  }
+
+  .add_of_context {
+    height: 100%;
+    max-height: 30.7rem;
+  }
+
+  .hostal_title h4 {
+    margin-bottom: 3rem;
+  }
+
+  .about_f_value .ab_f_content {
+    padding-block: 3rem 0;
+  }
+
+  .eligib_cont h2 {
+    font: var(--font-24);
+    color: var(--color-white);
+    letter-spacing: 0;
+    font-family: var(--font-Condensed);
+    margin-bottom: 3.1rem;
+    line-height: normal;
+  }
+  .leadership-page .leadership_dtls_two{
+    padding-top: 2rem;
+  }
+  .about_one .abt_cntnt p {
+    font: var(--font-16);
+    font-weight: 300;
+    line-height: 1.4;
+    text-align: center;
+    
+  }
+  .icge-why-jss .abt_cntnt > h3 {
+        font: var(--font-21);
+        margin-bottom: 1.5rem;
+        font-weight: bold;
+    }
+    .icge-why-jss .abt_cntnt > i {font: var(--font-16);text-align: center;font-weight: 300;line-height: 1.4;max-width: 100%;}
+    .icge-why-jss .why-study-sec.icge-why-jss02 h5 {font: var(--font-21);}
+    .icge-why-jss .why-welcome.icge-why-jss03 h3 {font: var(--font-21);}
+    .icge-why-jss .why-welcome.icge-why-jss03 h5{margin-bottom:1rem;}
+      
+
+}
+
 @media (max-width: 480px) {
- .leadership_dtls_one .top_img figure figcaption { display: none; }
-.placement_highLight { grid-template-columns: repeat(1, 1fr); }
-.high_box { border: none; padding: 1.5rem 0.9rem 1.8rem; }
-.placement_highlights { padding-block: 4rem; }
-.placement .placement_procedure { margin-bottom: 3.2rem; padding-bottom: 3.2rem; }
-.place_logos .early-grid { grid-template-columns: repeat(1, 1fr); gap: 1rem; }
-.tabs_group_section .early-grid { grid-template-columns: repeat(2, 1fr); }
-.place_logos .early-grid figure .name { font: var(--font-14) }
-.placement .tabs_group_section .early-grid { grid-template-columns: repeat(1, 1fr); }
-.leadership_two_cnt p { padding-bottom: 0; }
-.leadership_two_cnt h5 { padding-block: 2rem; }
-.message_section { padding-top: 2rem; }
-.tesIcon { width: 15%; }
-.academic_grid { gap: 2.3rem; }
-.academic_lab_leftsec h4 { font: var(--font-20); color: var(--color-white); margin-bottom: 0; padding-bottom: 2rem; padding-right: 0; font-weight: 300; line-height: 1.4; }
-.research_labmain { padding-block: 4rem; }
-.message_text { margin-top: 2rem; }
-.message_text h3 { margin-bottom: 2rem; }
-.leadership_one .top_img>div>figcaption h3 { font: var(--font-24); }
-.c { display: grid; align-items: end; position: relative; margin-top: 0px; }
-.leadership_one .top_img figure figcaption { padding-left: 1rem; padding-bottom: 0rem; }
-.arrow-icon { position: relative; top: 1px; width: 1.2rem; height: 1.2rem; right: 6px; }
-.leadership_one .top_img figure { display: grid; align-items: end; position: relative; margin-top: 0px; }
-.ab_estab_slider { padding: 2rem 0; }
-.ab_jss_c_col { padding: 3.3rem 1rem; }
-.abou_t_sec h2 { padding-inline: 0rem; }
-.about_subtitle { margin-bottom: 2rem; }
-.sports_fac_slider .spo_fa_content { padding-block: 8rem; }
-.heri_prici_names { margin-bottom: 2rem; }
-.facilities_diffent p { margin-bottom: 0; }
-.heri_pri_btm_text { padding-top: 2rem; }
-.campu_con_rgt .ab_jss_c_col { padding: 3rem 0.4rem; }
-.facilities_diffent h5 { line-height: 1.2; }
-.resea_cre_items .ab_jss_coutsec { grid-template-columns: repeat(1, 1fr); }
-.public_table .fee_table { min-width: 100%; width: auto; }
-.fee_strcu_table .fee_table_wrapper { width: 100%; overflow: scroll; }
-.research .pulication_patent,
-  .research .grands_mainsec { padding-block: 4rem 2rem; }
-.grands_mainsec .publi_title p { text-align: left; }
-.fee_strcu_table { width: 100%; overflow: scroll; }
-.atm_fac_grid p { margin-bottom: 2rem; }
-.atm_g_imgsec { padding-top: 3rem; }
-.ab_jss_c_col { padding: 3.3rem 1rem; }
-.abou_t_sec h2 { padding-inline: 0rem; }
-.about_subtitle { margin-bottom: 2rem; }
-.about_one .abt_cntnt p { font: var(--font-18); font-weight: 300; line-height: 1.4; }
-.sports_fac_slider .spo_fa_content { padding-block: 3rem; }
-.spo_fa_counsec h4 { font: var(--font-26); }
-.campu_con_rgt p { margin-bottom: 2rem; }
-.sport_fac_swiper .swiper-pagination { display: none; }
-.facilities_diffent p { margin-bottom: 0; }
-.lib_cen_main .ab_jss_coutsec { margin-top: 3rem; display: block; }
-.ab_jss_c_col { max-width: 100%; }
-.ab_jss_c_col:last-child { border-left: 1px solid var(--color-d4); }
-.academic_grid .ab_jss_coutsec { margin-block: 3rem 0; display: block; border-top: none; }
-.academic-facilities .facilities_diffent { padding-block: 3rem; }
-.campu_con_rgt .ab_jss_c_col { padding: 3rem 0.4rem; }
-.facilities_diffent h5 { line-height: 1.2; }
-.heri_prici_names { text-align: left; }
-.about_four.heritage p:not(:last-child) { margin-bottom: 1rem; }
-.hei__princi_grid h3 { font: var(--font-18); font-weight: 300; line-height: 1.33; }
-.heri_prici_names h5 { font: var(--font-18); font-family: var(--font-Condensed); font-weight: bold; }
-.placement_request_content p { font: var(--font-20); color: #16344e; font-family: var(--font-Roboto); letter-spacing: 0; margin-bottom: 0; font-weight: 600; line-height: 1.1; }
- }
+  .leadership_dtls_one .top_img figure figcaption {
+    display: none;
+  }
+
+  .placement_highLight {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .high_box {
+    border: none;
+    padding: 1.5rem 0.9rem 1.8rem;
+  }
+
+  .placement_highlights {
+    padding-block: 4rem;
+  }
+
+  .placement .placement_procedure {
+    margin-bottom: 3.2rem;
+    padding-bottom: 3.2rem;
+  }
+
+  .place_logos .early-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+
+  .tabs_group_section .early-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .place_logos .early-grid figure .name {
+    font: var(--font-14)
+  }
+ 
+   .placement .tabs_group_section .early-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+  .leadership_two_cnt p {
+    padding-bottom: 0;
+  }
+
+  .leadership_two_cnt h5 {
+    padding-block: 2rem;
+  }
+
+  .message_section {
+    padding-top: 2rem;
+  }
+
+  .tesIcon {
+    width: 15%;
+  }
+
+  .academic_grid {
+    gap: 2.3rem;
+  }
+
+  .academic_lab_leftsec h4 {
+    font: var(--font-20);
+    color: var(--color-white);
+    margin-bottom: 0;
+    padding-bottom: 2rem;
+    padding-right: 0;
+    font-weight: 300;
+    line-height: 1.4;
+  }
+
+  .research_labmain {
+    padding-block: 4rem;
+  }
+
+  .message_text {
+    margin-top: 2rem;
+  }
+
+  .message_text h3 {
+    margin-bottom: 2rem;
+  }
+
+  .leadership_one .top_img>div>figcaption h3 {
+    font: var(--font-24);
+  }
+
+  .c {
+    display: grid;
+    align-items: end;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .leadership_one .top_img figure figcaption {
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+
+  .arrow-icon {
+    position: relative;
+    top: 1px;
+    width: 1.2rem;
+    height: 1.2rem;
+    right: 6px;
+  }
+
+  .leadership_one .top_img figure {
+    display: grid;
+    align-items: end;
+    position: relative;
+    margin-top: 0px;
+  }
+
+  .ab_estab_slider {
+    padding: 2rem 0;
+  }
+
+  .ab_jss_c_col {
+    padding: 3.3rem 1rem;
+  }
+
+  .abou_t_sec h2 {
+    padding-inline: 0rem;
+  }
+
+
+
+  .about_subtitle {
+    margin-bottom: 2rem;
+  }
+
+  .sports_fac_slider .spo_fa_content {
+    padding-block: 8rem;
+  }
+
+  .heri_prici_names {
+    margin-bottom: 2rem;
+  }
+
+  .facilities_diffent p {
+    margin-bottom: 0;
+  }
+
+  .heri_pri_btm_text {
+    padding-top: 2rem;
+  }
+
+  .campu_con_rgt .ab_jss_c_col {
+    padding: 3rem 0.4rem;
+  }
+
+  .facilities_diffent h5 {
+    line-height: 1.2;
+  }
+
+  .resea_cre_items .ab_jss_coutsec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .public_table .fee_table {
+    min-width: 100%;
+    width: auto;
+  }
+
+  .fee_strcu_table .fee_table_wrapper {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .research .pulication_patent,
+  .research .grands_mainsec {
+    padding-block: 4rem 2rem;
+  }
+
+  .grands_mainsec .publi_title p {
+    text-align: left;
+  }
+
+  .fee_strcu_table {
+    width: 100%;
+    overflow: scroll;
+  }
+
+  .atm_fac_grid p {
+    margin-bottom: 2rem;
+  }
+
+  .atm_g_imgsec {
+    padding-top: 3rem;
+  }
+
+  .ab_jss_c_col {
+    padding: 3.3rem 1rem;
+  }
+
+  .abou_t_sec h2 {
+    padding-inline: 0rem;
+  }
+
+
+  .about_subtitle {
+    margin-bottom: 2rem;
+  }
+
+  
+
+  .sports_fac_slider .spo_fa_content {
+    padding-block: 3rem;
+  }
+
+  .spo_fa_counsec h4 {
+    font: var(--font-26);
+  }
+
+  .campu_con_rgt p {
+    margin-bottom: 2rem;
+  }
+
+  .sport_fac_swiper .swiper-pagination {
+    display: none;
+  }
+
+  .facilities_diffent p {
+    margin-bottom: 0;
+  }
+
+  .lib_cen_main .ab_jss_coutsec {
+    margin-top: 3rem;
+    display: block;
+  }
+
+  .ab_jss_c_col {
+    max-width: 100%;
+  }
+
+  .ab_jss_c_col:last-child {
+    border-left: 1px solid var(--color-d4);
+  }
+
+  .academic_grid .ab_jss_coutsec {
+    margin-block: 3rem 0;
+    display: block;
+    border-top: none;
+  }
+
+  .academic-facilities .facilities_diffent {
+    padding-block: 3rem;
+  }
+
+  .campu_con_rgt .ab_jss_c_col {
+    padding: 3rem 0.4rem;
+  }
+
+  .facilities_diffent h5 {
+    line-height: 1.2;
+  }
+
+  .heri_prici_names {
+    text-align: left;
+  }
+
+  .about_four.heritage p:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+
+  .hei__princi_grid h3 {
+    font: var(--font-18);
+    font-weight: 300;
+    line-height: 1.33;
+  }
+
+  .heri_prici_names h5 {
+    font: var(--font-18);
+    font-family: var(--font-Condensed);
+    font-weight: bold;
+  }
+
+  .placement_request_content p {
+    font: var(--font-20);
+    color: #16344e;
+    font-family: var(--font-Roboto);
+    letter-spacing: 0;
+    margin-bottom: 0;
+    font-weight: 600;
+    line-height: 1.1;
+  }
+}
+
 /* Full Page Loader Overlay */
 .leadership_loader { position: relative; top: 0; left: 0; width: 100%; height: 100vh; z-index: 9999; display: flex; align-items: center; justify-content: center; }
 /* Animation */
@@ -2562,121 +3478,383 @@ h5.text-center.event_org_orojo { padding-block: 4rem 0; }
 .jss-step-incubation .placement_proSec { padding-block: 4rem 2rem; }
 .admission .atm_g_imgsec { padding-top: 2rem; }
 .admission .about_one { padding-block: 2rem 0; }
-.admission .fee_sturc_admain { padding-block: 4rem; }
-.admission .admins_of_con { padding-bottom: 4rem; }
-.admission .admins_of_con { padding-bottom: 4rem; }
-.admission .hostal_title h4 { margin-bottom: 3rem; }
-.admission .add_of_context { padding: 3.3rem 3.2rem 0rem; }
-.admission .about_f_value { padding-top: 4rem; }
-.best-practices .image_content_repeat_section { padding-block: 4rem 0; }
-.campus-facilities .image_content_repeat_section.hostel_repeatsec .hostel_list { margin: 2rem 0 0; }
-.oorja_gallery_grid { grid-template-columns: 1fr; }
-.oorja_gallery_item h4 { font-size: 2rem; }
-.event_boxes { grid-template-columns:1fr; gap:2rem; }
-.event_box { padding:2rem; }
-.other_initiative .event_boxes { grid-template-columns: 1fr; }
-.society_gallery { grid-template-columns:1fr; }
-.accordion_title { padding-block: 2rem 0rem; font:var(--font-16); }
-.benefits_grid { grid-template-columns: 1fr; }
-.benefit_item { border-right: none; }
-.benefit_item:last-child { border-bottom: none; }
-.left_side_content h2 { font: var(--font-22); font-weight: 300; line-height: normal; text-align: left; }
-.left_side_content h1,.left_side_content .heading { font: var(--font-30); letter-spacing: 0; margin-top: 3rem; text-align: left; }
-.icge-about .internation-about .abt_cntnt h3 { font: var(--font-28); }
-.icge-about .internation-about i { font: var(--font-16); }
-.icge-about01 .vision-gray { padding: 2rem; }
-.icge-about03.international-statis-dashboard { margin-bottom: 6rem; padding: 6rem 0; }
-.icge-about04.highlights-sec { padding-bottom: 6rem; }
-.icge-about04.highlights-sec ul { grid-template-columns: 1fr; }
-.icge-about04.highlights-sec ul li { padding: 2rem; }
-.icge-about05.about-icge-sec { padding: 6rem 0; }
-.icge-about06.why-study-sec.partner { padding: 6rem 0; }
-.icge-about07.about-testimonial { padding: 6rem 0; }
-.icge-about07
-  .placement-module__VSLvPW__eachSlide { flex-direction: column; align-items: flex-start; }
-.icge-about07
-  .placement-module__VSLvPW__testimonialImageContainer { width: 216px; max-width: 100%; }
-.icge-about07
-  .placement-module__VSLvPW__desktopQuoteIcon { display: none; }
-.icge-about07
-  .placement-module__VSLvPW__mobileQuoteIcon { display: block; }
- }
+.admission .fee_sturc_admain {padding-block: 4rem;}
+.admission .admins_of_con {padding-bottom: 4rem;}
+.admission .admins_of_con {padding-bottom: 4rem;}
+.admission .hostal_title h4 { margin-bottom: 3rem;}
+.admission .add_of_context {padding: 3.3rem 3.2rem 0rem;}
+.admission .about_f_value {padding-top: 4rem;}
+.best-practices .image_content_repeat_section {padding-block: 4rem 0;}
+.campus-facilities .image_content_repeat_section.hostel_repeatsec .hostel_list {margin: 2rem 0 0;}
+ .icge-about .icge-about07 .placement-module__VSLvPW__testimonialImageContainer {width: 150px;height: 150px;margin-bottom: 3rem!important;}
+   .icge-contact .internation-about.jss-contact .abt_cntnt > i {  font: var(--font-16);  }
+   
+}
+
 @media(max-width:575px) {
- .ad_selec_grid { grid-template-columns: repeat(1, 1fr); }
-.ad_selec_grid .ad_sel_col { padding: 2.7rem 2.5rem; }
-.student-life .grands_mainsec { padding-block: 2rem 0; }
-.student-life .stu_clubs_title p { margin-bottom: 3rem; }
-.recent-audit-observations .ad_sel_col li { margin-bottom: 1.5rem; }
-.ad_selec_procss { padding-block: 6rem; }
-.recent-audit-observations .table_section { padding-block: 3rem; }
-.admission-selection-process.ad_selec_procss { padding-bottom: 4rem; }
-.eligibilty_main { padding-block: 3rem; }
-.eligib_cont h5 { font: var(--font-20); color: var(--color-white); margin-bottom: 1.5rem; }
-.fee_stru_title p { color: var(--color-44); margin-bottom: 2rem; }
-.fee_sturc_admain { background-color: var(--color-white); padding-block: 3rem; }
-.about_f_value { padding-top: 3rem; }
-.procedure_box { padding: 2rem; }
-.placement_proSec { padding-block: 3rem; }
-.add_of_context { height: 100%; max-height: 30.7rem; }
-.hostal_title h4 { margin-bottom: 3rem; }
-.about_f_value .ab_f_content { padding-block: 3rem 0; }
-.eligib_cont h2 { font: var(--font-24); color: var(--color-white); letter-spacing: 0; font-family: var(--font-Condensed); margin-bottom: 3.1rem; line-height: normal; }
-.leadership-page .leadership_dtls_two { padding-top: 2rem; }
-.department-information-technology-about-us .grid_card_design1_section { padding-block: 0 6rem; }
-.awards-and-rankings .row.justify-content-center { padding-top: 3rem; }
-.awards-and-rankings .placement_proSec { padding-top: 3rem; padding-bottom: 3rem; }
-.institutional-development-plan .amenities_section .grid_group { padding: 3rem; }
-.faulty-box { gap: 1rem 2rem; }
-.abou_t_sec { padding-top: 0rem; }
-.abou_t_sec h2 { padding-bottom: 3.7rem; }
-.abou_t_sec .about_subtitle { margin-bottom: 1.8rem; }
-.academic-facilities .academic_labmain .ab_jss_coutsec .ab_jss_c_col { max-width: 100%; }
-.campus-facilities .ameminites_listmain .ameniti_item_col p { margin-bottom: 2rem; }
-.campus-facilities .uni_boa_grid { gap: 2rem; }
-.internation-conference .conference_section .grid { grid-template-columns: repeat(1, 1fr); }
-.internation-conference .single_card .content h5 { min-height: auto; }
-.internation-conference .conference_section .grid { gap: 1rem 0; }
-.internation-conference .conference_section { padding: 6rem 0; }
-.patents .pate_boxmain .patent_boxgrid { grid-template-columns: repeat(1, 1fr); gap: 1.5rem; }
-.academic-facilities .about_one .estblish #mentoring-scheme { margin-bottom: 0; }
-.internation-conference .conference_section { padding: 4rem 0; }
-.academic-facilities .atm_mainsec.consultancy_main .atm_g_imgsec { padding-top: 0; }
-.campus-facilities .image_content_repeat_section.hostel_repeatsec .single_image_content { padding-bottom: 2rem; }
-.campus-facilities .ameminites_listmain { padding-block: 2rem; }
-.admission .eligib_cont h2 { font: var(--font-26); letter-spacing: -1.2; line-height: 3.2rem; font-family: var(--font-Condensed); }
-.admission  .hostal_title h4 { font: var(--font-22); margin-bottom: 2rem; font-weight: 300; }
-.hostal_title h5 { margin-bottom: 2rem; }
-.scholarship-and-eligibility .image_content_repeat_section, .scholarship-and-eligibility .about_one .estblish { padding-block: 2rem 0; }
-.about_one .estblish p, .grid_em_leftsec p { margin-bottom: 0; }
-.academic-audit-process .about_one .estblish p, .grid_em_leftsec p { margin-bottom: 2rem; }
-.academic-audit-process  .about_one .estblish { padding-block: 2rem 0; }
-.academic-audit-process .grid_group { padding: 2rem; }
-.academic-audit-process .placement_proSec { padding-block: 2rem; }
-.academic-audit-process .add_of_context { max-height: 25.7rem; }
-.campus-facilities .amenities_title p { max-width: 100%; padding: 0 0 3rem; }
-.campus-facilities .sports_fac_slider .spo_fa_content { gap: 3rem; }
-.campus-facilities .uni_boa_grid { margin-top: 0; }
-.campus-facilities .atm_fac_grid h5 { margin-bottom: 2rem; }
-.campus-facilities .about_two.labs_group_section { padding-bottom: 4rem; }
-.about_subHeading { text-align: left; max-width: 100%; padding-inline: 0; }
-.about_subtitle { text-align: left; }
-.internal_soc_content .achievements_li_grid { grid-template-columns: 1fr; }
-.internal_soc_content h5 { font:var(--font-18); font-weight: 600; }
-.icge-about .internation-about h3 { margin-bottom: 2rem; }
-.icge-about01 .about_f_value { padding-top: 1rem; }
-.icge-about03.international-statis-dashboard { padding: 5rem 0; }
-.icge-about04.highlights-sec ul li { padding: 2rem 1.5rem; }
-.icge-about05 .about-icge-right { padding: 2rem; }
-.icge-about07
-  .placement-module__VSLvPW__testimonialImageContainer { width: 180px; }
- }
+.institutional-development-plan .amenities_section .grid_group {padding: 3rem;}
+.faulty-box {gap: 1rem 2rem;}
+.abou_t_sec {padding-top: 0rem;}
+.abou_t_sec h2 {padding-bottom: 3.7rem;}
+.abou_t_sec .about_subtitle {margin-bottom: 1.8rem;}
+.academic-facilities .academic_labmain .ab_jss_coutsec .ab_jss_c_col {max-width: 100%;}
+.campus-facilities .ameminites_listmain .ameniti_item_col p {  margin-bottom: 2rem;}
+.campus-facilities .uni_boa_grid {gap: 2rem;}
+.internation-conference .conference_section .grid {grid-template-columns: repeat(1, 1fr);}
+.internation-conference .single_card .content h5 { min-height: auto;}
+.internation-conference .conference_section .grid {gap: 1rem 0;}
+.internation-conference .conference_section {padding: 6rem 0;}
+.patents .pate_boxmain .patent_boxgrid {grid-template-columns: repeat(1, 1fr);gap: 1.5rem;}
+.academic-facilities .about_one .estblish #mentoring-scheme {margin-bottom: 0;}
+.internation-conference .conference_section {padding: 4rem 0;}
+.academic-facilities .atm_mainsec.consultancy_main .atm_g_imgsec {padding-top: 0;}
+.campus-facilities .image_content_repeat_section.hostel_repeatsec .single_image_content {padding-bottom: 2rem;}
+.campus-facilities .ameminites_listmain { padding-block: 2rem;}
+.admission .eligib_cont h2 {font: var(--font-26);letter-spacing: -1.2;line-height: 3.2rem;font-family: var(--font-Condensed);}
+.admission  .hostal_title h4 {font: var(--font-22);margin-bottom: 2rem;font-weight: 300;}
+.hostal_title h5 {margin-bottom: 2rem;}
+.scholarship-and-eligibility .image_content_repeat_section, .scholarship-and-eligibility .about_one .estblish { padding-block: 2rem 0;}
+.about_one .estblish p, .grid_em_leftsec p {margin-bottom: 0;}
+.academic-audit-process .about_one .estblish p, .grid_em_leftsec p {margin-bottom: 2rem;}
+.academic-audit-process  .about_one .estblish {padding-block: 2rem 0;}
+.academic-audit-process .grid_group {padding: 2rem;}
+.academic-audit-process .placement_proSec { padding-block: 2rem;}
+.academic-audit-process .add_of_context {max-height: 25.7rem;}
+.campus-facilities .amenities_title p {max-width: 100%;padding: 0 0 3rem;}
+.campus-facilities .sports_fac_slider .spo_fa_content {gap: 3rem;}
+.campus-facilities .uni_boa_grid {margin-top: 0;}
+.campus-facilities .atm_fac_grid h5 {margin-bottom: 2rem;}
+.campus-facilities .about_two.labs_group_section {padding-bottom: 4rem;}
+.about_subHeading {text-align: left;max-width: 100%;padding-inline: 0;}
+.about_subtitle{text-align: center;}
+.icge-contact.about_subtitle{text-align: center;}
+.icge-contact .internation-about .abt_cntnt h3{ font: var(--font-21);  margin-bottom: 1.5rem; font-weight: bold;  }
+.icge-contact .about_one {padding-block:4rem 0;}
+
+}
+
 @media(max-width:480px) {
- .admission-sec .overview-duration .structure-btns { gap: 1.5rem 0; }
-.admission-sec .overview-duration .overview-duration-text { margin-bottom: 1.5rem; padding-bottom: 1.5rem; }
-.research .resea_cre_items { padding: 3rem 0 2.7rem 0; }
-.research .resea_cre_items2 { padding: 2rem 0 2rem 0; }
-.research .pulication_patent, .research .grands_mainsec { padding-block: 4rem 0; }
-.research .publi_title h4 { margin-bottom: 2rem; }
-.publi_content h6 { margin-bottom: 2rem; }
-.campus-facilities .academic-facilities .academic_labmain, .sports_fac_slider .spo_fa_content { padding-block: 2rem; }
- }
+  .admission-sec .overview-duration .structure-btns {gap: 1.5rem 0;}
+  .admission-sec .overview-duration .overview-duration-text { margin-bottom: 1.5rem;padding-bottom: 1.5rem;}
+  .research .resea_cre_items {padding: 3rem 0 2.7rem 0;}
+  .research .resea_cre_items2 {padding: 2rem 0 2rem 0;}
+  .research .pulication_patent, .research .grands_mainsec {padding-block: 4rem 0;}
+  .research .publi_title h4 {margin-bottom: 2rem;}
+  .publi_content h6 {margin-bottom: 2rem;}
+  .campus-facilities .academic-facilities .academic_labmain, .sports_fac_slider .spo_fa_content {padding-block: 2rem;}
+.icge-contact .about_one {padding-block: 2rem 0;}
+}
+
+.ac_pagination .ac_swi_btn img:hover {
+  filter: invert(41%) sepia(94%) saturate(707%) hue-rotate(9deg) brightness(101%) contrast(102%);
+}
+
+.society_tables_depart {margin-top: 5rem;}
+.society_tables_depart .fee_strcu_table:nth-of-type(2){  margin-top: 6rem;}
+.department_society_objective{margin-top: 5rem;}
+.math_society h5{font-weight: 600;margin-top: 3rem; font: var(--font-21);color: var(--color-4e);font-weight: 700;font-family: var(--font-Condensed);text-align: left;margin-bottom: 1rem;line-height: 1.6}
+.aim_sec p{text-align: left;color: #444;}
+.aim_sec h5{font: var(--font-18);color: var(--color-4e);font-weight: bold;font-family: var(--font-Condensed);margin-bottom: 1rem;line-height: 1.6;}
+.achievements_li_grid{display: grid;grid-template-columns: repeat(4, 1fr);gap: 3rem;margin-top: 2rem;}
+.achievements_li_grid p{background-color: white;padding: 3rem;text-align: center;   font-weight: normal; border-bottom: 1px solid var(--color-100);}
+.internal_soc_content p{color: var(--color-44);}
+.internal_soc_content h5{font-weight: 600;margin-top: 3rem; font: var(--font-21);color: var(--color-4e);font-weight: 700;font-family: var(--font-Condensed);text-align: left;margin-bottom: 1rem;line-height: 1.6}
+.society_tables_depart h5{margin-bottom: 3rem;}
+.internal_soc_content .achievements_li_grid{grid-template-columns: repeat(3, 1fr)}
+.benift_sec{padding-top:2rem}
+/* .achivmnt h5{text-align: center;} */
+.elec_seed_image{margin-block: 3rem;}
+.achivmnt .elec_seed_image {margin-top: 2rem;padding-bottom: 8rem;}
+/* .all_data {padding-bottom: 7rem;} */
+.INKSPIRE_pad_btm {padding-bottom: 7rem;}
+.student_soc {padding-top: 2.5rem;}
+.right_side_menus .active_society {color: var(--color-9a);font-weight: 500;}
+.right_side_menus .inactive_society {color: var(--color-44);}
+.department_society_objective p:last-of-type {color: var(--color-white);margin-top: 5rem;text-align: center;}
+.event_boxes{display:grid;grid-template-columns:repeat(6,1fr);gap:3rem;margin-block: 3rem;}
+.event_box{grid-column:span 2;padding:3rem;border-bottom: 1px solid var(--color-100);background:#fff;}
+.event_box h5{margin-top: 0;}
+/* .event_box:nth-child(4){grid-column:2 / span 2;}
+.event_box:nth-child(5){grid-column:4 / span 2;} */
+.other_initiative .event_boxes {grid-template-columns: repeat(2,1fr);}
+.other_initiative .event_box{grid-column:auto;}
+.achievement_dot_design_list{margin-top: 3.5rem;padding-bottom: 1rem;}
+.achievement_dot_design_list h5{margin-bottom: 2rem;}
+.achievement_item{position:relative;padding: 0 0 1rem 3rem;border-left:1px solid #d9d9d9;}
+.achievement_dot_design_list p{color:var(--color-44)}
+.aiml_soc_bg_white p{color:var(--color-44)}
+.achievement_item:last-child{padding-bottom:0;}
+.achievement_item::before{content:'';position:absolute;left:-0.8rem;top:0.4rem;width:1.5rem;height:1.5rem;border-radius:50%;background:var(--color-9a);}
+.achievement_item .year{display:inline-block;font-weight:600;margin-bottom:1rem;}
+.signature{margin-top: 3rem;}
+.student_soc .signature span{font: var(--font-14);}
+.society_gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:3rem;margin-top:3rem;}
+.gallery_item img{width:100%;height:35rem;object-fit:cover;border-radius:1rem;}
+.guidance_note{margin-top:3rem;}
+.internal_soc_content .single_lab_card  .early-slide{align-items: center;}
+.divercity_chem_soc .society_gallery{grid-template-columns: repeat(3,1fr);}
+.pixel_society >p{margin-top: 3rem;}
+/* Accordion */
+.accordion_item{border-bottom:1px solid #e5e5e5;background-color: #fff;padding-inline: 2rem; scroll-margin-top:10rem;}
+.accordion_item .active_society {color: var(--color-9a);font-weight: 500;}
+.accordion_item .inactive_society {color: var(--color-44);}
+.accordion_item a{font: var(--font-14);line-height: 2.8rem;color: var(--color-44);}
+.accordion_title{width:100%;display:flex;align-items:center;justify-content:space-between;cursor:pointer;background:none;border:none;cursor:pointer;font:var(--font-18);font-weight:500;padding-block: 3rem;}
+.accordion_arrow{width:20px;height:20px;transition:transform 0.3s ease;flex-shrink:0;}
+.accordion_arrow.rotate{transform:rotate(180deg);}
+.department_society_overview .accordion_item:last-child {border: none;}
+.accordion_content{max-height:0;overflow:hidden;opacity:0;padding-bottom:2rem;transition:max-height .45s ease,opacity .3s ease,padding-bottom .3s ease;}
+.accordion_content.open{max-height:5000px;opacity:1;padding-bottom:2rem;}
+.pixel_society img{width:100%}
+.cse_society {margin-block: 7rem;}
+.club_image {padding-block: 3rem;}
+.club_image img{width: 100%;}
+.elec_seed_image  img{width: 100%;}
+.benefits_grid {display: grid;grid-template-columns: repeat(2, 1fr);border: 1px solid var(--color-100);background: #fff;    margin-top: 2rem;}
+.benefit_item {padding: 1rem;padding-inline: 2rem;border-right: 1px solid var(--color-100);border-bottom: 1px solid var(--color-100);background: #fff;}
+.benefit_item:nth-child(2n) {border-right: none;}
+.benefit_item:nth-last-child(-n + 2) {border-bottom: none;}
+.benefit_item h5 {margin: 0 0 0.5rem;}
+.benefit_item p {margin: 0;}
+.department_society_achivement .societies_events_header h5{text-align: left;}
+.custom_order_listing{padding-left: 2rem;margin-top: 3rem;}
+.custom_order_listing li{font: var(--font-16);color: #444;margin-bottom: 2rem;padding-left: 2.2rem;line-height: 2.8rem;}
+.custom_order_listing li::marker{color: var(--color-100); /* yellow */font-weight: 700;}
+.aiml_soc_bg_white {background-color: var(--color-white);}
+.aiml_soc_bg_white .labs_group_section{margin-top: 10rem;padding-top: 0;}
+.aiml_soc_bg_white .society_tables_depart{margin-top: 4rem;}
+.aiml_soc_bg_white h5{font: var(--font-21);color: var(--color-4e);font-weight: 700;font-family: var(--font-Condensed);text-align: left;margin-top: 3rem;margin-bottom: 1rem;line-height: 1.6;}
+.society_tables_depart .fee_strcu_table .fee_table_wrapper .fee_table th:first-child{min-width: 10rem;}
+.society_tables_depart .fee_strcu_table .fee_table_wrapper .fee_table th:nth-child(2){min-width: 19rem;}
+.society_tables_depart .fee_strcu_table .fee_table_wrapper .fee_table th:nth-child(3){min-width: 24rem;}
+.society_tables_depart .fee_strcu_table .fee_table_wrapper .fee_table th:nth-child(4){min-width: 27rem;}
+.aiml_society .society_gallery {padding-block: 3rem;}
+.aiml_society .society_gallery:nth-of-type(2)  {padding-bottom: 10rem;}
+.aiml_soc_bg_white h5{ padding-block: 5rem 2rem;}
+.connect_us_faculty {padding-top:6rem}
+.achievement_timeline{position:relative;margin-block: 3rem;}
+.achievement_timeline::before{content:"";position:absolute;left:8rem;top:0;bottom:0;width:1px;background:#d9d9d9;}
+.timeline_item{position:relative;display:grid;grid-template-columns:6rem 1fr;gap:4rem;padding-bottom:3rem;}
+.timeline_item:last-child{padding-bottom:0;}
+.timeline_year{position:relative;z-index:2;text-align:center;font-weight:600;background:#fff;padding:.5rem 0;height: 3rem;}
+.timeline_year::after{content:"";position:absolute;top:1rem;right:-2.6rem;width:1.2rem;height:1.2rem;border-radius:50%;background:#f7b500;}
+.timeline_content{padding-bottom:1rem;}
+.timeline_content p{margin:0 0 1.2rem;}
+.timeline_content p:last-child{margin-bottom:0;}
+.achievement_dot_design_list h5{padding-top: 0;margin-top: 0;}
+.nibble_bits{display:flex;flex-direction:column;gap:4rem;margin-top:4rem;}
+.bit_row{display:flex;}
+.bit_row:nth-child(odd){justify-content:flex-start;}
+.bit_row:nth-child(even){justify-content:flex-end;}
+.bit_card{width:min(75rem,100%);padding:4rem;background:#fff;border-left:2px solid var(--color-100);position:relative;}
+.bit_number{position:absolute;top:2rem;right:3rem;line-height:1;font-size:8rem;font-weight:700;opacity:.08;}
+.bit_card h5{margin-bottom:1.5rem;}
+.bit_card > p{margin-bottom:2.5rem;}
+.bit_features{display:flex;flex-direction:column;gap:1.5rem;}
+.feature_item{position:relative;padding-left:2rem;}
+.feature_item::before{content:"";position:absolute;left:0;top:.8rem;width:.8rem;height:.8rem;border-radius:50%;background:currentColor;}
+.aiml_clubs .event_boxes {grid-template-columns: repeat(4, 1fr);}
+.oorja_society{margin-top: 7rem;}
+.oorja_society .vision p{font: var(--font-18);font-weight: normal;line-height: 2.8rem;}
+.oorja_society .mission-card p{color:#444;}
+.oorja_white {    position: relative; padding-bottom: 3rem;}
+.oorja_white::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5rem;
+    width: 100%;
+    height: 5rem;
+    background: inherit;
+}
+.oorja_white h5{padding-top: 5rem;margin-top: 0;}
+.oorja_white .society_tables_depart{margin-top: 0;}
+.oorja_gallery_sec {padding-top: 6rem;}
+.oorja_gallery_sec h5{font-weight: 600;padding-block: 5rem; font: var(--font-21);color: var(--color-4e);font-weight: 700;font-family: var(--font-Condensed);text-align: left;line-height: 1.6;text-align: center;}
+h5.text-center.event_org_orojo {padding-block: 4rem 0;}
+.oorja_gallery_grid{display: grid;grid-template-columns: repeat(3, 1fr);gap: 4rem 3rem;}
+.oorja_gallery_item{text-align: center;}
+.oorja_gallery_item img{width: 100%;display: block;}
+.oorja_gallery_item h4 {margin-top: 1.8rem;font: var(--font-18);font-weight: 600;line-height: 1.3;color: var(--color-4e);}
+
+
+@media(max-width:1030px) {
+.aiml_clubs .event_boxes {grid-template-columns: repeat(2, 1fr);}
+}
+@media(max-width:991px) {
+.achievements_li_grid{grid-template-columns: 1fr;}
+.event_boxes{grid-template-columns:repeat(2,1fr);}
+.event_box,.event_box:nth-child(4),.event_box:nth-child(5){grid-column:auto;}
+.divercity_chem_soc .society_gallery{grid-template-columns: 1fr;}
+.left_side_content h1,.left_side_content .heading{font:var(--font-30);letter-spacing: 0; margin-top: 3rem;}
+.student_soc {padding-top: 1rem;}
+.internal_soc_content .about_two{background-color: transparent;}
+.left_side_content h2 {margin-block:0.7rem}
+.faculty_cordinator {margin-bottom: 1rem;}
+.mobile_overview{ padding-bottom: 6rem;margin-top: 3rem;}
+.aiml_soc_bg_white .society_contact .about_two .early-slide .early_rgt{padding-top: 0;margin-top: 0rem;}
+.aiml_soc_bg_white h5:last-of-type{padding-top: 2rem;padding-bottom: 0;}
+.department_society_overview {   margin-top: 4rem;padding-bottom: 4rem; padding-top:0;}
+.bit_row,.bit_row:nth-child(even),.bit_row:nth-child(odd){justify-content:flex-start;}
+.bit_card{width:100%;padding:3rem;}
+.bit_number{font-size:5rem;top:1.5rem;right:2rem;}
+.connect_us_faculty {padding-top: 2rem;}
+.aiml_soc_bg_white .labs_group_section {margin-top: 6rem;}
+.accordion_title {padding-block: 2rem;}
+.oorja_gallery_grid{grid-template-columns: repeat(2, 1fr);gap: 3rem 2rem;}
+
+  
+.icge-about01 .about_f_value {
+  padding-top: 2rem;
+  }
+  
+  .icge-about05.about-icge-sec {
+  padding: 7rem 0;
+  }
+  
+  .icge-about05 .about-icge-left {
+  padding-right: 0;
+  margin-bottom: 4rem;
+  }
+  
+  .icge-about06.why-study-sec.partner {
+  padding: 7rem 0;
+  }
+  
+  .icge-about07.about-testimonial {
+  padding: 7rem 0;
+  }
+  
+  .icge-about04.highlights-sec ul {
+  grid-template-columns: repeat(2, 1fr);
+  }
+
+
+}
+@media(max-width:767px){
+.oorja_gallery_grid{grid-template-columns: 1fr;}
+.oorja_gallery_item h4{font-size: 2rem;}
+.event_boxes{grid-template-columns:1fr;gap:2rem;}
+.event_box{padding:2rem;}
+.other_initiative .event_boxes {grid-template-columns: 1fr;}
+.society_gallery{grid-template-columns:1fr;}
+.accordion_title{padding-block: 2rem 0rem; font:var(--font-16);}
+.benefits_grid {grid-template-columns: 1fr;}
+.benefit_item {border-right: none;}
+.benefit_item:last-child {border-bottom: none;}
+.left_side_content h2 {font: var(--font-22);font-weight: 300;line-height: normal;text-align: left;}
+.left_side_content h1,.left_side_content .heading {font: var(--font-30);letter-spacing: 0;margin-top: 3rem;text-align: left;}
+
+  
+.icge-about .internation-about .abt_cntnt h3 {
+  font: var(--font-28);
+  }
+  
+  .icge-about .internation-about i {
+  font: var(--font-16);
+  }
+  
+  .icge-about01 .vision-gray {
+  padding: 2rem;
+  }
+  
+  .icge-about03.international-statis-dashboard {
+  margin-bottom: 6rem;
+  padding: 6rem 0;
+  }
+  
+  .icge-about04.highlights-sec {
+  padding-bottom: 6rem;
+  }
+  
+  .icge-about04.highlights-sec ul {
+  grid-template-columns: 1fr;
+  }
+  
+  .icge-about04.highlights-sec ul li {
+  padding: 2rem;
+  }
+  
+  .icge-about05.about-icge-sec {
+  padding: 6rem 0;
+  }
+  
+  .icge-about06.why-study-sec.partner {
+  padding: 6rem 0;
+  }
+  
+  .icge-about07.about-testimonial {
+  padding: 6rem 0;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__eachSlide {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImageContainer {
+  width: 216px;
+  max-width: 100%;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__desktopQuoteIcon {
+  display: none;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__mobileQuoteIcon {
+  display: block;
+  }
+
+}
+@media(max-width:575px){
+.internal_soc_content .achievements_li_grid {    grid-template-columns: 1fr;}
+.internal_soc_content h5{font:var(--font-18);font-weight: 600;}
+
+
+.icge-about .internation-about h3 {
+  margin-bottom: 2rem;
+  }
+  
+  .icge-about01 .about_f_value {
+  padding-top: 1rem;
+  }
+  
+  .icge-about03.international-statis-dashboard {
+  padding: 5rem 0;
+  }
+  
+  .icge-about04.highlights-sec ul li {
+  padding: 2rem 1.5rem;
+  }
+  
+  .icge-about05 .about-icge-right {
+  padding: 2rem;
+  }
+  
+  .icge-about07
+  .placement-module__VSLvPW__testimonialImageContainer {
+  width: 180px;
+  }
+.icge-about .internation-about .abt_cntnt h3{font: var(--font-21);font-weight: bold;margin-bottom: 1.5rem;}
+}
+
+.about-iic .grid_card_design1_section h4{text-align: center;font: var(--font-18);font-weight: 500;}
+.about-iic .achievements_section .achievements_bottom > :last-child {margin-top: 3rem;}
+.iic-council .about_top {padding-top:0}
+.iic-council .about_one .about_subtitle{display:none}
+.innovation-ambassadors .about_top {padding-top:0}
+.innovation-ambassadors .about_one .about_subtitle{display:none}
+.innovation-ambassadors .about_one .atm_g_imgsec{    margin-bottom: 9rem;}
+.iic-student-club .about_one .about_subtitle{display:none}
+.iic-student-club .about_one .atm_g_imgsec{padding-bottom: 10rem;}
+.iic-student-club .about_one .about_top{padding-top: 0;}
+.iic-student-club .placement_stats{padding-bottom: 5rem;}
+
+
+/* css ends here */
+
+.department_society_overview p{ color: var(--color-44);}

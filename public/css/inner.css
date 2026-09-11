@@ -9251,6 +9251,7 @@ ul.comon_list li:before {
   .ad_selec_grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  
 
   .ad_selec_grid .ad_sel_col {
     padding: 2.7rem 2.5rem;
@@ -10295,6 +10296,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 }
 
 @media(max-width:575px) {
+  
 .institutional-development-plan .amenities_section .grid_group {padding: 3rem;}
 .faulty-box {gap: 1rem 2rem;}
 .abou_t_sec {padding-top: 0rem;}
@@ -10475,6 +10477,8 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .oorja_gallery_item{text-align: center;}
 .oorja_gallery_item img{width: 100%;display: block;}
 .oorja_gallery_item h4 {margin-top: 1.8rem;font: var(--font-18);font-weight: 600;line-height: 1.3;color: var(--color-4e);}
+.icge-faq .faq-module__HU7XJq__inner_page{margin-top:10rem; margin-bottom:10rem;}
+.icge-faq .faq-module__HU7XJq__inner_page h5{    font: var(--font-26);color: var(--color-4e);margin-bottom: 3rem;}
 
 
 @media(max-width:1030px) {
@@ -10501,6 +10505,9 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .aiml_soc_bg_white .labs_group_section {margin-top: 6rem;}
 .accordion_title {padding-block: 2rem;}
 .oorja_gallery_grid{grid-template-columns: repeat(2, 1fr);gap: 3rem 2rem;}
+.icge-faq .faq-module__HU7XJq__inner_page {margin-top: 4rem;}
+
+
 }
 @media(max-width:767px){
 .oorja_gallery_grid{grid-template-columns: 1fr;}
@@ -10519,6 +10526,7 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 @media(max-width:575px){
 .internal_soc_content .achievements_li_grid {    grid-template-columns: 1fr;}
 .internal_soc_content h5{font:var(--font-18);font-weight: 600;}
+.icge-faq .faqAnswer {width: 100%;}
 
 }
 
@@ -10568,21 +10576,22 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
   .placement-module__VSLvPW__testimonialContent { padding-top: 3rem!important; }
 .icge-about .placement-module__VSLvPW__testimonialSwiper p.small{text-align: center;-webkit-box-orient: vertical;}
 .icge-about07 .gallery-navigation {display: block;  text-align: center;margin-bottom: 5rem;}
-    
+    .icge-about .internation-vision .ab_jss_coutsec {display: grid; grid-template-columns: repeat(3, 1fr);gap: 2rem;}
+    .icge-about .internation-vision .ab_jss_c_col:last-child {border-left: 1px solid var(--color-d4);}
 
 }
 @media (max-width: 767px) {
     
 	.icge-about07 h3 {text-align: center;}
 	.icge-about07 .gallery-navigation {display: block;}
-	.gate-way-row {grid-template-columns: 100% auto;gap: 0;display: block;}
+	
 	.icge-about04.highlights-sec ul li h4 {margin-bottom: 2rem;}
 	.ab_jss_coutsec {display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;}
 	.ab_jss_c_col:last-child {border-left: 1px solid var(--color-d4)!important;}
 	.about_one .abt_cntnt p { text-align: center;}
 	.icge-about03.international-statis-dashboard h3 {font: var(--font-32);}
 	.icge-about04.highlights-sec ul li h4 {min-height:auto;margin-bottom: 2rem;}
-	.icge-about07 .placement-module__VSLvPW__testimonialImageContainer {width: 150px;height: 150px;margin-bottom: 3rem !important;}
+	
   .icge-about07.about-testimonial {padding: 2rem 0;}
   .icge-about07 .placement-module__VSLvPW__mobileQuoteIcon {display: none!important; }
   .placement-module__VSLvPW__testimonialContent {padding-top: 0rem !important;}
@@ -10598,11 +10607,22 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
   .icge-about03.international-statis-dashboard {margin: 0px 0 5rem!important;padding: 6rem 0!important;}
   .ab_jss_c_col:last-child {border-left: 1px solid #d4d4d4;}
   .about_four {padding-bottom: 7rem;}
+      .icge-about .icge-about03.international-statis-dashboard h3 {
+        font: var(--font-28);
+        margin-bottom: 2rem;
+        letter-spacing: normal;
+    }
+  .icge-why-jss .icge-why-jss01 ul {grid-template-columns: repeat(2, 1fr);}
+ 
 
+  
 }
 
 @media (max-width: 575px) {
 .icge-about .about_subtitle {text-align: center;}
+.icge-why-jss .about_subtitle {text-align: center;}   
+.icge-faq .heading {text-align: center;}
+
 .icge-about .internation-vision .ab_jss_coutsec {display: grid; grid-template-columns: repeat(2, 1fr);}
 .icge-about06 h5 {margin-bottom: 1rem;}
 .icge-about06 > .container > p { font: var(--font-18);}
@@ -10616,11 +10636,22 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .icge-about04.highlights-sec ul {grid-template-columns: repeat(1, 1fr);}
 .icge-about07 h3 {font: var(--font-21);}
 .placement-module__VSLvPW__testimonialSwiper {padding: 3rem 0 !important;}
+.icge-about07:last-child h3{margin: 0;}
+.icge-about05.about-icge-sec, .icge-about06.why-study-sec.partner, .icge-about07.about-testimonial {padding: 4rem 0;}
+.icge-about .icge-about07 h3 {font: var(--font-21);}
+.icge-about .icge-about06 .estab_slide_item h5{ font: var(--font-18);}
+.icge-about .icge-about06 > .container > p{ font: var(--font-18);font-weight: 300;}
+.icge-about .icge-about05 .about-icge-left h5, .icge-about .icge-about04.highlights-sec h5,.icge-about .icge-about03.international-statis-dashboard h3{font: var(--font-21);font-weight: 400;}
+.icge-about .icge-about03.international-statis-dashboard h5{font: var(--font-21);font-weight: 400;}
 
+    
 }
 
 @media (max-width: 480px) {
     .icge-about03.international-statis-dashboard h3 {font: var(--font-24);}
     .icge-about05.about-icge-sec {  padding: 5rem 0;}
+    .icge-why-jss .icge-why-jss01 ul {  grid-template-columns: repeat(1, 1fr); }
+    .icge-why-jss .why-welcome.icge-why-jss03 { padding-block: 3rem;}
+    .icge-why-jss .why-study-sec.icge-why-jss02 {padding-top: 3rem;}
 
 }
