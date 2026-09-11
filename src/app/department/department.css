@@ -1,0 +1,20 @@
+
+.department_society_achivement{background-color: var(--color-f6);padding-block: 8rem 6rem;}
+.department_society_achivement .societies_events_heade.event_subheading{text-align: left;}
+.department_society_achivement .societies_events_heade.event_heading{text-align: left;}
+.department_society_achivement .societies_events_header { margin-bottom: 4.2rem;}
+.department_society_objective {background-color: var(--color-9a) !important;}
+.department_society_objective .about_two {background-color: transparent;}
+.department_society_objective .about_two .single_lab_card .early-slide {align-items: center;}
+.department_society_objective .about_two .single_lab_card .early-slide .early_rgh5 {color: var(--color-white);font-weight: bold;}
+.department_society_objective .about_two .single_lab_card .early-slide p {color: var(--color-white);}
+.department_society_objective .about_two .single_lab_card .early-slide .image_col {border-radius: 0 0 0 6rem;}
+
+.department_society_overview {padding-block: 12rem 5rem;}
+.department_society_overview .overview_bottom_data{border-bottom: 1px solid #e2e2e2;padding-bottom: 4rem;}
+.department_society_achivement .societies_events_headep{text-align: left !important;}
+.department_society_achivement .achievements_list {margin-top: 2rem;text-align: left;}
+
+.department_society_objective .achievements_list li{color: var(--color-white);}
+
+.vision_mission_section.department_society_objective .mission-card p {color: var(--color-33);text-align: left;}

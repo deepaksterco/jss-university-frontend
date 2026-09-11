@@ -1,0 +1,12 @@
+.upcomiRow { display: grid; grid-template-columns: repeat(2, 1fr); }
+
+
+
+
+/* start responsive*/
+
+@media (max-width: 991px) {
+    .upcomiRow { grid-template-columns: repeat(1, 1fr); }
+    .upcomiRow .eventtop { margin-top: 0rem; }
+    .upcom-evenContent { margin-bottom:0 }
+}

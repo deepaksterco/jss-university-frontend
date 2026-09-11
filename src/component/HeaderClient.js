@@ -308,6 +308,8 @@ export default function HeaderClient({ initialNavLinks = [] }) {
 
   // ---- effects ------------------------------------------------------
 
+  // setIsAcademic(pageName?.toLowerCase() === "academics");
+
   useEffect(() => {
     const handleClickOutside = (e) => {
       if(admissionButtonRef.current && admissionButtonRef.current.contains(e.target)) {
@@ -340,7 +342,8 @@ export default function HeaderClient({ initialNavLinks = [] }) {
 
   useEffect(() => {
     setIsMounted(true);
-  }, []);
+    setIsAcademic(pathname.includes("academics"));
+  }, [pathname]);
 
   useEffect(() => {
     if (!isMounted) return;

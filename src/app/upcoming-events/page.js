@@ -1,6 +1,7 @@
 import { getPageSEO } from "@/lib/seo";
 import Script from "next/script";
 import UpcomingEvents from "./UpcomingEvents";
+import './upcoming-events.css'
 
 export async function generateMetadata() {
   return await getPageSEO(`upcoming-events`);
