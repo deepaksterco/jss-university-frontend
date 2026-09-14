@@ -108,7 +108,7 @@ export default async function DepartmentPage({ params }) {
       
 
         <h1 className="d-none">{titleCase}</h1>
-        <h2 className="d-none">{subTitleCase}</h2>
+        <h2 className="d-none">{`Department - ${subTitleCase}`}</h2>
 
       {/* <BelowBannerComponent /> */}
       <DepartmentHeader

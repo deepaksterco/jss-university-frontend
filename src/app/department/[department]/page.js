@@ -63,6 +63,7 @@ export default async function DepartmentPage({ params }) {
         isDepartment={true}
       /> */}
       <h1 style={{display:'none'}}>{departmentData?.departments_name}</h1>
+      <h2 style={{display:'none'}}>{`${departmentData?.departments_name} - HomePage`}</h2>
       <BannerComponent
         data={departmentData?.sections?.banners}
         name={departmentData?.department_name}

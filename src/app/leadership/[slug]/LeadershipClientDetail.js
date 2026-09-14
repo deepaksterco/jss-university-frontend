@@ -5,7 +5,7 @@ import "@/styles/style.css";
 import "@/styles/custom.style.css";
 import { BASE_URL, WEB_URL } from "@/config/config.mjs";
 
-export default async function LeadershipClientDetail({ leader }) {
+export default async function LeadershipClientDetail({slug, leader }) {
   const { sections } = leader;
 
   const fetchPageData = await fetch(`${BASE_URL}pages/leadership`);
@@ -19,8 +19,14 @@ export default async function LeadershipClientDetail({ leader }) {
           <div className="row justify-content-center">
             <div className="col-lg-12">
               <div className="innnr_head">
+                <h2 style={{
+                  display:'none'
+                }}>
+                  {`${slug} ${pageData?.tabs?.subTitle}`}
+                </h2>
+
                 {pageData?.tabs?.subTitle && (
-                  <h2
+                  <h3
                     dangerouslySetInnerHTML={{
                       __html: pageData?.tabs?.subTitle,
                     }}

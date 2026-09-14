@@ -227,7 +227,7 @@ export default function HeroSlider({ data, slug, classname='' }) {
                         </span>
                       )}
 
-                      <h2
+                      <h3
                         className={styles.bannerContentH1}
                         dangerouslySetInnerHTML={{ __html: slide.title }}
                       // data-aos="fade-right"
@@ -344,7 +344,7 @@ export default function HeroSlider({ data, slug, classname='' }) {
                       <span className={styles.bannerSmall}>Department of</span>
                     )}
 
-                    <h2
+                    <h3
                       className={styles.bannerContentH1}
                       dangerouslySetInnerHTML={{ __html: slide.title }}
                     // data-aos="fade-right"

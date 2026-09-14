@@ -64,9 +64,9 @@ export default function AboutDepartmentComponent({ data, params }) {
             <p className={styles.subtitle}>{departmentData.subtitle}</p>
           )}
           {departmentData?.title && (
-            <h2 className={`blue-text ${styles.title}`}>
+            <h3 className={`blue-text ${styles.title}`}>
               {departmentData.title}
-            </h2>
+            </h3>
           )}
           {departmentData?.description && (
             <h6 className={styles.description}>{departmentData.description}</h6>

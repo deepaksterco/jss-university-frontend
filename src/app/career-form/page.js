@@ -18,6 +18,7 @@ export default async function Page() {
           }}
         />
       )}
+      <h1 style={{display:'none'}}>Career Form</h1>
       <CareersFormData />
     </>
   );

@@ -23,6 +23,9 @@ export default async function Faculty() {
       <h1 style={{
         display:'none'
       }}>Upcoming Events</h1>
+      <h2 style={{
+        display:'none'
+      }}>Events</h2>
       <UpcomingEvents />
     </>
   );

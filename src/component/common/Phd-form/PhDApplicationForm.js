@@ -261,9 +261,9 @@ export default function PhDApplicationForm() {
         </div>
       )}
       <form onSubmit={handleSubmit}>
-        <h1 className={styles.mainTitle}>
+        <h2 className={styles.mainTitle}>
           JSS University Noida - Ph.D Application Form
-        </h1>
+        </h2>
 
         <section className={styles.FormSec}>
           <h2 className={styles.sectionTitle}>Personal Details</h2>

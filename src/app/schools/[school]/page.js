@@ -9,6 +9,7 @@ import { getPageSEO } from "@/lib/seo";
 import Script from "next/script";
 import { BASE_URL } from "@/config/config.mjs";
 import { notFound } from "next/navigation";
+import { uppercaseSlug } from "@/utils/capitalizeSlug";
 
 export async function generateMetadata({ params }) {
   const { school } = await params;
@@ -47,6 +48,8 @@ export default async function SchoolPage({ params }) {
 
   const seoData = await getPageSEO(`schools/${school}`);
 
+  const updatedH1 = uppercaseSlug(school);
+
   return (
     <>
       {seoData?.schema && (
@@ -58,6 +61,14 @@ export default async function SchoolPage({ params }) {
           strategy="beforeInteractive"
         />
       )}
+
+      <h1 style={{
+        display:'none'
+      }}>{updatedH1}</h1>
+
+      <h2 style={{
+        display:'none'
+      }}>{`${updatedH1} - HOMEPAGE`}</h2>
 
       <SchoolBannerComponent
         data={schoolData?.sections?.banners}

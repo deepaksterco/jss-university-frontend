@@ -71,7 +71,7 @@ export default function SchoolSlider({
                     <span className={styles.bannerSmall}>
                       {isSchoolPage}
                     </span>
-                    <h2
+                    <h3
                       className={styles.bannerContentH1}
                       dangerouslySetInnerHTML={{ __html: slide.title }}
                     />
@@ -131,7 +131,7 @@ export default function SchoolSlider({
                     {isSchoolPage}
                   </span>
 
-                  <h1
+                  <h3
                     className={styles.bannerContentH1}
                     dangerouslySetInnerHTML={{ __html: slide.title }}
                   />

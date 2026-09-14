@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { BASE_URL } from "@/config/config.mjs";
 import { getPageSEO } from "@/lib/seo";
 import LeadershipClientDetail from "./LeadershipClientDetail";
+import { capitalizeSlug, uppercaseSlug } from "@/utils/capitalizeSlug";
 
 async function fetchLeader(slug) {
   const isDev = process.env.NODE_ENV === 'development';
@@ -47,6 +48,8 @@ export default async function LeadershipDetailPage({ params }) {
 
   const seoData = await getPageSEO(`leadership/${slug}`);
 
+  const updatedSlug = uppercaseSlug(slug);
+
   return (
     <>
       {seoData?.schema && (
@@ -58,7 +61,7 @@ export default async function LeadershipDetailPage({ params }) {
       <h1 style={{
         display:'none'
       }}>{leader?.leadership_name}</h1>
-      <LeadershipClientDetail leader={leader} />
+      <LeadershipClientDetail slug={updatedSlug} leader={leader} />
     </>
   );
 }
