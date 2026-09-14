@@ -242,6 +242,8 @@ export default function HeroSlider({ data, slug, classname='' }) {
                         {slide.desc}
                       </p>
 
+                      {console.log(slide.url)}
+
                       {slide.url && (
                         <Link
                           href={`${slug
