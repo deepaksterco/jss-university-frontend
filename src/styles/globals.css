@@ -1691,3 +1691,8 @@ padding: 5.2rem 5.4rem;
 
 .comman_profile ul {padding-block: 2rem;}
 
+.mission-card>p{
+    font: var(--font-16);
+    color: #444;
+    line-height: 2.8rem;
+}

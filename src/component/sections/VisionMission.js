@@ -17,7 +17,7 @@ export default function VisionMission({ data }) {
                           {item?.leftTitle && (
                             <h2 className="title">{item.leftTitle}</h2>
                           )}
-                          {item?.leftContent && <p dangerouslySetInnerHTML={{__html:item.leftContent}}/>}
+                          {item?.leftContent && <p dangerouslySetInnerHTML={{ __html: item.leftContent }} />}
                         </div>
                       </div>
                       <div className="col-lg-6 col-md-12">
@@ -25,6 +25,9 @@ export default function VisionMission({ data }) {
                           {item?.rightTitle && (
                             <h2 className="title">{item.rightTitle}</h2>
                           )}
+                          {item?.para?.map((paraItem, index) => (
+                            <p key={index}>{paraItem?.para}</p>
+                          ))}
                           {item?.rightLists && (
                             <ul>
                               {item.rightLists.map((rightlistItem, listIdx) => (
@@ -53,7 +56,7 @@ export default function VisionMission({ data }) {
           <p>There is no data!</p>
         </div>
       )}
-  
+
     </>
   );
 }
