@@ -28,7 +28,7 @@ export default function VisionMission({ data }) {
                           {item?.para?.map((paraItem, index) => (
                             <p key={index}>{paraItem?.para}</p>
                           ))}
-                          {item?.rightLists && (
+                          {/* {item?.rightLists && (
                             <ul>
                               {item.rightLists.map((rightlistItem, listIdx) => (
                                 <li key={listIdx}>
@@ -36,7 +36,18 @@ export default function VisionMission({ data }) {
                                 </li>
                               ))}
                             </ul>
+                          )} */}
+                         
+                          {item?.rightLists && (
+                            <ul>
+                              {item.rightLists.map((rightlistItem, listIdx) => (
+                                <li key={listIdx}>
+                                  {rightlistItem.rightContent}
+                                </li>
+                              ))}
+                            </ul>
                           )}
+                         
                         </div>
                       </div>
                     </div>

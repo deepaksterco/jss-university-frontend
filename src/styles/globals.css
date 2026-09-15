@@ -1688,11 +1688,7 @@ padding: 5.2rem 5.4rem;
 .profile-info-text .back_btn {background-color: transparent;}
 .placement .placement_highlights {margin-top: 4rem;}
 .schools-page.schools-college-of-pharmacy-facilities .about_four .about_f_value{padding-top: 6rem;}
-
 .comman_profile ul {padding-block: 2rem;}
-
-.mission-card>p{
-    font: var(--font-16);
-    color: #444;
-    line-height: 2.8rem;
-}
+.mission-card>p{font: var(--font-16); color: #444; line-height: 2.8rem;}
+.igce-gallery-sec {    margin: 7rem 0;}
+.igce-gallery-sec img{margin-bottom:2rem;}
