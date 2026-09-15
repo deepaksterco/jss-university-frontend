@@ -72,19 +72,22 @@
 .ad-contact p a { color: var(--color-white); }
 .ad-contact img { margin-right:1rem; }
 .ad-ctas { display: flex; gap: 8px; flex-wrap: wrap; }
-/* .cta { padding: 8px 14px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: opacity 0.3s ease; } */
-/* .cta:hover { opacity: 0.9; } */
-/* .cta.primary:hover { background-color: var(--color-4e); color: var(--color-white); } */
-
+/* .cta { padding: 8px 14px; font-size: 14px; font-weight: 600; text-decoration: none; border: none; cursor: pointer; transition: opacity 0.3s ease; }
+*/
+/* .cta:hover { opacity: 0.9; }
+*/
+/* .cta.primary:hover { background-color: var(--color-4e); color: var(--color-white); }
+*/
 .ad-left .ad-ctas .cta.applynow.primary { background: #ffc100; border: 1px solid #ffc100; padding: 1rem 2rem; display: inline-flex; font: var(--font-18); font-family: var(--font-Condensed); align-items: center; gap: 3rem; /* var(--color-4e)-space: nowrap; */
             -webkit-transition: all 0.5s ease; color: #000; font-weight: 600; letter-spacing: 0.72px; }
 .mega-ctas { font: var(--font-13); font-family: var(--font-Condensed); letter-spacing: 0.72px; cursor: pointer; color: #16344e !important; background: #fff; border: 1px solid rgba(22, 52, 78, 0.4); padding: 1rem 1.5rem; font-weight: 600; transition: all 0.3s; max-width: 22rem; }
-.ad-left .ad-ctas .cta.applynow.secondary { border: 1px solid #fff; color: #fff; font: var(--font-18); font-family: var(--font-Condensed); font-weight: 600; letter-spacing: 0.72px; padding: 8px 14px; transition: opacity .3s;}
+.ad-left .ad-ctas .cta.applynow.secondary { border: 1px solid #fff; color: #fff; font: var(--font-18); font-family: var(--font-Condensed); font-weight: 600; letter-spacing: 0.72px; padding: 8px 14px; transition: opacity .3s; }
 .applynow.primary { background: #ffc100; font: var(--font-18); font-family: var(--font-Condensed); }
 .applynow.primary:hover { color: #fff !important; }
 .ad-middle { width: 100%; padding: 9rem 9.2rem 8rem 8rem; border-right: 1px solid #eee; }
 .ad-middle ul { list-style: none; padding: 0; margin: 0; }
-/* .admission-dropdown .ad-link img{width} */
+/* .admission-dropdown .ad-link img { width }
+*/
 .ad-link { font: var(--font-21); color: var(--color-4e); padding-block: 1rem; border-bottom: 1px dashed #16344e33; display: block; position: relative; cursor: pointer; }
 .ad-link:hover { color: var(--color-e8); text-decoration: none; }
 .ad-stats { margin-top: 5.8rem; }
@@ -113,12 +116,7 @@
 .menu-middle::before { content: ""; background-color: #707070; width: 1px; position: absolute; top: 10rem; height:calc(100% - 20rem); right: 58%; transform: translateY(0); opacity:0.2; }
 .hamburger-layout:before { content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0; width: 100%; height: 100%; background-image: url(/images/header/ham-overlay.webp); backdrop-filter: blur(4px); -webkit-backdrop-filter: blur(4px); background-size: cover; background-repeat: no-repeat; opacity: 1; z-index: -1; }
 .middle-title ul { padding: 0; margin: 0; list-style-type: none; }
-.middle-title .hambur_link {font: var(--font-18);
-  font-family: var(--font-Condensed);
-  color: var(--color-4e);
-  padding-bottom: 1.8rem;
-  font-weight: 700;
-  display: block; }
+.middle-title .hambur_link { font: var(--font-18); font-family: var(--font-Condensed); color: var(--color-4e); padding-bottom: 1.8rem; font-weight: 700; display: block; }
 .middle-title ul li:hover { color: var(--color-e8); }
 .middle-title ul { margin-bottom: 1rem; }
 .middle_ul { padding: 0; }
@@ -149,7 +147,7 @@
 .mega-ctas { display: flex; gap: 12px; }
 .mega-banners { display: flex; gap: 12px; align-items: center; }
 .banner { position: relative; display: block; overflow: hidden; border-radius: 6px; width: 100%; height: 100%; text-decoration: none; }
-.banner img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+.banner img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .banner-label { background: transparent; width: 100%; padding:1.6rem 12.2rem 1.6rem 2.2rem; padding-block: 1.6rem; font-weight: 700; position: absolute; bottom: 0; left: 0; font: var(--font-28); color: var(--color-white); font-family: var(--font-Condensed); font-weight: 600; text-transform: uppercase; z-index: 9; }
 .banner-label:before { content: ""; position: absolute; left: 0; right: 0; bottom: 0; opacity: 0.85; background: transparent
               linear-gradient(
@@ -179,15 +177,16 @@
 .mega-dept-block h6 a:hover { color: var(--color-e8); }
 .mega-dept-block ul { list-style: none; padding: 0; margin: 0; }
 .mega-dept-block ul li { padding-block: 0.4rem; }
-.mega-dept-block ul li a { font: var(--font-15);
-    color: #555;
-    padding-left: 0;
-    text-decoration: none;
-    transition: color .3s;
-    position: relative;
-    line-height: 2.2rem; }
-/* .mega-dept-block ul li a::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 4px; height: 4px; border-radius: 50%; background: var(--color-e8); } */
+.mega-dept-block ul li a { font: var(--font-15); color: #555; padding-left: 0; text-decoration: none; transition: color .3s; position: relative; line-height: 2.2rem; }
+/* .mega-dept-block ul li a::before { content: ""; position: absolute; left: 0; top: 50%; transform: translateY(-50%); width: 4px; height: 4px; border-radius: 50%; background: var(--color-e8); }
+*/
 .mega-dept-block ul li a:hover { color: var(--color-e8); }
+.courses-menu .explore_programs { background:#fff; display:block; height: 100%; padding-block: 2rem; padding-inline: 1.5rem; position:relative; }
+.courses-menu .explore_programs p { font: var(--font-20); font-weight: normal; font-family: var(--font-Roboto); letter-spacing: -.24px; color: #16344e; margin-bottom: 3rem; }
+.courses-menu .explore_programs .counter { font: var(--font-60); letter-spacing: -2.4px; color: #018ce8; margin-bottom: 3rem; font-weight: 600; margin-bottom: 0; }
+.courses-menu .explore_programs .title { font: var(--font-20); font-weight: 600; color: #16344e; letter-spacing: -.6px; font-family: var(--font-Condensed); margin-bottom: 1.8rem; }
+.courses-menu .explore_programs .arrow_btn { position:absolute; bottom:1.8rem; }
+.courses-menu .explore_programs .arrow_btn img { filter:invert(1) brightness(0.7) }
 @media (max-width: 1749px) {
  .hamburger { padding: 1.3rem; }
  }
@@ -352,7 +351,7 @@
 .courses-menu li { padding: 0; }
 .brand-wrap.logo-content { display: block; }
 .engineering-dropdown-container { top: 85%; left: 13%; }
-.hamburger-layout:before{background-image:none;}
+.hamburger-layout:before { background-image:none; }
  }
 .header-inner { width: 100%; padding-block: 2.4rem; }
 @media (max-width: 667px) {

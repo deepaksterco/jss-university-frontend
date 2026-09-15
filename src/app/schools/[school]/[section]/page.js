@@ -53,7 +53,7 @@ export default async function SchoolPage({ params }) {
 
   const seoData = await getPageSEO(`schools/${school}/${section}`);
 
-  const pageName = school.replace(/-/g, ' ') + " " + section;
+  const pageName = school.replace(/-/g, ' ') + " " + section.replace(/-/g, ' ');
   const titleCase = pageName
   .split(' ')
   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
@@ -70,7 +70,12 @@ export default async function SchoolPage({ params }) {
         />
       )}
 
-      <h1 className="d-none">{titleCase}</h1>
+      <h1 style={{
+        display:'none'
+      }}>{titleCase}</h1>
+      <h2 style={{
+        display:'none'
+      }}>{`School ${section.replace(/-/g, ' ')}`}</h2>
 
       {/* <BelowBannerComponent /> */}
       <DepartmentHeader data={schoolData?.tabs} className="inner_sub_header" />

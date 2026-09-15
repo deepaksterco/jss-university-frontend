@@ -240,9 +240,10 @@ export default function CareersFormData() {
     return (
         <div className={`container ${styles.formContainer}`}>
             <form onSubmit={handleSubmit}>
-                <h1 className={styles.mainTitle}>
+                
+                <h2 className={styles.mainTitle}>
                     Faculty Recruitment Application Form
-                </h1>
+                </h2>
                 <section className={styles.FormSec}>
                     <h2 className={styles.sectionTitle}>Personal Details</h2>
 

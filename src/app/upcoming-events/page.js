@@ -1,6 +1,7 @@
 import { getPageSEO } from "@/lib/seo";
 import Script from "next/script";
 import UpcomingEvents from "./UpcomingEvents";
+import './upcoming-events.css'
 
 export async function generateMetadata() {
   return await getPageSEO(`upcoming-events`);
@@ -22,6 +23,9 @@ export default async function Faculty() {
       <h1 style={{
         display:'none'
       }}>Upcoming Events</h1>
+      <h2 style={{
+        display:'none'
+      }}>Events</h2>
       <UpcomingEvents />
     </>
   );

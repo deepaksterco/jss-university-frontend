@@ -88,7 +88,7 @@ import Editor from "@/component/sections/Editor";
 import CmsEnhancer from "@/component/common/CmsEnhancer";
 
 import "@/styles/style.css";
-import "@/styles/custom.style.css";
+// import "@/styles/custom.style.css";
 import '@/styles/inner.css';
 
 async function fetchPageData(slug) {

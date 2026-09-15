@@ -91,6 +91,8 @@ export default async function DepartmentPage({ params }) {
   .map(word => word.charAt(0).toUpperCase() + word.slice(1))
   .join(' ');
 
+  const subTitleCase = section.replace(/-/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+
   return (
     <>
       {seoData?.schema && (
@@ -106,6 +108,7 @@ export default async function DepartmentPage({ params }) {
       
 
         <h1 className="d-none">{titleCase}</h1>
+        <h2 className="d-none">{`Department - ${subTitleCase}`}</h2>
 
       {/* <BelowBannerComponent /> */}
       <DepartmentHeader

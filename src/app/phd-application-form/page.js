@@ -19,6 +19,9 @@ export default async function Page() {
         />
 
       )}
+      <h1 style={{
+        display:'none'
+      }}>PHD Application Form</h1>
       <PhDApplicationForm />
     </>
   )
