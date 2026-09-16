@@ -11287,7 +11287,8 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 @media(max-width:575px){
 .internal_soc_content .achievements_li_grid {    grid-template-columns: 1fr;}
 .internal_soc_content h5{font:var(--font-18);font-weight: 600;}
-
+.icge-contact .contact-igce-right iframe {width: 100%;height: auto;}
+.icge-contact .contact-igce-right  {width: 100%;height: auto;}
 
 .icge-about .internation-about h3 {
   margin-bottom: 2rem;
