@@ -30,7 +30,7 @@ export default function FacilitiesComponent({ data,schoolName }) {
     description:
     `Committed to producing industry-ready ${last.toLowerCase()} through advanced laboratories, research, and practical exposure.`,
 
-    url: "/facilities",
+    url: "facilities",
 
     labs: [
       {

@@ -849,20 +849,7 @@ bottom: 0rem;
 } */
 
 
-.upcomiRow {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-}
 
-@media (max-width: 991px) {
-.upcomiRow {
-grid-template-columns: repeat(1, 1fr);
-}
-.upcomiRow .eventtop {
-margin-top: 0rem;
-}
-.upcom-evenContent{margin-bottom:0}
-}
 .menu-left-item .hambur_links {font: var(--font-21);color: var(--color-white);font-weight: normal;transition: all 0.3s ease;display: inline-block;padding: 1rem 7rem 1rem 10rem;width: 100%;}
 .menu-left-item:hover .hambur_links {color: #16344e;font-weight: bold;}
 .menu-left-item.active .hambur_links {color: var(--color-4e);font-weight: bold;}
@@ -909,29 +896,6 @@ margin-top: 0rem;
 .section-placment .containerMD{ padding-block: 3rem 2.7rem;}
 
 }
-/* .active_head .nav-list {background-color: transparent;
-}
-
-.active_head .nav-list>li>a {color: var(--color-4e);
-}
-
-.active_head .site-header .header-scrolled .nav-list>li>a {color: var(--color-white);
-}
-
-.active_head .site-header .header-scrolled.scroll_bg .nav-list>li>a {color: var(--color-29);
-}
-
-.active_head .site-header .header-scrolled.programs-nav .nav-list>li>a {color: rgb(22, 52, 78);
-}
-
-.active_head .nav-list>li.nav-item:hover>a {position: relative;
-}
-
-.active_head .nav-list>li:hover>a {color: var(--color-29);
-}
-.active_head .nav-list {background-color: transparent !important;
-} */
-
 .active_head .nav-list:has(> li:nth-child(2):hover) {background-color: transparent !important;}
 .active_head .nav-list:has(> li:nth-child(2):hover)>li:not(:nth-child(2))>a {color: rgb(22, 52, 78);}
 .active_head .nav-list>li:nth-child(2):hover>a {color: var(--color-29);}
@@ -1405,7 +1369,7 @@ to {opacity: 1;transform: translateY(0);}}
 .society_contact .about_tw.single_lab_car.early-slide .early_rgt h5{font-weight: 600;}
 
 /* Department Society */
-.department_society_overview {padding-block: 12rem 5rem;}
+
 .society_overview_grid ,
 .tab_grids_col{grid-template-columns: 24.662% auto;display: grid;gap: 5.3rem;align-items:start;}
 .society_overview_center {text-align: center;}
@@ -1423,21 +1387,9 @@ to {opacity: 1;transform: translateY(0);}}
 .right_side_menus .society_links{border-bottom: 1px solid #e2e2e2;margin-bottom: 1.3rem;padding-bottom: 0.7rem;}
 .right_side_menus a{font: var(--font-14);line-height: 2.8rem;color: var(--color-44);}
 .right_side_menus .society_links:last-child{border-bottom: none;margin-bottom: 0;padding-bottom: 0;}
-.department_society_achivement{background-color: var(--color-f6);padding-block: 8rem 6rem;}
-.department_society_achivement .societies_events_heade.event_subheading{text-align: left;}
-.department_society_achivement .societies_events_heade.event_heading{text-align: left;}
-.department_society_achivement .societies_events_header { margin-bottom: 4.2rem;}
-.department_society_objective {background-color: var(--color-9a) !important;}
-.department_society_objective .about_two {background-color: transparent;}
-.department_society_objective .about_two .single_lab_card .early-slide {align-items: center;}
-.department_society_objective .about_two .single_lab_card .early-slide .early_rgh5 {color: var(--color-white);font-weight: bold;}
-.department_society_objective .about_two .single_lab_card .early-slide p {color: var(--color-white);}
-.department_society_objective .about_two .single_lab_card .early-slide .image_col {border-radius: 0 0 0 6rem;}
-.department_society_overview .overview_bottom_data{border-bottom: 1px solid #e2e2e2;padding-bottom: 4rem;}
-.department_society_achivement .societies_events_headep{text-align: left !important;}
-.department_society_achivement .achievements_list {margin-top: 2rem;text-align: left;}
+
 .faculty_cordinator {margin-top: 1rem;}
-.department_society_objective .achievements_list li{color: var(--color-white);}
+
 
 
 /* blogs_list_page */
@@ -1715,7 +1667,12 @@ padding: 5.2rem 5.4rem;
 .yir-yic .top_section + .yukti_section .yukti_grid .custom-list li:last-child{margin-bottom: 0;}
 .yukti_section .section_heading h2{font: var(--font-30);font-family: var(--font-Condensed);letter-spacing: -1.3px;margin-bottom: 0;font-weight: bold;line-height: normal;}
 .yukti_grid{grid-template-columns: repeat(1, 1fr);gap: 2rem;margin-block: 2rem 0;}
-.yukti_grid .custom-list {padding-top: 2rem;}}
+.yukti_grid .custom-list {padding-top: 2rem;}
+}
+
+
+
+
 .event_box .internal_soc_content p {text-align: left;}
 .left_side_content:first-child p{text-align: left;}
 .left_side_content:first-child p{padding-top: 2rem;}
@@ -1731,7 +1688,6 @@ padding: 5.2rem 5.4rem;
 .profile-info-text .back_btn {background-color: transparent;}
 .placement .placement_highlights {margin-top: 4rem;}
 .schools-page.schools-college-of-pharmacy-facilities .about_four .about_f_value{padding-top: 6rem;}
-
 .comman_profile ul {padding-block: 2rem;}
 .vision_mission_section.department_society_objective .mission-card p {color: var(--color-33);text-align: left;}
 .upcomBlog h3,
@@ -1760,4 +1716,5 @@ margin: 0 0 3rem;
 }
 
 }
+
 

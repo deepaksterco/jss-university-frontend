@@ -47,10 +47,16 @@ export default function HappeningsClientDetail({ happeningsData }) {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="innnr_head">
-                <h1 className="d-none">{titleCase}</h1>
-                <h2>{happeningsData.innerTitle?.date}</h2>
+                <h1 style={{
+                  display:'none'
+                }}>{titleCase}</h1>
+                <h2 style={{
+                  display:'none'
+                }}>{`${titleCase} - Happening`}</h2>
+                <h3 className={styles.sub_title}>{happeningsData.innerTitle?.date}</h3>
                 {happeningsData.innerTitle?.heading && (
                   <h3
+                    className={styles.title}
                     dangerouslySetInnerHTML={{
                       __html: happeningsData.innerTitle?.heading,
                     }}

@@ -115,6 +115,7 @@
     align-items: start;
     padding: 0;
     margin: 0;
+     flex-wrap: wrap;
   }
   
   .footer_section .quick-item li .link-item {

@@ -26,33 +26,43 @@ export default function PdfLists({ data }) {
                     const isPdf =
                       fileUrl.toLowerCase().includes(".pdf");
 
-                    return (
-                      <li key={pdfIdx}>
-                        <Link
-                          href={fileUrl}
-                          target={singlePdf?.pdf ? '_blank' : '_self'}
-                          rel="noopener noreferrer"
-                        >
-                          <p>{singlePdf?.pdf_type}</p>
+                    if(!singlePdf?.pdf && !singlePdf?.pdf_url){
+                      return(
+                        <li key={pdfIdx}>
+                            <p>{singlePdf?.pdf_type}</p>
+                        </li>
+                      )
+                    }else{
+                      return (
+                        <li key={pdfIdx}>
+                          <Link
+                            href={fileUrl}
+                            target={(singlePdf?.pdf || singlePdf?.pdf_url) ? '_blank' : '_self'}
+                            rel="noopener noreferrer"
+                          >
+                            <p>{singlePdf?.pdf_type}</p>
+  
+                            {singlePdf?.pdf && (
+                                <Image
+                              src={
+                                isPdf
+                                  ? "/images/icons/pdf.png"
+                                  : "/images/icons/link.png"
+                              }
+                              width={20}
+                              height={20}
+                              loading="lazy"
+                              alt={isPdf ? "pdf" : "link"}
+                            />
+                            )}
+  
+                            
+                          </Link>
+                        </li>
+                      );
+                    }
 
-                          {singlePdf?.pdf && (
-                              <Image
-                            src={
-                              isPdf
-                                ? "/images/icons/pdf.png"
-                                : "/images/icons/link.png"
-                            }
-                            width={20}
-                            height={20}
-                            loading="lazy"
-                            alt={isPdf ? "pdf" : "link"}
-                          />
-                          )}
-
-                          
-                        </Link>
-                      </li>
-                    );
+                    
                   })}
                 </ul>
               </React.Fragment>

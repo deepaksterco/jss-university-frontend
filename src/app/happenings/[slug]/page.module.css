@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.innerTitle h2 {
+.innerTitle .sub_title {
   font: var(--font-18);
   padding-bottom: 2rem;
   color: var(--color-4e);
@@ -16,7 +16,7 @@
   font-family: var(--font-Condensed);
 }
 
-.innerTitle h3 {
+.innerTitle .title {
   font: var(--font-45);
   letter-spacing: -1.35px;
   color: var(--color-4e);
@@ -24,7 +24,7 @@
   font-family: var(--font-Condensed);
 }
 
-.innerTitle h3>span {
+.innerTitle .title>span {
   color: var(--color-e8);
 }
 
@@ -247,7 +247,7 @@
     max-width: 100%;
   }
 
-  .innerTitle h3 {
+  .innerTitle .title {
     font: var(--font-36);
     letter-spacing: -1.35px;
     color: var(--color-4e);

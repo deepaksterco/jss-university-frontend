@@ -41,11 +41,16 @@ export default function FacultyDetailClient({ faculty }) {
           <div className="row justify-content-center">
             <div className="col-lg-10">
               <div className="innnr_head faculty-heading">
-                <h1 className="d-none">{titleCase}</h1>
+                <h1 style={{
+                  display:'none'
+                }}>{titleCase}</h1>
+                <h2 style={{
+                  display:'none'
+                }}>{`${titleCase} - Faculty`}</h2>
                 <p className="sub_heading">FACULTY</p>
-                <h2>
+                <h3>
                   MEET OUR <span>FACULTY</span>
-                </h2>
+                </h3>
               </div>
             </div>
           </div>

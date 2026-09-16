@@ -3,6 +3,7 @@ import { BASE_URL } from "@/config/config.mjs";
 import { getPageSEO } from "@/lib/seo";
 import HappeningsClientDetail from "./blogsClientDetail";
 import BlogsClientDetail from "./blogsClientDetail";
+import './blogDetail.css'
 
 async function fetchBlogDetail(slug) {
   const isDev = process.env.NODE_ENV === 'development';
