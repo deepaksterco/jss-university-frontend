@@ -3859,3 +3859,5 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 /* css ends here */
 
 .department_society_overview p{ color: var(--color-44);}
+
+.gallery-image.gallery-desc .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;margin-top:3rem;}

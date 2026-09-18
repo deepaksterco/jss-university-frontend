@@ -69,6 +69,7 @@ import DepartmentSocietyOverview from "@/component/sections/DepartmentSocietyOve
 import SocietiesEvent from "@/component/sections/SocietiesEvents";
 import Textarea from "@/component/sections/Textarea";
 import TextareaCustom from "@/component/sections/TextareaCustom";
+import CustomGalleryPopup from "@/components/CustomGalleryPopup";
 
 export default function CommonPage({ data }) {
   const groupedSections = [];
