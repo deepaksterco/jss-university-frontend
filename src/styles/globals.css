@@ -1497,16 +1497,11 @@ background:unset;
 .yir-yic .top_section {margin-top: 8rem;}
 .yukti_section {padding-block: 6rem;}
 .yukti_section p {padding-top: 4rem;}
-.vision_mission_section .mission-card {
-background: #fff;
-border-radius: .6rem;
-padding: 5.2rem 5.4rem;
-}
+.vision_mission_section .mission-card { background: #fff; border-radius: .6rem; padding: 5.2rem 5.4rem;}
 .kapila-scheme .top_section {margin-top: 8rem;}
 .kapila-scheme .labs_group_section.about_two .about_two {padding-bottom: 4rem;}
 .kapila-scheme .labs_group_section {padding-top: 4rem;}
-.kapila-scheme .yukti_section {padding-block: 2rem;}
-}
+.kapila-scheme .yukti_section {padding-block: 2rem;}}
 
 @media (max-width: 1024px){
 .ieee .about_f_value {gap: 5rem;padding-top: 4rem;display: flex;flex-direction: column-reverse;}
@@ -1541,7 +1536,6 @@ padding: 5.2rem 5.4rem;
 .ieee .societies_faculties {padding-block: 8rem;}
 .ieee .labs_group_section.about_two .about_two {padding-bottom: 4rem;}
 .ieee .labs_group_section.about_two .about_two.reverse .early-slide {display: grid!important;grid-template-columns: 100%;}.societies .about_f_value {gap: 3rem;padding-top: 1rem; } .societies .societies_grid {grid-template-columns: repeat(1, 1fr);gap: 2.5rem;display: grid;}
-
 .student-welfare-societies .top_section {margin-block: 6rem 4rem;}
 .student-welfare-societies .labs_group_section.about_two .about_two.reverse .early_rgt{margin-block: 4rem 3rem;}
 .student-welfare-societies .about_two.labs_group_section .early-slide .early_rgt h4 { margin-bottom: 2rem;}
@@ -1565,8 +1559,7 @@ padding: 5.2rem 5.4rem;
 .events .research_labmain .research_grid_one {margin-bottom: 0;}
 .events .hostel_list_cont{gap: 4rem;}
 .kapila-scheme .labs_group_section{padding-top: 0;}
-.campus-facilities .content_col {padding-inline: 0;}
-}
+.campus-facilities .content_col {padding-inline: 0;}}
 @media (max-width: 767px){
 .ieee .placement_page {padding-block: 4rem;}
 .ieee .top_section .container {padding-bottom: 4rem;}
@@ -1618,8 +1611,7 @@ padding: 5.2rem 5.4rem;
 .yukti_grid {grid-template-columns: repeat(2,1fr);gap: 4rem;margin-block: 4rem 0;}
 .latest-event.no_upcoming_events{padding-block: 4rem;}
 .coming-container{height: auto; padding: 10rem 0;}
-.coming-container .title{font:var(--font-32); letter-spacing: 0;}
-}
+.coming-container .title{font:var(--font-32); letter-spacing: 0;}}
 @media (max-width: 575px){
 .ieee .events_grid {grid-template-columns: repeat(1, 1fr);gap: 2rem;}
 .ieee .about_one .abt_cntnt > span {max-width: 100%;padding-bottom: 0;line-height: 2.8rem;text-align: left;}
