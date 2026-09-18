@@ -1667,8 +1667,7 @@ padding: 5.2rem 5.4rem;
 .yir-yic .top_section + .yukti_section .yukti_grid .custom-list li:last-child{margin-bottom: 0;}
 .yukti_section .section_heading h2{font: var(--font-30);font-family: var(--font-Condensed);letter-spacing: -1.3px;margin-bottom: 0;font-weight: bold;line-height: normal;}
 .yukti_grid{grid-template-columns: repeat(1, 1fr);gap: 2rem;margin-block: 2rem 0;}
-.yukti_grid .custom-list {padding-top: 2rem;}
-}
+.yukti_grid .custom-list {padding-top: 2rem;}}
 
 
 
@@ -1701,19 +1700,10 @@ gap:1rem}
 .upcomBlog .custom-list li{font: var(--font-16);font-family: var(--font-Roboto);line-height: 1.8;color: #555;margin-bottom: 1rem;}
 .upcomBlog .table-responsive{width: 100%;overflow-x: auto;margin: 6rem 0;}
 @media (max-width: 575px){
-.upcomBlog .custom-list{
-grid-template-columns: repeat(1, 1fr);
-gap:1rem
-}
-.upcomBlog .table-responsive {
-margin: 3rem 0;
-}
-.upcomBlog h3{
-margin-block: 3rem;
-}
-.upcomBlog p{
-margin: 0 0 3rem;
-}
+.upcomBlog .custom-list{grid-template-columns: repeat(1, 1fr);gap:1rem}
+.upcomBlog .table-responsive {margin: 3rem 0;}
+.upcomBlog h3{margin-block: 3rem;}
+.upcomBlog p{margin: 0 0 3rem;}
 
 }
 

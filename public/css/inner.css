@@ -10541,12 +10541,14 @@ h5.text-center.event_org_orojo {padding-block: 4rem 0;}
 .iic-student-club .about_one .atm_g_imgsec{padding-bottom: 10rem;}
 .iic-student-club .about_one .about_top{padding-top: 0;}
 .iic-student-club .placement_stats{padding-bottom: 5rem;}
-
+.igce-gallery-sec{display: block;row-gap: 0.3rem;column-gap: 3rem;grid-template-columns: repeat(3, 1fr);columns: 3; }
+.igce-gallery-sec img {margin-bottom: 2rem;width: 100%;}
+.igce-gallery-sec {margin: 7rem 0;}
 
 /* css ends here */
 
 .department_society_overview p{ color: var(--color-44);}
-
+.institutional-development-plan .placement_proSec {padding: 10rem 0 0;}
 
 @media (max-width: 1366px) {
   .about_four {padding-bottom: 10rem;}
