@@ -640,3 +640,240 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 }
 
 
+
+
+(function () {
+
+  function initGalleryLightbox() {
+
+    const items = document.querySelectorAll(".custom-gallery-item");
+    const lightbox = document.getElementById("customLightbox");
+    const content = document.getElementById("lightboxContent");
+    const closeBtn = document.getElementById("lightboxClose");
+    const nextBtn = document.getElementById("lightboxNext");
+    const prevBtn = document.getElementById("lightboxPrev");
+
+    // Check required elements
+    if (!items.length || !lightbox || !content) {
+      console.log("Gallery Lightbox: Elements not found");
+      return;
+    }
+
+    console.log("Gallery Lightbox initialized:", items.length, "items");
+
+    let currentIndex = 0;
+
+    function openLightbox(index) {
+
+      currentIndex = index;
+
+      const item = items[currentIndex];
+
+      if (!item) return;
+
+      const src = item.getAttribute("href");
+      const type = item.getAttribute("data-type");
+      const title = item.getAttribute("data-caption");
+
+      // Clear previous content
+      content.innerHTML = "";
+
+      // IMAGE
+      if (type === "image") {
+
+        const image = document.createElement("img");
+
+        image.src = src;
+        image.alt = title || "Gallery Image";
+
+        content.appendChild(image);
+
+      }
+
+      // VIDEO
+      else if (type === "video") {
+
+        const video = document.createElement("video");
+
+        video.src = src;
+        video.controls = true;
+        video.autoplay = true;
+        video.playsInline = true;
+
+        content.appendChild(video);
+
+      }
+
+      // Caption
+      const caption = document.createElement("div");
+
+      caption.className = "custom-lightbox-caption";
+      caption.textContent = title || "";
+
+      content.appendChild(caption);
+
+      // Open
+      lightbox.classList.add("active");
+
+      document.body.style.overflow = "hidden";
+    }
+
+
+    function closeLightbox() {
+
+      lightbox.classList.remove("active");
+
+      // Stop video
+      const video = content.querySelector("video");
+
+      if (video) {
+        video.pause();
+        video.currentTime = 0;
+      }
+
+      content.innerHTML = "";
+
+      document.body.style.overflow = "";
+    }
+
+
+    function nextImage() {
+
+      currentIndex++;
+
+      if (currentIndex >= items.length) {
+        currentIndex = 0;
+      }
+
+      openLightbox(currentIndex);
+    }
+
+
+    function previousImage() {
+
+      currentIndex--;
+
+      if (currentIndex < 0) {
+        currentIndex = items.length - 1;
+      }
+
+      openLightbox(currentIndex);
+    }
+
+
+    // Gallery click
+    items.forEach(function (item, index) {
+
+      item.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        openLightbox(index);
+
+      });
+
+    });
+
+
+    // Close
+    if (closeBtn) {
+
+      closeBtn.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        closeLightbox();
+
+      });
+
+    }
+
+
+    // Next
+    if (nextBtn) {
+
+      nextBtn.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        nextImage();
+
+      });
+
+    }
+
+
+    // Previous
+    if (prevBtn) {
+
+      prevBtn.addEventListener("click", function (event) {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        previousImage();
+
+      });
+
+    }
+
+
+    // Click outside image/video
+    lightbox.addEventListener("click", function (event) {
+
+      if (event.target === lightbox) {
+
+        closeLightbox();
+
+      }
+
+    });
+
+
+    // Keyboard
+    document.addEventListener("keydown", function (event) {
+
+      if (!lightbox.classList.contains("active")) {
+        return;
+      }
+
+      if (event.key === "Escape") {
+
+        closeLightbox();
+
+      }
+
+      if (event.key === "ArrowRight") {
+
+        nextImage();
+
+      }
+
+      if (event.key === "ArrowLeft") {
+
+        previousImage();
+
+      }
+
+    });
+
+  }
+
+
+  // Important:
+  // Agar DOM already loaded hai to directly initialize karein.
+
+  if (document.readyState === "loading") {
+
+    document.addEventListener("DOMContentLoaded", initGalleryLightbox);
+
+  } else {
+
+    initGalleryLightbox();
+
+  }
+
+})();
