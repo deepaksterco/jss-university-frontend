@@ -9,6 +9,51 @@ import "@/styles/custom.style.css";
 import Link from "next/link";
 import { ASSETS_URL, BASE_URL } from "@/config/config.mjs";
 
+// Convert any YouTube link (watch, youtu.be, shorts, embed, live) to an embed URL
+const getYouTubeEmbedUrl = (url) => {
+  if (!url) return null;
+  try {
+    const u = new URL(url);
+    const host = u.hostname.replace(/^www\./, "");
+    let id = null;
+
+    if (host === "youtu.be") {
+      id = u.pathname.slice(1);
+    } else if (host.endsWith("youtube.com") || host.endsWith("youtube-nocookie.com")) {
+      if (u.pathname === "/watch") {
+        id = u.searchParams.get("v");
+      } else {
+        const match = u.pathname.match(/^\/(embed|shorts|live|v)\/([^/?]+)/);
+        if (match) id = match[2];
+      }
+    }
+    return id ? `https://www.youtube.com/embed/${id}?autoplay=1&rel=0&loop=1` : null;
+  } catch {
+    return null;
+  }
+};
+
+// Decide what to render: mp4 first, then video_url, otherwise null
+const getVideoSource = (data) => {
+  if (!data) return null;
+
+  if (data.video) {
+    const src = data.video.startsWith("http")
+      ? data.video
+      : `${ASSETS_URL}${data.video}`;
+    return { type: "mp4", src };
+  }
+
+  if (data.video_url) {
+    return {
+      type: "iframe",
+      src: getYouTubeEmbedUrl(data.video_url) || data.video_url, // fallback: use as-is
+    };
+  }
+
+  return null;
+};
+
 export default function TestimonialClient() {
   const [testimonialData, setTestimonialData] = useState([]);
   const [selectedType, setSelectedType] = useState("");
@@ -87,22 +132,31 @@ export default function TestimonialClient() {
     return () => window.removeEventListener("keydown", handleEsc);
   }, []);
 
-  const openModal = async (slug) => {
+  const openModal = async (item) => {
+    console.log("clicked item:", item);
     setModalOpen(true);
     setModalData(null);
     setModalLoading(true);
-    setModalAnimate(false); // reset
+    setModalAnimate(false);
     try {
-      const res = await fetch(`${BASE_URL}testimonials/${slug}`);
+      const res = await fetch(`${BASE_URL}testimonials/${item.slug}`, { cache: "no-store" });
       if (!res.ok) throw new Error(`Detail API error: ${res.status}`);
-      const data = await res.json();
-      setModalData(data.data || data);
+      const json = await res.json();
+      const detail = json.data || json;
+  
+      // Start with the list item, let the detail override only real values
+      const merged = { ...item };
+      Object.keys(detail).forEach((key) => {
+        if (detail[key] !== null && detail[key] !== undefined && detail[key] !== "") {
+          merged[key] = detail[key];
+        }
+      });
+      setModalData(merged);
     } catch (err) {
       console.error("Modal fetch error:", err);
-      setModalData(null);
+      setModalData(item); // fall back to the list data instead of an error message
     } finally {
       setModalLoading(false);
-      // Small tick so the browser registers the initial state before animating
       requestAnimationFrame(() => {
         requestAnimationFrame(() => setModalAnimate(true));
       });
@@ -113,6 +167,9 @@ export default function TestimonialClient() {
     setModalOpen(false);
     setModalData(null);
   };
+
+  const videoSource = getVideoSource(modalData);
+  console.log("modalData:", modalData, "videoSource:", videoSource);
 
   return (
     <main className="site_main">
@@ -180,7 +237,7 @@ export default function TestimonialClient() {
                     <div
                       className="faulty-list-box"
                       key={item.id}
-                      onClick={() => openModal(item.slug)}
+                      onClick={() => openModal(item)}
                       style={{ cursor: "pointer" }}
                     >
                       <div className="faulty-img">
@@ -246,10 +303,10 @@ export default function TestimonialClient() {
               className={`testimonial-modal-overlay ${modalAnimate ? "overlay-visible" : ""}`}
               onClick={closeModal}
             >
-              <div
-                className={`testimonial-modal ${modalAnimate ? "modal-visible" : ""}`}
-                onClick={(e) => e.stopPropagation()}
-              >
+               <div
+                  className={`testimonial-modal ${videoSource ? "testimonial-modal--video" : ""} ${modalAnimate ? "modal-visible" : ""}`}
+                  onClick={(e) => e.stopPropagation()}
+                >
                 <button
                   className="testimonial-modal-close"
                   onClick={closeModal}
@@ -258,10 +315,33 @@ export default function TestimonialClient() {
                 </button>
 
                 {!modalData ? (
-                  <div className="modal-loading">
-                    <p>Something went wrong. Please try again.</p>
-                  </div>
-                ) : (
+                    <div className="modal-loading">
+                      <p>Something went wrong. Please try again.</p>
+                    </div>
+                  ) : videoSource ? (
+                    /* VIDEO MODE: no image, no content */
+                    <div className="modal-video-wrap">
+                      {videoSource.type === "mp4" ? (
+                        <video
+                          className="modal-video"
+                          src={videoSource.src}
+                          muted
+                          controls
+                          autoPlay
+                          loop
+                          playsInline
+                        />
+                      ) : (
+                        <iframe
+                          className="modal-video"
+                          src={videoSource.src}
+                          title={modalData.name || "Testimonial video"}
+                          allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+                          allowFullScreen
+                        />
+                      )}
+                    </div>
+                  ) : (
                   <div className="modal-inner">
                     <div className="modal-left">
                       <Image
