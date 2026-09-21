@@ -2818,3 +2818,16 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 @media (max-width:575px){.gallery-image.gallery-desc .grid{grid-template-columns:repeat(1,1fr)}
 ;.gallery-image.gallery-desc{padding-block:6rem;}
 }
+
+
+
+.about_f_value .ab_fo_imgsec {border-radius: 0; margin-bottom: 2rem;}
+
+.about_four.heritage .about_f_value { gap: 2em;}
+
+@media (max-width: 991px) {
+.about_f_value .ab_fo_imgsec {margin-bottom: 2rem;}
+}
+@media (max-width: 767px) {
+.about_four {padding-bottom: 3rem;}
+}
