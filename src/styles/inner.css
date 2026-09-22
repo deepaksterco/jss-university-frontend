@@ -1307,9 +1307,9 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 /* ========================================================= TESTIMONIAL SLIDER ========================================================= */
  .icge-about07 .placement-module__VSLvPW__testimonialSwiper{position:relative;}
 .icge-about07 .placement-module__VSLvPW__eachSlide{display:flex;align-items:center;gap:3rem;}
-.icge-about07 .placement-module__VSLvPW__testimonialImageContainer{position:relative;flex:0 0 216px;}
+.icge-about07 .placement-module__VSLvPW__testimonialImageContainer{position:relative;flex:0 0 400px;}
 .icge-about07 .placement-module__VSLvPW__testimonialImage{object-fit:cover;}
-.icge-about07 .placement-module__VSLvPW__testimonialContent{flex:1;}
+.icge-about07 .placement-module__VSLvPW__testimonialContent{flex:1;margin-left:3rem;}
 .icge-about07 .placement-module__VSLvPW__testimonialContent p{margin-bottom:1.5rem;}
 .icge-about07 .placement-module__VSLvPW__username{margin-bottom:0.5rem;}
 .icge-about07 .placement-module__VSLvPW__testimonialIconContainer{margin-top:2rem;}
