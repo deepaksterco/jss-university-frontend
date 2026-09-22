@@ -817,10 +817,10 @@ width 0.2s ease,
 height 0.2s ease;
 }
 
-.logo-content.scrolled img {
+/* .header-scrolled .logo-content img {
 width: 9.5rem;
 height: auto;
-}
+} */
 
 .nav-container.header-scrolled {
 padding-block: 1.5rem !important;
