@@ -1476,6 +1476,12 @@ background:unset;
 .ieee .event_card:hover .event_icon {background:#16344e}
 .event_card:hover .event_icon img {transform: scale(1.1);transition: all 0.3s ease;}
 .event_card:hover .event_icon img {filter: brightness(0) invert(1);}
+.about-top-right{padding: 3rem 4rem;}
+.about-top-right h5{ font: var(--font-26);color: var(--color-4e); text-transform: uppercase; padding-bottom: 2rem;}
+
+
+
+
 
 /* responsive page */
 
