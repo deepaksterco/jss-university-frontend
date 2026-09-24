@@ -910,8 +910,6 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 
 
 
-
-
 (function () {
     function setupTestimonialSlider() {
         const sliderEl = document.querySelector('.testimonial-slider2');
@@ -919,57 +917,48 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
         if (!sliderEl || !sliderEl.swiper) {
             return false;
         }
-
         const swiper = sliderEl.swiper;
-
-        // Auto slide
-        swiper.params.autoplay = {
-            delay: 4000,
-            disableOnInteraction: false,
-            pauseOnMouseEnter: true
-        };
-
-        // Loop enable
-        swiper.params.loop = true;
-
-        // Reinitialize loop if needed
-        if (!swiper.loopedSlides) {
-            swiper.loopCreate();
-            swiper.update();
-        }
-
-        // Start autoplay
         if (swiper.autoplay) {
+            swiper.params.autoplay = {
+                delay: 4000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true
+            };
             swiper.autoplay.start();
         }
-
-        // Buttons
         if (!document.body.dataset.testimonialButtonsReady) {
+
             document.body.dataset.testimonialButtonsReady = 'true';
 
             document.addEventListener('click', function (e) {
+
                 const nextBtn = e.target.closest('.testimonial-next');
                 const prevBtn = e.target.closest('.testimonial-prev');
 
+                if (!nextBtn && !prevBtn) {
+                    return;
+                }
+
+                e.preventDefault();
+                e.stopPropagation();
+
                 if (nextBtn) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    swiper.slideNext();
+                    swiper.slideNext(300);
                 }
 
                 if (prevBtn) {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    swiper.slidePrev();
+                    swiper.slidePrev(300);
                 }
-            });
+
+            }, true);
         }
 
         return true;
     }
-
     if (!setupTestimonialSlider()) {
+
         const interval = setInterval(function () {
+
             if (setupTestimonialSlider()) {
                 clearInterval(interval);
             }
@@ -979,4 +968,5 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
             clearInterval(interval);
         }, 10000);
     }
+
 })();
