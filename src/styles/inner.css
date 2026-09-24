@@ -1289,7 +1289,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-about05 .about-icge-right p{display:block;color:#fff;}
 .icge-about05 .about-icge-right img{filter:invert(1);margin-bottom:1rem;}
 /* ========================================================= 06. GLOBAL PARTNERSHIPS HTML:.why-study-sec.partner.icge-about06 ========================================================= */
- .icge-about06.why-study-sec.partner{padding:10rem 0;}
+ .icge-about06.why-study-sec.partner{padding:6rem 0;}
 .icge-about06 h3{padding-bottom:2rem;color:var(--color-4e);font:var(--font-18);text-align:center;font-weight: 500;}
 .icge-about06 h5{font:var(--font-26);color:var(--color-4e);margin-bottom:3rem;text-align:center;text-transform:uppercase;}
 .icge-about06 > .container> p{margin-bottom:5rem;font:var(--font-24);text-align:center;margin:0 auto;padding-bottom:5rem;font-weight:300;line-height:1.4;}
@@ -2999,8 +2999,8 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 /* LEFT NAV */
 
 .school-of-engineering .cms-tab-nav {
-    width: 280px;
-    min-width: 280px;
+    width: 350px;
+    min-width: 350px;
     padding-right: 20px;
     border-right: 1px solid #ddd;
 }
@@ -3040,7 +3040,13 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"],
 .school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"],
 .school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"],
-.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"] {
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"],
+.school-of-engineering #cms-tab-radio-5:checked ~ .cms-tab-nav label[for="cms-tab-radio-5"],
+.school-of-engineering #cms-tab-radio-6:checked ~ .cms-tab-nav label[for="cms-tab-radio-6"],
+.school-of-engineering #cms-tab-radio-7:checked ~ .cms-tab-nav label[for="cms-tab-radio-7"],
+.school-of-engineering #cms-tab-radio-8:checked ~ .cms-tab-nav label[for="cms-tab-radio-8"],
+.school-of-engineering #cms-tab-radio-9:checked ~ .cms-tab-nav label[for="cms-tab-radio-9"],
+.school-of-engineering #cms-tab-radio-10:checked ~ .cms-tab-nav label[for="cms-tab-radio-10"] {
     background: #1b4797;
     color: #fff;
 }
@@ -3051,7 +3057,13 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"]::after,
 .school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"]::after,
 .school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"]::after,
-.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after {
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after,
+.school-of-engineering #cms-tab-radio-5:checked ~ .cms-tab-nav label[for="cms-tab-radio-5"]::after,
+.school-of-engineering #cms-tab-radio-6:checked ~ .cms-tab-nav label[for="cms-tab-radio-6"]::after,
+.school-of-engineering #cms-tab-radio-7:checked ~ .cms-tab-nav label[for="cms-tab-radio-7"]::after,
+.school-of-engineering #cms-tab-radio-8:checked ~ .cms-tab-nav label[for="cms-tab-radio-8"]::after,
+.school-of-engineering #cms-tab-radio-9:checked ~ .cms-tab-nav label[for="cms-tab-radio-9"]::after,
+.school-of-engineering #cms-tab-radio-10:checked ~ .cms-tab-nav label[for="cms-tab-radio-10"]::after {
     content: "";
 
     position: absolute;
@@ -3086,7 +3098,13 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-content .cms-content-1,
 .school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-content .cms-content-2,
 .school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-content .cms-content-3,
-.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-content .cms-content-4 {
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-content .cms-content-4,
+.school-of-engineering #cms-tab-radio-5:checked ~ .cms-tab-content .cms-content-5,
+.school-of-engineering #cms-tab-radio-6:checked ~ .cms-tab-content .cms-content-6,
+.school-of-engineering #cms-tab-radio-7:checked ~ .cms-tab-content .cms-content-7,
+.school-of-engineering #cms-tab-radio-8:checked ~ .cms-tab-content .cms-content-8,
+.school-of-engineering #cms-tab-radio-9:checked ~ .cms-tab-content .cms-content-9,
+.school-of-engineering #cms-tab-radio-10:checked ~ .cms-tab-content .cms-content-10 {
     display: block;
 }
 
@@ -3165,7 +3183,13 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
     .school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"]::after,
     .school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"]::after,
     .school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"]::after,
-    .school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after {
+    .school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after,
+    .school-of-engineering #cms-tab-radio-5:checked ~ .cms-tab-nav label[for="cms-tab-radio-5"]::after,
+    .school-of-engineering #cms-tab-radio-6:checked ~ .cms-tab-nav label[for="cms-tab-radio-6"]::after,
+    .school-of-engineering #cms-tab-radio-7:checked ~ .cms-tab-nav label[for="cms-tab-radio-7"]::after,
+    .school-of-engineering #cms-tab-radio-8:checked ~ .cms-tab-nav label[for="cms-tab-radio-8"]::after,
+    .school-of-engineering #cms-tab-radio-9:checked ~ .cms-tab-nav label[for="cms-tab-radio-9"]::after,
+    .school-of-engineering #cms-tab-radio-10:checked ~ .cms-tab-nav label[for="cms-tab-radio-10"]::after {
         display: none;
     }
 
@@ -3176,8 +3200,159 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 }
 
 
+.school-of-engineering .cms-accordion {
+    width: 100%;
+}
 
+/* Hide radio buttons */
+.school-of-engineering .cms-accordion input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
 
+/* Accordion heading */
+.school-of-engineering .cms-accordion-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+background: #eee;
+    width: 100%;
+    padding: 16px 20px;
+    margin-bottom: 8px;
+
+    border: 1px solid #ddd;
+
+    color: #333;
+    font-size: 17px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+/* + icon */
+.school-of-engineering .accordion-icon {
+    font-size: 24px;
+    line-height: 1;
+
+    transition: transform 0.3s ease;
+}
+
+/* Content closed */
+.school-of-engineering .cms-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+
+    padding: 0 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease,
+        visibility 0.3s ease;
+}
+.school-of-engineering .cms-accordion-content p{font:var(--font-21);}
+.school-of-engineering .cms-accordion-content strong{font:var(--font-20);}
+/* Active heading */
+.school-of-engineering .cms-accordion input[type="radio"]:checked
++ .cms-accordion-title {
+    background: #1b4797;
+    color: #fff;
+    border-color: #1b4797;
+}
+
+/* Active content */
+.school-of-engineering .cms-accordion input[type="radio"]:checked
++ .cms-accordion-title
++ .cms-accordion-content {
+    max-height: 900px;
+
+    padding: 20px;
+
+    opacity: 1;
+    visibility: visible;
+
+    border: 1px solid #ddd;
+    border-top: 0;
+
+    margin-bottom: 8px;
+}
+
+/* Change + appearance when active */
+.school-of-engineering .cms-accordion input[type="radio"]:checked
++ .cms-accordion-title
+.accordion-icon {
+    transform: rotate(45deg);
+}
+.school-of-engineering .pdfs_row ul {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
+    margin: 0 0 2rem 0;
+    padding: 0;
+    list-style-type: none;
+    display: grid;
+}
+.school-of-engineering .pdfs_row li a {
+    justify-content: space-between;
+    display: flex;
+}
+.school-of-engineering .pdfs_row li {
+    border-bottom: 1px solid #d6d6d6;
+    padding-bottom: 1.5rem;
+    position: relative;
+}
+/* Content */
+.school-of-engineering .cms-accordion-content p {
+    margin: 0 0 15px;
+    line-height: 1.7;
+    color: #555;
+}
+
+.school-of-engineering .cms-accordion-content strong {color: #333;margin-bottom: 3rem;display:block;}
+.school-of-engineering .accordion-icon {
+    width: 20px;
+    height: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 0.3s ease;
+}
+
+.school-of-engineering .accordion-icon img {
+    width: 14px;
+    height: 14px;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+    filter: brightness(0.5);
+}
+
+.school-of-engineering .cms-accordion input[type="radio"]:checked + .cms-accordion-title .accordion-icon img {
+    transform: rotate(46deg);
+        filter: brightness(0) invert(1);
+}
+
+.school-of-engineering .cms-accordion-content .pdfs_row ul li p{font:var(--font-16);}
+.school-of-engineering .cms-accordion input[type="radio"]:checked
++ .cms-accordion-title
++ .cms-accordion-content {
+    max-height: auto;
+    padding: 20px;
+    opacity: 1;
+    visibility: visible;
+}
+   .cms-accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+}
 
 /* =========================
    TABLET
