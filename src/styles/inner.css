@@ -1241,7 +1241,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-about03 .ab_jss_c_col.dashboard h4{color:#fff;}
 /* ========================================================= 04. FEATURED HIGHLIGHTS HTML:.highlights-sec.icge-about04 ========================================================= */
  .icge-about04.highlights-sec{padding:0 0 10rem;}
-.icge-about04.highlights-sec h3{padding:0;font:var(--font-24);font-weight:400;line-height:1.4;padding-bottom:2rem;text-align:left;text-transform:capitalize;color:var(--color-4e);}
+.icge-about04.highlights-sec h3{padding:0;font:var(--font-24);font-weight:500;line-height:1.4;padding-bottom:2rem;text-align:left;text-transform:capitalize;color:var(--color-4e);}
 .icge-about04.highlights-sec h5{padding-bottom:2rem;font:var(--font-26);color:var(--color-4e);text-transform:uppercase;}
 .icge-about04.highlights-sec ul{display:grid;grid-template-columns:repeat(5,1fr);gap:2rem;padding-left:0;margin-top:3rem;}
 .icge-about04.highlights-sec ul li{list-style:none;padding:3rem;background-color:var(--color-white);text-align:center;}
@@ -1281,7 +1281,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 /* ========================================================= 05. ABOUT ICGE HTML:.about-icge-sec.icge-about05 ========================================================= */
  .icge-about05.about-icge-sec{background-color:#fff;padding:10rem 0;}
 .icge-about05 .about-icge-left{padding-right:3rem;}
-.icge-about05 .about-icge-left h3{font:var(--font-24);text-align:left;text-transform:capitalize;padding:0 0 2rem;font-weight:400;line-height:1.4;color:var(--color-4e);}
+.icge-about05 .about-icge-left h3{font:var(--font-24);text-align:left;text-transform:capitalize;padding:0 0 2rem;font-weight:500;line-height:1.4;color:var(--color-4e);}
 .icge-about05 .about-icge-left h5{font:var(--font-26);color:var(--color-4e);text-transform:uppercase;padding-bottom:2rem;}
 .gate-way-row{grid-template-columns:47% auto;gap:12rem;display:grid;}
 .icge-about05 .about-icge-right{padding:5rem;background-color:#16344ec7;}
@@ -1290,7 +1290,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-about05 .about-icge-right img{filter:invert(1);margin-bottom:1rem;}
 /* ========================================================= 06. GLOBAL PARTNERSHIPS HTML:.why-study-sec.partner.icge-about06 ========================================================= */
  .icge-about06.why-study-sec.partner{padding:10rem 0;}
-.icge-about06 h3{padding-bottom:2rem;color:var(--color-4e);font:var(--font-18);text-align:center;}
+.icge-about06 h3{padding-bottom:2rem;color:var(--color-4e);font:var(--font-18);text-align:center;font-weight: 500;}
 .icge-about06 h5{font:var(--font-26);color:var(--color-4e);margin-bottom:3rem;text-align:center;text-transform:uppercase;}
 .icge-about06 > .container> p{margin-bottom:5rem;font:var(--font-24);text-align:center;margin:0 auto;padding-bottom:5rem;font-weight:300;line-height:1.4;}
 .icge-about06 .estab_slide_item h5{font:var(--font-21);margin-top:3rem;color:var(--color-4e);font-weight:600;}
@@ -2792,41 +2792,447 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .iic-student-club .placement_stats{padding-bottom:5rem;}
 /* css ends here */
 .department_society_overview p{color:var(--color-44);}
-.gallery-image.gallery-desc{padding-block:10rem;}
-.gallery-image.gallery-desc .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3rem;}
-.custom-lightbox{display:none;position:fixed;z-index:999999;inset:0;width:100%;height:100%;background:rgba(0,0,0,0.92);align-items:center;justify-content:center;}
-.custom-lightbox.active{display:flex !important;}
-.custom-lightbox-content{position:relative;width:100%;max-width:75rem;max-height:90vh;display:flex;flex-direction:column;align-items:center;justify-content:center;}
-.custom-lightbox-content img,.custom-lightbox-content video{display:block;max-width:100%;max-height:80vh;width:auto;height:auto;object-fit:contain;}
-.custom-lightbox-caption{color:#fff;margin-top:0.75rem;font-size:1rem;text-align:center;}
-/* Close Icon */
-.custom-lightbox-close{position:fixed;top:1rem;right:1.5rem;z-index:1000000;color:#fff;font-size:2rem;line-height:1;cursor:pointer;user-select:none;}
-/* Previous / Next Icons */
-.custom-lightbox-prev,.custom-lightbox-next{position:fixed;top:50%;transform:translateY(-50%);z-index:1000000;color:#fff;font-size:2rem;line-height:1;cursor:pointer;user-select:none;padding:0.75rem;}
-.custom-lightbox-prev{left:1rem;}
-.custom-lightbox-next{right:1rem;}
+
+
+/* Masonry Grid */
+.gallery-image.gallery-desc .grid {
+    column-count: 3;
+    column-gap:1rem;
+}
+
+/* Each image */
+.gallery-image.gallery-desc .grid figure {
+    width: 100%;
+    margin: 0 0 1rem;
+    break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+/* Image */
+.gallery-image.gallery-desc .grid figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* =========================
+   CUSTOM LIGHTBOX
+========================= */
+
+.custom-lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999999;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.92);
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-lightbox.active {
+    display: flex !important;
+}
+
+.custom-lightbox-content {
+    position: relative;
+    width: 100%;
+    max-width: 75rem;
+    max-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-lightbox-content img,
+.custom-lightbox-content video {
+    display: block;
+    max-width: 100%;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+}
+
+.custom-lightbox-caption {
+    color: #fff;
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+/* Close */
+
+.custom-lightbox-close {
+    position: fixed;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1000000;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+/* Previous / Next */
+
+.custom-lightbox-prev,
+.custom-lightbox-next {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1000000;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+    padding: 0.75rem;
+}
+
+.custom-lightbox-prev {
+    left: 1rem;
+}
+
+.custom-lightbox-next {
+    right: 1rem;
+}
+
+
 /* Hover */
-.custom-lightbox-prev:hover,.custom-lightbox-next:hover,.custom-lightbox-close:hover{opacity:0.7;}
-/* Mobile */
-.icge-gallery .media-content{padding-block:2rem 0;}
-.icge-gallery .media-content p:first-child{color:var(--color-4e);font:var(--font-18);font-family:var(--font-Condensed);margin-bottom:0.5rem;font-weight:500;margin-bottom:2rem;}
-.icge-gallery .media-content p:last-child{/* Second p */
- color:var(--color-black);font:var(--font-18);font-family:var(--font-Condensed);margin-bottom:3rem;font-weight:500;}
-.institutional-development-plan .placement_proSec{padding-top:6rem;}
-@media (max-width:991px){.gallery-image.gallery-desc .grid{grid-template-columns:repeat(2,1fr)}
-;}
-@media (max-width:575px){.gallery-image.gallery-desc .grid{grid-template-columns:repeat(1,1fr)}
-;.gallery-image.gallery-desc{padding-block:6rem;}
+
+.custom-lightbox-prev:hover,
+.custom-lightbox-next:hover,
+.custom-lightbox-close:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================
+   ICGE CONTENT
+========================= */
+
+.icge-gallery .media-content {
+    padding-block: 2rem 0;
+}
+
+.icge-gallery .media-content p:first-child {
+    color: var(--color-4e);
+    font: var(--font-18);
+    font-family: var(--font-Condensed);
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+
+.icge-gallery .media-content p:last-child {
+    color: var(--color-black);
+    font: var(--font-18);
+    font-family: var(--font-Condensed);
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.institutional-development-plan .placement_proSec {
+    padding-top: 6rem;
+}
+.grid {
+    column-count: 3;
+    column-gap: 3rem;
+}
+
+.grid figure {
+    break-inside: avoid;
+}
+
+
+/*-----------paper button start------------*/
+.question-paper-button{padding-block: 10rem;    max-width: 60%;margin: 0px auto;}
+.question-paper .question-btn-box {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2rem 2rem;
+    display: grid;
+    position: relative;
+}
+
+.question-paper .question-btn-box a {
+    background: var(--color-white);
+    font: var(--font-18);
+    color: var(--color-29);
+    letter-spacing: 0;
+    font-family: var(--font-Roboto);
+    text-transform: uppercase;
+    width: 100%;
+    padding: 2.2rem 1.2rem 1.9rem 2rem;
+    font-weight: bold;
+    line-height: 2.2rem;
+}
+
+/*-----------paper tabing start------------*/
+
+.school-of-engineering .question-paper-sec{margin-block:10rem;}
+.school-of-engineering .cms-left-tabs {
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    position: relative;
+}
+
+
+/* HIDE RADIO BUTTONS */
+
+.school-of-engineering .cms-left-tabs > input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+/* LEFT NAV */
+
+.school-of-engineering .cms-tab-nav {
+    width: 280px;
+    min-width: 280px;
+    padding-right: 20px;
+    border-right: 1px solid #ddd;
+}
+
+.school-of-engineering .cms-tab-nav label {
+    display: block;
+    position: relative;
+
+    padding: 16px 20px;
+    margin-bottom: 8px;
+
+    background: #f5f6f8;
+    color: #333;
+
+    border-radius: 5px;
+
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+/* HOVER */
+
+.school-of-engineering .cms-tab-nav label:hover {
+    background: #e8eef8;
+    color: #1b4797;
+}
+
+
+/* ACTIVE TAB 1 */
+
+.school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"],
+.school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"],
+.school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"],
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"] {
+    background: #1b4797;
+    color: #fff;
+}
+
+
+/* ARROW */
+
+.school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"]::after,
+.school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"]::after,
+.school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"]::after,
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after {
+    content: "";
+
+    position: absolute;
+    right: -9px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    border-top: 9px solid transparent;
+    border-bottom: 9px solid transparent;
+    border-left: 9px solid #1b4797;
+}
+
+
+/* RIGHT CONTENT */
+
+.school-of-engineering .cms-tab-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* HIDE ALL CONTENT */
+
+.school-of-engineering .cms-tab-box {
+    display: none;
+}
+
+
+/* SHOW SELECTED CONTENT */
+
+.school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-content .cms-content-1,
+.school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-content .cms-content-2,
+.school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-content .cms-content-3,
+.school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-content .cms-content-4 {
+    display: block;
+}
+
+
+/* CONTENT */
+
+.school-of-engineering .cms-tab-box {
+    animation: cmsTabFade 0.3s ease;
+}
+
+.school-of-engineering .cms-tab-box h2 {
+    margin: 0 0 15px;
+
+    color: #1b4797;
+
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.school-of-engineering .cms-tab-box h4 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+
+    color: #333;
+    font-size: 20px;
+}
+
+.school-of-engineering .cms-tab-box p {
+    color: #555;
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.school-of-engineering .cms-tab-box ul {
+    padding-left: 20px;
+}
+
+.school-of-engineering .cms-tab-box li {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+/* ANIMATION */
+
+@keyframes cmsTabFade {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* MOBILE */
+
+@media (max-width: 767px) {
+
+    .school-of-engineering .cms-left-tabs {
+        display: block;
+    }
+
+    .school-of-engineering .cms-tab-nav {
+        width: 100%;
+        min-width: 100%;
+        padding-right: 0;
+        border-right: 0;
+        margin-bottom: 25px;
+    }
+
+    .school-of-engineering #cms-tab-radio-1:checked ~ .cms-tab-nav label[for="cms-tab-radio-1"]::after,
+    .school-of-engineering #cms-tab-radio-2:checked ~ .cms-tab-nav label[for="cms-tab-radio-2"]::after,
+    .school-of-engineering #cms-tab-radio-3:checked ~ .cms-tab-nav label[for="cms-tab-radio-3"]::after,
+    .school-of-engineering #cms-tab-radio-4:checked ~ .cms-tab-nav label[for="cms-tab-radio-4"]::after {
+        display: none;
+    }
+
+   .school-of-engineering .cms-tab-box h2 {
+        font-size: 24px;
+    }
+
 }
 
 
 
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 991px) {
+
+    .gallery-image.gallery-desc .grid {
+        column-count: 2;
+        column-gap: 2rem;
+    }
+
+    .gallery-image.gallery-desc .grid figure {
+        margin-bottom: 2rem;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 575px) {
+
+ 
+    .gallery-image.gallery-desc .grid {
+        column-count: 1;
+    }
+
+    .gallery-image.gallery-desc .grid figure {
+        margin-bottom: 2rem;
+    }
+}
+
 .about_f_value .ab_fo_imgsec {border-radius: 0; margin-bottom: 2rem;}
 
 .about_four.heritage .about_f_value { gap: 2em;}
+.icge-gallery .editor_page{
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+h5.icge-heading.gallery-module  {
+    font: var(--font-26);
+    color: var(--color-4e);
+    margin-bottom: 3rem;
+    text-align:center;
+}
+
 
 @media (max-width: 991px) {
 .about_f_value .ab_fo_imgsec {margin-bottom: 2rem;}
+.icge-gallery .editor_page {
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+}
 }
 @media (max-width: 767px) {
 .about_four {padding-bottom: 3rem;}

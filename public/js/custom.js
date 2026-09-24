@@ -1,3 +1,28 @@
+// $(document).ready(function () {
+
+//     $(".left-tab-btn").on("click", function () {
+//       //alert('sdsd');
+
+//         var tabId = $(this).attr("data-tab");
+
+//         // Remove active from all buttons
+//         $(".left-tab-btn").removeClass("active");
+
+//         // Add active to clicked button
+//         $(this).addClass("active");
+
+//         // Hide all content
+//         $(".left-tab-pane").removeClass("active");
+
+//         // Show selected content
+//         $("#" + tabId).addClass("active");
+
+//     });
+
+// });
+
+
+
 (function () {
   "use strict";
 
@@ -877,3 +902,13 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
   }
 
 })();
+
+
+
+
+
+
+
+
+
+
