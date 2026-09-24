@@ -666,240 +666,334 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 
 
 
-
 (function () {
+  "use strict";
 
-  function initGalleryLightbox() {
+  let currentIndex = 0;
+  let initialized = false;
 
-    const items = document.querySelectorAll(".custom-gallery-item");
-    const lightbox = document.getElementById("customLightbox");
-    const content = document.getElementById("lightboxContent");
-    const closeBtn = document.getElementById("lightboxClose");
-    const nextBtn = document.getElementById("lightboxNext");
-    const prevBtn = document.getElementById("lightboxPrev");
+  function getGalleryItems() {
+    return Array.from(
+      document.querySelectorAll(".custom-gallery-item")
+    );
+  }
 
-    // Check required elements
+  function getElements() {
+    return {
+      lightbox: document.getElementById("customLightbox"),
+      content: document.getElementById("lightboxContent")
+    };
+  }
+
+  function openLightbox(index) {
+    const items = getGalleryItems();
+    const { lightbox, content } = getElements();
+
     if (!items.length || !lightbox || !content) {
-      console.log("Gallery Lightbox: Elements not found");
       return;
     }
 
-    console.log("Gallery Lightbox initialized:", items.length, "items");
-
-    let currentIndex = 0;
-
-    function openLightbox(index) {
-
-      currentIndex = index;
-
-      const item = items[currentIndex];
-
-      if (!item) return;
-
-      const src = item.getAttribute("href");
-      const type = item.getAttribute("data-type");
-      const title = item.getAttribute("data-caption");
-
-      // Clear previous content
-      content.innerHTML = "";
-
-      // IMAGE
-      if (type === "image") {
-
-        const image = document.createElement("img");
-
-        image.src = src;
-        image.alt = title || "Gallery Image";
-
-        content.appendChild(image);
-
-      }
-
-      // VIDEO
-      else if (type === "video") {
-
-        const video = document.createElement("video");
-
-        video.src = src;
-        video.controls = true;
-        video.autoplay = true;
-        video.playsInline = true;
-
-        content.appendChild(video);
-
-      }
-
-      // Caption
-      const caption = document.createElement("div");
-
-      caption.className = "custom-lightbox-caption";
-      caption.textContent = title || "";
-
-      content.appendChild(caption);
-
-      // Open
-      lightbox.classList.add("active");
-
-      document.body.style.overflow = "hidden";
+    if (index < 0) {
+      index = items.length - 1;
     }
 
-
-    function closeLightbox() {
-
-      lightbox.classList.remove("active");
-
-      // Stop video
-      const video = content.querySelector("video");
-
-      if (video) {
-        video.pause();
-        video.currentTime = 0;
-      }
-
-      content.innerHTML = "";
-
-      document.body.style.overflow = "";
+    if (index >= items.length) {
+      index = 0;
     }
 
+    currentIndex = index;
 
-    function nextImage() {
+    const item = items[currentIndex];
 
-      currentIndex++;
+    const src = item.getAttribute("href");
+    const type = item.getAttribute("data-type");
+    const title = item.getAttribute("data-caption");
 
-      if (currentIndex >= items.length) {
-        currentIndex = 0;
-      }
+    content.innerHTML = "";
 
-      openLightbox(currentIndex);
+    if (type === "image") {
+      const image = document.createElement("img");
+
+      image.src = src;
+      image.alt = title || "Gallery Image";
+
+      content.appendChild(image);
     }
 
+    if (type === "video") {
+      const video = document.createElement("video");
 
-    function previousImage() {
+      video.src = src;
+      video.controls = true;
+      video.autoplay = true;
+      video.playsInline = true;
 
-      currentIndex--;
-
-      if (currentIndex < 0) {
-        currentIndex = items.length - 1;
-      }
-
-      openLightbox(currentIndex);
+      content.appendChild(video);
     }
 
+    const caption = document.createElement("div");
 
-    // Gallery click
-    items.forEach(function (item, index) {
+    caption.className = "custom-lightbox-caption";
+    caption.textContent = title || "";
 
-      item.addEventListener("click", function (event) {
+    content.appendChild(caption);
+
+    lightbox.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closeLightbox() {
+    const { lightbox, content } = getElements();
+
+    if (!lightbox || !content) {
+      return;
+    }
+
+    const video = content.querySelector("video");
+
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
+
+    lightbox.classList.remove("active");
+
+    content.innerHTML = "";
+
+    document.body.style.overflow = "";
+  }
+
+  function nextImage() {
+    const items = getGalleryItems();
+
+    if (!items.length) {
+      return;
+    }
+
+    currentIndex++;
+
+    if (currentIndex >= items.length) {
+      currentIndex = 0;
+    }
+
+    openLightbox(currentIndex);
+  }
+
+  function previousImage() {
+    const items = getGalleryItems();
+
+    if (!items.length) {
+      return;
+    }
+
+    currentIndex--;
+
+    if (currentIndex < 0) {
+      currentIndex = items.length - 1;
+    }
+
+    openLightbox(currentIndex);
+  }
+
+
+  /*
+   * IMPORTANT:
+   * Event delegation use kar rahe hain.
+   * Isliye dynamically loaded gallery bhi work karegi.
+   */
+  function bindEvents() {
+
+    if (initialized) {
+      return;
+    }
+
+    initialized = true;
+
+    document.addEventListener("click", function (event) {
+
+      /*
+       * Gallery image
+       */
+      const galleryItem = event.target.closest(
+        ".custom-gallery-item"
+      );
+
+      if (galleryItem) {
 
         event.preventDefault();
         event.stopPropagation();
 
-        openLightbox(index);
+        const items = getGalleryItems();
 
-      });
+        const index = items.indexOf(galleryItem);
 
-    });
+        if (index !== -1) {
+          openLightbox(index);
+        }
+
+        return;
+      }
 
 
-    // Close
-    if (closeBtn) {
+      /*
+       * Close button
+       */
+      const closeButton = event.target.closest(
+        "#lightboxClose"
+      );
 
-      closeBtn.addEventListener("click", function (event) {
+      if (closeButton) {
 
         event.preventDefault();
         event.stopPropagation();
 
         closeLightbox();
 
-      });
+        return;
+      }
 
-    }
 
+      /*
+       * Next button
+       */
+      const nextButton = event.target.closest(
+        "#lightboxNext"
+      );
 
-    // Next
-    if (nextBtn) {
-
-      nextBtn.addEventListener("click", function (event) {
+      if (nextButton) {
 
         event.preventDefault();
         event.stopPropagation();
 
         nextImage();
 
-      });
+        return;
+      }
 
-    }
 
+      /*
+       * Previous button
+       */
+      const prevButton = event.target.closest(
+        "#lightboxPrev"
+      );
 
-    // Previous
-    if (prevBtn) {
-
-      prevBtn.addEventListener("click", function (event) {
+      if (prevButton) {
 
         event.preventDefault();
         event.stopPropagation();
 
         previousImage();
 
-      });
+        return;
+      }
 
-    }
 
+      /*
+       * Click outside lightbox content
+       */
+      const { lightbox } = getElements();
 
-    // Click outside image/video
-    lightbox.addEventListener("click", function (event) {
-
-      if (event.target === lightbox) {
-
+      if (
+        lightbox &&
+        event.target === lightbox
+      ) {
         closeLightbox();
-
       }
 
     });
 
 
-    // Keyboard
+    /*
+     * Keyboard navigation
+     */
     document.addEventListener("keydown", function (event) {
 
-      if (!lightbox.classList.contains("active")) {
+      const { lightbox } = getElements();
+
+      if (
+        !lightbox ||
+        !lightbox.classList.contains("active")
+      ) {
         return;
       }
 
       if (event.key === "Escape") {
-
         closeLightbox();
-
       }
 
       if (event.key === "ArrowRight") {
-
+        event.preventDefault();
         nextImage();
-
       }
 
       if (event.key === "ArrowLeft") {
-
+        event.preventDefault();
         previousImage();
-
       }
 
     });
 
+    console.log("Gallery Lightbox events bound");
   }
 
 
-  // Important:
-  // Agar DOM already loaded hai to directly initialize karein.
+  /*
+   * Wait for dynamically rendered gallery
+   */
+  function checkGallery() {
 
-  if (document.readyState === "loading") {
+    const items = getGalleryItems();
+    const { lightbox, content } = getElements();
 
-    document.addEventListener("DOMContentLoaded", initGalleryLightbox);
+    if (
+      items.length &&
+      lightbox &&
+      content
+    ) {
+      console.log(
+        "Gallery found:",
+        items.length,
+        "images"
+      );
 
-  } else {
+      bindEvents();
 
-    initGalleryLightbox();
+      return true;
+    }
 
+    return false;
   }
+
+
+  /*
+   * First attempt
+   */
+  checkGallery();
+
+
+  /*
+   * React / Next.js / dynamically rendered DOM
+   */
+  const observer = new MutationObserver(function () {
+
+    checkGallery();
+
+  });
+
+  observer.observe(document.body, {
+    childList: true,
+    subtree: true
+  });
+
+
+  /*
+   * Safety cleanup after 30 seconds
+   */
+  setTimeout(function () {
+    observer.disconnect();
+  }, 30000);
+
 
 })();
 
