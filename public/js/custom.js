@@ -912,3 +912,71 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 
 
 
+(function () {
+    function setupTestimonialSlider() {
+        const sliderEl = document.querySelector('.testimonial-slider2');
+
+        if (!sliderEl || !sliderEl.swiper) {
+            return false;
+        }
+
+        const swiper = sliderEl.swiper;
+
+        // Auto slide
+        swiper.params.autoplay = {
+            delay: 4000,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+        };
+
+        // Loop enable
+        swiper.params.loop = true;
+
+        // Reinitialize loop if needed
+        if (!swiper.loopedSlides) {
+            swiper.loopCreate();
+            swiper.update();
+        }
+
+        // Start autoplay
+        if (swiper.autoplay) {
+            swiper.autoplay.start();
+        }
+
+        // Buttons
+        if (!document.body.dataset.testimonialButtonsReady) {
+            document.body.dataset.testimonialButtonsReady = 'true';
+
+            document.addEventListener('click', function (e) {
+                const nextBtn = e.target.closest('.testimonial-next');
+                const prevBtn = e.target.closest('.testimonial-prev');
+
+                if (nextBtn) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slideNext();
+                }
+
+                if (prevBtn) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    swiper.slidePrev();
+                }
+            });
+        }
+
+        return true;
+    }
+
+    if (!setupTestimonialSlider()) {
+        const interval = setInterval(function () {
+            if (setupTestimonialSlider()) {
+                clearInterval(interval);
+            }
+        }, 300);
+
+        setTimeout(function () {
+            clearInterval(interval);
+        }, 10000);
+    }
+})();
