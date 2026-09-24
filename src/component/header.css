@@ -353,7 +353,7 @@
 .engineering-dropdown-container { top: 85%; left: 13%; }
 .hamburger-layout:before { background-image:none; }
  }
-.header-inner { width: 100%; padding-block: 2.4rem; }
+.header-inner { width: 100%; padding-block: 2.4rem; transition:all 0.2s ease-in-out}
 @media (max-width: 667px) {
  .contact-panel .contact-info li { max-width: 57%; }
 .admissions-heading h4 { max-width: 40%; }

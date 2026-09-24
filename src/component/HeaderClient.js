@@ -468,7 +468,7 @@ export default function HeaderClient({ initialNavLinks = [] }) {
       >
         <div className="containerMD">
           <div className={`nav-container ${!isHomeLikePage ? "scroll_bg programs-nav not-home" : ""}`}>
-            <div className={`brand-wrap logo-content ${scrolled ? "scrolled" : ""}`}>
+            <div className={`brand-wrap logo-content `}>
               <div className="dashbord-logo">
                 <Link href="/" aria-label="Home" className="nav_logo">
                   <Image
