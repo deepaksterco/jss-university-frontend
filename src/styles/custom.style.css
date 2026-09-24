@@ -7282,6 +7282,7 @@ hr {
     grid-template-columns: repeat(1, 1fr);
     gap: 4rem;
   }
+  .jss-step-incubation .atm_g_cont{padding-bottom: 2rem;}
 }
 
 @media (max-width: 575px) {
@@ -7372,6 +7373,7 @@ hr {
   .peo-list{
   grid-template-columns: repeat(1,1fr);
 }
+.grid_card_design1_section .heading{margin-bottom:2.5rem;}
 }
 
 @media (max-width: 480px) {

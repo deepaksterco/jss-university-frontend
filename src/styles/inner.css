@@ -1170,12 +1170,8 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .grands_mainsec:after{content:"";background-color:#d9d9d9;width:73%;height:0.1rem;position:absolute;top:0;left:50%;transform:translateX(-50%);}
 .grands_mainsec .publi_title{max-width:100%;margin-left:auto;margin-right:0;}
 .grands_mainsec .publi_title h4{margin-bottom:4rem;}
-.grands_mainsec .publi_title > h5:empty {
-  display: none;
-}
-.academic-credits .abt_cntnt > h5:empty {
-  display: none;
-}
+.grands_mainsec .publi_title > h5:empty {display: none;}
+.academic-credits .abt_cntnt > h5:empty {display: none;}
 .academic-credits .about_one .abt_cntnt {padding-top: 10rem;}
 .academic-credits .about_one .abt_cntnt>h5:empty{display: none;}
 .grands_mainsec .publi_title p{padding-bottom:5.8rem;color:var(--color-44);margin-bottom:0;}
@@ -1334,14 +1330,9 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-why-jss01 ul{grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;padding-left:0;display:grid;}
 /* Responsive */
 @media (min-width:2550px){.pb_max_4rem{padding-bottom:4rem !important;}
-.eligi_tab_con .growth-item .program_tabs .courses{grid-template-columns:repeat(1,1fr);}
-}
-@media (min-width:1920px){.grands_content{padding-left:8.3rem;padding-right:5rem;}
-/* .department-master-of-computer-applications-about-us .estab_slide_item{min-height:25rem;}
-*/
-}
-@media (max-width:1024px){.grands_content{padding-left:5.3rem;padding-right:1rem;}
-}
+.eligi_tab_con .growth-item .program_tabs .courses{grid-template-columns:repeat(1,1fr);}}
+@media (min-width:1920px){.grands_content{padding-left:8.3rem;padding-right:5rem;}}
+@media (max-width:1024px){.grands_content{padding-left:5.3rem;padding-right:1rem;}}
 @media (max-width:991px){.inner-title{padding-top:10rem;}
 .department-master-of-computer-applications-about-us .grid_card_design1_section{padding-block:5rem;}
 .icge-about .icge-about07 h3{text-align:center;padding-bottom:0;}
@@ -1578,7 +1569,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .about_four.heritage .about_f_value{padding-top:8rem;}
 .about_one .about_top{padding-top:0;}
 .about_one .abt_cntnt{padding-top:0rem;}
-.about_one .estblish{max-width:100%;padding-block:4rem 0;}
+.about_one .estblish{max-width:100%;padding-block:4rem;}
 .recent-audit-observations .about_one .estblish{padding-block:0rem 0;}
 .placeBottom p{max-width:100%;margin-block:1.2rem 6rem;}
 .placement_highlights{padding-block:6rem 8rem;}
@@ -1693,6 +1684,10 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-why-jss .why-study-sec.icge-why-jss02 h5{font:var(--font-21);}
 .icge-why-jss .why-welcome.icge-why-jss03 h3{font:var(--font-21);}
 .icge-why-jss .why-welcome.icge-why-jss03 h5{margin-bottom:1rem;}
+.about_one .estblish{padding-block:2rem;}
+.grands_content p {
+    margin-bottom: 2rem;
+}
 }
 @media (max-width:480px){.leadership_dtls_one .top_img figure figcaption{display:none;}
 .placement_highLight{grid-template-columns:repeat(1,1fr);}
@@ -1994,7 +1989,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .research .grans_tab_mainsec{padding-block:4rem 6rem;}
 .examination-overview .grands_content{padding-inline:0;}
 .examination-overview .grands_maingrid{padding-block:4rem 0;}
-.examination-overview .grands_content p:last-child{margin-bottom:0;}
+/* .examination-overview .grands_content p:last-child{margin-bottom:0;} */
 .examination-overview .content_col{padding-inline:0;}
 .examination-overview .amenities_section .grid_group{gap:2rem;}
 .alumni .labs_group_section.about_two .about_two.reverse .early_rgt{padding-top:0;padding-inline:0 2rem;}
@@ -2124,7 +2119,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .research .grands_maingrid{grid-template-columns:repeat(1,1fr);}
 .research .grands_content{padding:3rem 0 0;}
 .grans_tab_mainsec{padding-block:7rem;}
-.atm_g_imgsec{padding-top:4rem;}
+.atm_g_imgsec{padding-top:2rem;}
 .academic-audit-process .atm_g_imgsec{padding-top:0;}
 .consultancy_main{padding-block:7rem;}
 .grands_imgsec figure img{width:100%;}
@@ -2550,10 +2545,11 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 @media(max-width:575px){.institutional-development-plan .amenities_section .grid_group{padding:3rem;}
 .faulty-box{gap:1rem 2rem;}
 .abou_t_sec{padding-top:0rem;}
+.about-jss-university .abou_t_sec{padding-top:2.5rem;}
 .abou_t_sec h2{padding-bottom:3.7rem;}
 .abou_t_sec .about_subtitle{margin-bottom:1.8rem;}
 .academic-facilities .academic_labmain .ab_jss_coutsec .ab_jss_c_col{max-width:100%;}
-.campus-facilities .ameminites_listmain .ameniti_item_col p{margin-bottom:2rem;}
+.campus-facilities .ameminites_listmain .ameniti_item_col p{margin-bottom:0;}
 .campus-facilities .uni_boa_grid{gap:2rem;}
 .internation-conference .conference_section .grid{grid-template-columns:repeat(1,1fr);}
 .internation-conference .single_card .content h5{min-height:auto;}
@@ -2585,6 +2581,14 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .icge-contact.about_subtitle{text-align:center;}
 .icge-contact .internation-about .abt_cntnt h3{font:var(--font-21);margin-bottom:1.5rem;font-weight:bold;}
 .icge-contact .about_one{padding-block:4rem 0;}
+.about_f_value .ab_f_content{padding-block:2.5rem 0;}
+.academic-facilities .academic_labmain .academic_grid{gap:2rem 0;}
+.academic_grid .ab_jss_coutsec{margin-block:2rem 0;}
+.sports_fac_slider .spo_fa_content{gap:2.5rem;}
+.lib_cen_main .ab_jss_coutsec{margin-top:2.5rem;}
+.campus-facilities .labs_group_section.about_two .about_two, .academic-facilities .labs_group_section.about_two .about_two {padding-bottom: 0rem;}
+.academic-facilities .atm_g_cont{padding-bottom: 2rem;}
+.placement_procedure {grid-template-columns: repeat(1, 1fr);}
 }
 @media(max-width:480px){.admission-sec .overview-duration .structure-btns{gap:1.5rem 0;}
 .admission-sec .overview-duration .overview-duration-text{margin-bottom:1.5rem;padding-bottom:1.5rem;}

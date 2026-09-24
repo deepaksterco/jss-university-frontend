@@ -506,6 +506,11 @@
   .sliderArrowRight {
     right: 0.5rem;
   }
+  .filterBox {
+  justify-content: center;
+  margin-top: 2rem;
+  position: relative;
+}
 }
 
 @media (max-width: 576px) {
@@ -525,6 +530,7 @@
   .mediaIframe {
     min-height: 250px;
   }
+  
 }
 
 @media (max-width: 768px) {
