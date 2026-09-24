@@ -665,7 +665,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 /* .grands_content .downlo_guides{position:relative;padding-top:7.1rem;}
 */
 .downlo_guides a{display:flex;align-items:center;gap:1rem;font:var(--font-18);font-weight:bold;color:var(--color-33);}
-.grands_mainsec{padding-block:9.5rem 9.3rem;}
+.grands_mainsec{padding-block:10rem 9.3rem;}
 .grans_tab_mainsec{padding-block:15rem 15rem;}
 .grand_tabs_main .growth-tabs{margin-bottom:5rem;text-align:center;}
 .grand_tab_panel{display:none;}
@@ -1169,9 +1169,18 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .grands_mainsec{position:relative;}
 .grands_mainsec:after{content:"";background-color:#d9d9d9;width:73%;height:0.1rem;position:absolute;top:0;left:50%;transform:translateX(-50%);}
 .grands_mainsec .publi_title{max-width:100%;margin-left:auto;margin-right:0;}
-.grands_mainsec .publi_title h4{margin-bottom:2.7rem;}
+.grands_mainsec .publi_title h4{margin-bottom:4rem;}
+.grands_mainsec .publi_title > h5:empty {
+  display: none;
+}
+.academic-credits .abt_cntnt > h5:empty {
+  display: none;
+}
+.academic-credits .about_one .abt_cntnt {padding-top: 10rem;}
+.academic-credits .about_one .abt_cntnt>h5:empty{display: none;}
 .grands_mainsec .publi_title p{padding-bottom:5.8rem;color:var(--color-44);margin-bottom:0;}
 .grands_maingrid{grid-template-columns:repeat(2,1fr);margin-left:auto;display:grid;padding-bottom:10rem;}
+.examination-overview .grands_maingrid{padding-bottom:6rem;}
 .grands_content p{color:var(--color-44);margin-bottom:3rem;}
 .grands_content{padding-left:8.3rem;padding-right:6rem;}
 .downlo_guides a{display:flex;align-items:center;gap:1rem;font:var(--font-18);font-weight:bold;color:var(--color-33);}

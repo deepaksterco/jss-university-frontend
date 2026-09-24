@@ -102,7 +102,7 @@
 .backdrop.show { opacity: 1; pointer-events: all; }
 .menu-overlay { position: fixed; inset: 0; z-index: 1200; pointer-events: none; }
 .menu-overlay.open { pointer-events: auto; }
-.hamburger-layout { position: absolute; top: 0; right: 0; height: 80rem; width: 0; display: flex; overflow: hidden; transition: width 450ms cubic-bezier(0.2, 0.9, 0.2, 1); }
+.hamburger-layout { position: absolute; top: 0; right: 0; height: auto; width: 0; display: flex; overflow: hidden; transition: width 450ms cubic-bezier(0.2, 0.9, 0.2, 1); }
 .menu-overlay.open .hamburger-layout { width: 100%; }
 .menu-left { width: 23%; background: var(--color-e8); color: #fff; padding-top: 10rem; }
 .menu-left-item { cursor: pointer; position: relative; display: block; font: var(--font-21); color: var(--color-white); font-weight: normal; transition: all 0.3s ease; }
