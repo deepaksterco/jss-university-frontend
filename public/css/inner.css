@@ -9965,7 +9965,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .research .grans_tab_mainsec {padding-block: 4rem 6rem;}
 .examination-overview .grands_content {padding-inline: 0;}
 .examination-overview .grands_maingrid {padding-block: 4rem 0;}
-.examination-overview .grands_content p:last-child{margin-bottom: 0;}
+/* .examination-overview .grands_content p:last-child{margin-bottom: 0;} */
 .examination-overview .content_col {padding-inline:0;}
 .examination-overview .amenities_section .grid_group {gap: 2rem;}
 .alumni .labs_group_section.about_two .about_two.reverse .early_rgt{padding-top: 0;padding-inline: 0 2rem;}

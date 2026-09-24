@@ -586,5 +586,7 @@
 .admistion_heading {
   display: block;
 }
-
+.departData {
+  margin-block: 2rem 0;
+}
 }

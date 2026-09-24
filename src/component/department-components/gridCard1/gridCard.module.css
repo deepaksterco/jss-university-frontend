@@ -14,3 +14,8 @@
 .borderTop {
     border-top: 1px solid #FFC100;
 }
+@media (max-width: 480px){
+.card {
+    padding: 2rem 0;
+}
+}

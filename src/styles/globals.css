@@ -1120,7 +1120,7 @@ font-family: var(--font-Condensed);
 .procedure_heading h2 {font: var(--font-26);font-family: var(--font-Roboto);font-weight: bold;color: #16344e;line-height: 1.7;}
 .placement .placement_proSec {padding-bottom: 0;}
 .placement .placement_procedure {padding-bottom: 6.2rem;margin-bottom: 7.2rem;border-bottom: 0.1rem solid var(--color-d6);}
-.placement .about_two .abou_t_sec {padding-top: 0;}
+.placement .about_two .abou_t_sec {padding-top: 4rem;}
 .placement_procedure {display: grid;grid-template-columns: repeat(3, 1fr);gap: 2.5rem;}
 .procedure_box {background-color: var(--color-white);padding: 4.2rem 4.8rem 4.8rem 4.2rem;border-bottom: solid 1px #ffc100;}
 .procedure_box h3 {font: var(--font-24);font-family: var(--font-Roboto);color: #16344e;line-height: 1.7;font-weight: bold;margin-bottom: 2.2rem;}
@@ -1211,7 +1211,11 @@ to {opacity: 1;transform: translateY(0);}}
 .faqItem .faqAnswer ul li {font: var(--font-14);margin-bottom: 1rem;}
 .tabs_accordion[open] .faqAnswer{max-height:unset;}
 @media (max-width: 575px) {
-.placement .high_box {padding: 2.5rem 2rem 1.8rem;}.placement .placeBottom p { text-align: left;}}
+.placement .high_box {padding: 2.5rem 2rem 0rem;}.placement .placeBottom p { text-align: left;}
+.placement .place_logos .early-grid {grid-template-columns: repeat(1, 1fr);}
+.placement .placement_procedure {grid-template-columns: repeat(1, 1fr);}
+.placement .placement_procedure {grid-template-columns: repeat(1, 1fr);}
+}
 @media (max-width: 420px) {.logo-content img {width: 8rem;height: auto;}
 .logo-content.scrolled img {width: 10rem;}
 .footer_section .footer_cnt {padding-inline: 0;}}
