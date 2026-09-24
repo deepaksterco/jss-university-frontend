@@ -1532,7 +1532,9 @@ background:unset;
 }
 
 .homeSlider .swiper-slide{height: auto;}
+.academic-credits .singleImageContent .row{align-items: center;}
 @media (max-width: 991px){
+.academic-credits .content_col {margin-bottom: 3rem;}
 .ieee .grands_maingrid {gap: 1.6rem;}
 .homeSlider .swiper-slide{height: 100%;}
 .societies_events_header {margin-bottom: 4.2rem;}
