@@ -1328,6 +1328,14 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-about07 .gallery-navigation button,.icge-about07 .placement-module__VSLvPW__testimonialIconContainer button{background:transparent;border:0;padding:0;}
 .icge-about07 .gallery-navigation img,.icge-about07 .placement-module__VSLvPW__testimonialIconContainer img{width:22px;height:22px;object-fit:contain;}
 .icge-why-jss01 ul{grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3rem;padding-left:0;display:grid;}
+
+.about-jss-university .placement_proSec{padding-bottom:0;}
+.about-jss-university .amenities_section{padding-bottom:0;}
+.about-jss-university .amenities_section .about_subtitle{text-align: left;}
+.about-jss-university .amenities_section .grid_group{background-color: var(--color-white); padding: 5rem; display:block;}
+.about-jss-university .amenities_section ul{padding:0;}
+.about-jss-university .amenities_section li:before{display:none;}
+
 /* Responsive */
 @media (min-width:2550px){.pb_max_4rem{padding-bottom:4rem !important;}
 .eligi_tab_con .growth-item .program_tabs .courses{grid-template-columns:repeat(1,1fr);}}
