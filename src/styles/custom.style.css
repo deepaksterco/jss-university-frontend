@@ -5055,10 +5055,15 @@ hr {
   background: #fff;
   padding: 10rem 0;
 }
-
-.table_section.bg-gray {
-  background: #f6f6f6;
+.table_section {
+    background: #fff;
+    padding: 10rem 0;
 }
+.research .table_section {
+  background: transparent;
+  padding: 0;
+}
+.research .amenities_section{padding-top: 0;}
 
 .table_section .heading {
   font: var(--font-26);
@@ -8770,4 +8775,48 @@ hr {
 }
 .about-jss-university .grid_card_design1_section {padding-bottom: 0;}
 
+
+.research-achievements .table_section{background: transparent;padding-block: 4rem;}
+.research-achievements .top_section {margin: 0;}
+.research-achievements .amenities_section {
+    padding: 4rem 0;
+}
+
+.research-achievements .pdf_list_section {
+    padding: 4rem 0;
+}
+.research-governance .pdf_list_section {
+    padding: 2rem 0;
+}
+
+.ip-management-cell .about_one .estblish {
+    padding-block: 4rem 0rem;
+}
+.research-governance .table_section {
+    padding-block: 8rem 2rem;
+}
+.research-governance .amenities_section {
+    padding-block: 6rem;
+}
+.phd-scholars-and-guides-list .pdf_list_section {
+    padding: 2rem 0;
+}
+.ip-management-cell .pdf_list_section {
+    padding: 6rem 0;
+}
+.ip-management-cell .about_one .abt_cntnt p {
+    padding-bottom: 2rem;
+}
+
+@media(max-width: 767px){
+.research-achievements .amenities_section, .research-achievements .pdf_list_section {
+    padding: 2rem 0;
+}
+.research-achievements .table_section {
+    padding-block: 2rem;
+}
+.ip-management-cell .about_one .estblish {
+    padding-block: 0rem 0;
+}
+}
 

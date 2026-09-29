@@ -2829,7 +2829,7 @@ ul.comon_list li:before {
   height: 100%;
   display: grid;
   background-color: var(--color-9a);
-  border-radius: 61rem 0 0 0.8rem;
+  border-radius: 10rem 0 0 0.8rem;
 }
 
 .add_of_context {

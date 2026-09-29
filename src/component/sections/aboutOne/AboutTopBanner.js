@@ -229,7 +229,10 @@ export default function AboutTopBanner({ section, extraClass }) {
                       data-aos-delay="300"
                       data-aos-duration="900"
                     >
-                      <p id="mentoring-scheme">{item.description}</p>
+                      <p
+                        id="mentoring-scheme"
+                        dangerouslySetInnerHTML={{ __html: item.description }}
+                      ></p>
                     </div>
                   )}
                 </div>
