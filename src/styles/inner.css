@@ -279,10 +279,10 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .awards-and-rankings .about_one .estblish{padding:0;}
 .committees .tab_table_multiple_section .pdf_list_section{padding:0;}
 .patent_boxgrid .patent_box h6{font:var(--font-24);font-family:var(--font-Roboto);color:#333;font-weight:300;line-height:1.3;}
-.central-instrumentation-facilities .about_f_value{padding:0;grid-template-columns:1fr 1fr;gap:3rem;}
-.central-instrumentation-facilities .about_f_value .read_more_btn{display:inline-block;margin-top:2rem;}
-.central-instrumentation-facilities .about_four{padding-bottom:0;}
-.central-instrumentation-facilities .about_one .estblish{padding-bottom:0;}
+.research-facilities .about_f_value{padding:0;grid-template-columns:1fr 1fr;gap:3rem;}
+.research-facilities .about_f_value .read_more_btn{display:inline-block;margin-top:2rem;}
+.research-facilities .about_four{padding-bottom:0;}
+.research-facilities .about_one .estblish{padding-bottom:0;}
 .publications .table_section{padding:0;background:transparent;}
 .publications .pdf_list_section{padding-top:5rem;}
 .publications .table_section .table-lab tbody td:first-child{width:28rem;}
@@ -513,7 +513,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .sch_seb_grid .sch_b_gcol p{margin-bottom:0;color:var(--color-44);}
 .sch_seb_grid .sch_b_gcol::before{content:"";position:absolute;left:0;width:90%;height:0.1rem;background-color:var(--color-100);bottom:0;}
 .schol_tigsec img{border-radius:6rem 0.8rem 0.8rem 0.8rem;}
-.ad_offc_contact{grid-template-columns:repeat(2,1fr);align-items:center;height:100%;display:grid;background-color:var(--color-9a);border-radius:61rem 0 0 0.8rem;}
+
 .add_of_context{background-color:var(--color-9a);height:100%;max-height:26.7rem;padding:4.3rem 14.2rem 4.7rem 11.8rem;}
 .add_of_context h5{color:var(--color-white);font:var(--font-26);margin-bottom:2.9rem;}
 .add_of_context ul{list-style:none;padding:0;}
@@ -791,6 +791,8 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .ameniti_item_col:hover p{color:var(--color-4e);font-weight:500;}
 /* .ameniti_item_col p{padding-top:2rem;color:var(--color-44);}
 */
+
+.research .amenities_gridmain {grid-template-columns: repeat(4, 1fr);gap: 4rem 2rem;display: grid;}
 .ameniti_item_col figure img{border-radius:0.8rem;}
 .page_link{position:absolute;left:0;top:0;width:100%;height:100%;}
 .load_m_btnsec{text-align:center;padding-block:7rem 7rem;position:relative;}
@@ -1783,7 +1785,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .institutional-development-plan .vision_mission_section .mission-card ul li{padding-left:2.2rem;}
 .institutional-development-plan .vision_mission_section .mission-card ul li:before{content:"";width:.7rem;height:.7rem;margin-top:0.7rem;}
 .internation-conference .single_card .content h5{min-height:5rem;}
-.central-instrumentation-facilities .about_f_value .read_more_btn:hover{background-color:var(--color-4e);color:#ffffff;}
+.research-facilities .about_f_value .read_more_btn:hover{background-color:var(--color-4e);color:#ffffff;}
 .fee_strcu_table .fee_table thead th{background-color:var(--color-9a);}
 .table_section thead tr{background-color:var(--color-9a);}
 .team-iqac .iqac_master .table_section{padding:0;}
@@ -2279,10 +2281,13 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .icge-about06.why-study-sec.partner{padding:7rem 0;}
 .icge-about07.about-testimonial{padding:7rem 0;}
 .icge-about04.highlights-sec ul{grid-template-columns:repeat(2,1fr);}
+.ad_offc_contact {
+    border-radius: 9rem 0 0 .8rem;
+}
 }
 @media(max-width:767px){.add_of_context h5{font:var(--font-20);margin-bottom:1.5rem;}
 .about_one .estblish{max-width:100%;}
-.careers .add_of_context{max-height:30rem;}
+.careers .add_of_context{max-height:27rem;}
 .about_two .early-slide{grid-template-columns:repeat(1,1fr);}
 .about_two .early-slide .early_rgt{padding-left:0;}
 .placement_stats.column-3{grid-template-columns:repeat(1,1fr);}
@@ -2483,7 +2488,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .internation-conference .conference_section .grid{grid-template-columns:repeat(2,1fr);}
 .main-container.placement .iqac_master{padding-bottom:6rem;}
 .patents .pate_boxmain .patent_boxgrid{grid-template-columns:repeat(2,1fr);}
-.central-instrumentation-facilities .image_content_repeat_section .imageContent-module__R4BLKG__bottomDesc{margin:4rem 0 0 0;}
+.research-facilities .image_content_repeat_section .imageContent-module__R4BLKG__bottomDesc{margin:4rem 0 0 0;}
 .admission .eligibilty_main .eligib_grid_ad{padding:0;}
 .admission .admins_of_con .ad_offc_contact .add_of_context{max-height:100%;}
 .academic-credits .image_content_repeat_section .singleImageContent .row{gap:2rem;}
@@ -3432,4 +3437,59 @@ h5.icge-heading.gallery-module  {
 }
 @media (max-width: 767px) {
 .about_four {padding-bottom: 3rem;}
+}
+
+
+
+
+.research .about_one .estblish{padding-bottom: 0;}
+.research .ameminites_listmain {
+    padding-block: 0rem 8rem;
+    border-bottom: solid 1px #ddd;
+}
+.research .ameminites_listmain .bottom_dec{padding: 0;margin: 0;}
+.research .amenities_section {padding-block: 8rem 0;}
+.research  .grans_tab_mainsec {
+    padding-block: 6rem 10rem;
+}
+
+
+
+@media(max-width: 1100px) {
+.research .amenities_gridmain {
+    grid-template-columns: repeat(2, 1fr);
+}
+.research .top_section {
+    margin-top: 7rem;
+}
+.research .resea_facili_main {
+    padding-block: 2.6rem 0;
+}
+}
+
+@media(max-width: 767px){
+.research .ameminites_listmain {
+    padding-block: 0 4rem;
+}
+.research .amenities_section {
+    padding-block: 4rem 0;
+}
+    .research .labs_group_section.about_two .about_two {
+        padding-bottom: 4rem;
+    }
+
+      
+}
+
+@media(max-width: 575px){
+  .research .amenities_gridmain {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+        .research .amenities_section {
+        padding-block: 3rem 0;
+    }
+        .research .ameminites_listmain {
+        padding-block: 0 2rem;
+    }
 }

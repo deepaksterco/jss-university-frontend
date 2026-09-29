@@ -67,7 +67,7 @@
 @media (max-width: 767px) {
   .happeningsContainer {
     padding-top: 3rem;
-    background: linear-gradient(to bottom, var(--color-f5) 0%, var(--color-f5) 13%, var(--color-f6) 0%, var(--color-f6) 100%);
+    background: linear-gradient(to bottom, var(--color-f5) 0%, var(--color-f5) 17%, var(--color-f6) 0%, var(--color-f6) 100%);
 
   }
 
