@@ -99,6 +99,7 @@
 
 .iconSpacing {
   margin-left: 3.3rem;
+  filter: brightness(0.1);
 }
 .department .iconSpacing{
   filter:invert(1)
@@ -410,7 +411,7 @@
 
   .iconSpacing {
     color: #000;
-    filter: brightness(0.1);
+    filter: brightness(0.1) invert(1);
   }
   .bannerContentP {
     color: var(--color-black);

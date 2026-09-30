@@ -1587,7 +1587,9 @@
 .labs_group_section.about_two .about_two.reverse .early-slide {
   grid-template-columns: 50% 50%;
 }
-
+.academic-facilities .labs_group_section.about_two .about_two.reverse .early-slide {
+  align-items: center;
+}
 .department-facilities .placement_page .section_title {
   font: var(--font-21);
   line-height: 3rem;

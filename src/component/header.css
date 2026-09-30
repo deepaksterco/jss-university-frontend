@@ -59,12 +59,12 @@
 .admission-btn:hover { background: #e6b000; }
 .admission-dropdown { z-index: 1200; background: #fff; display: flex; position: absolute; top: 14rem; box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); left:0; width:100%; right:0; }
 .header-scrolled .admission-dropdown { top: 12rem; }
-.dropdown-arrow { border-bottom: 18px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; width: 0; height: 0; position: absolute; top: -18px; right: 7%; }
+.dropdown-arrow { border-bottom: 18px solid #fff; border-left: 10px solid transparent; border-right: 10px solid transparent; width: 0; height: 0; position: absolute; top: -18px; right: 11%; }
 .ad-left { width: 100%; background: var(--color-e8); color: #fff; padding: 9rem 9.2rem 8rem 8rem; }
 .ad-right { width: 100%; }
 .ad-subtitle { font: var(--font-16); font-family: var(--font-Condensed); color: var(--color-white); margin-bottom: 1rem; }
 .ad-title { font: var(--font-48); font-family: var(--font-Condensed); color: var(--color-white); letter-spacing: -2.3px; font-weight: 700; line-height: 1; }
-.ad-desc { font: var(--font-16); color: var(--color-white); font-weight: 300; margin-top: 1rem; padding-right: 2rem; padding-bottom: 6rem; position: relative; }
+.ad-desc { font: var(--font-16); color: var(--color-white); font-weight: 300; margin-top: 1rem; padding-right: 2rem; padding-bottom: 6rem; position: relative;margin-bottom: 0; }
 .ad-desc::before { content: ""; position: absolute; background-color: #fff; bottom: 0; left: 0; width: 50rem; height: 0.1rem; opacity: 0.3; }
 .ad-contact { padding-top: 6rem; }
 .ad-contact span { font: var(--font-16); color: var(--color-white); font-family: var(--font-Condensed); margin-bottom: 0.8rem; display: block; }
@@ -84,14 +84,15 @@
 .ad-left .ad-ctas .cta.applynow.secondary { border: 1px solid #fff; color: #fff; font: var(--font-18); font-family: var(--font-Condensed); font-weight: 600; letter-spacing: 0.72px; padding: 8px 14px; transition: opacity .3s; }
 .applynow.primary { background: #ffc100; font: var(--font-18); font-family: var(--font-Condensed); }
 .applynow.primary:hover { color: #fff !important; }
-.ad-middle { width: 100%; padding: 9rem 9.2rem 8rem 8rem; border-right: 1px solid #eee; }
+.ad-middle { width: 100%; padding: 9rem 9.2rem 8rem 6.8rem; border-right: 1px solid #eee; }
 .ad-middle ul { list-style: none; padding: 0; margin: 0; }
 /* .admission-dropdown .ad-link img { width }
 */
 .ad-link { font: var(--font-21); color: var(--color-4e); padding-block: 1rem; border-bottom: 1px dashed #16344e33; display: block; position: relative; cursor: pointer; }
+.ad-link:last-child{border: none;}
 .ad-link:hover { color: var(--color-e8); text-decoration: none; }
 .ad-stats { margin-top: 5.8rem; }
-.ad-stats h3 { font: var(--font-36); font-family: var(--font-Condensed); color: var(--color-4e); letter-spacing: -1.01px; padding-right: 8rem; }
+.ad-stats h3 { font: var(--font-36); font-family: var(--font-Condensed); color: var(--color-4e); letter-spacing: -1.01px; padding-right: 6rem; }
 .ad-stats p { font: var(--font-16); font-family: var(--font-Condensed); color: var(--color-4e); text-transform: uppercase; margin-block: 1.4rem 1.8rem; }
 .stats-btn { background: #fff; border: 1px solid rgba(22, 52, 78, 0.4); font: var(--font-18); font-family: var(--font-Condensed); font-weight: 700; letter-spacing: 0.72px; padding: 1rem 1.5rem; cursor: pointer; font-weight: 600; transition: all 0.3s ease; color: #16344e; }
 .stats-btn:hover { background: #16344e; color: #fff; }
