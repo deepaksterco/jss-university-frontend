@@ -463,6 +463,77 @@
 
 
 
+  function adjustMaxContent() {
+    const container = document.querySelector(".container");
+    if (!container) return;
+
+    let containerWidth = container.clientWidth;
+    let windowWidth = document.body.clientWidth;
+
+    if (windowWidth > 4000) windowWidth = 4000;
+
+    let maxContentWidth = windowWidth - (windowWidth - containerWidth) / 2 + 16;
+
+    const setMax = (selector, value) => {
+      document.querySelectorAll(selector).forEach((el) => {
+        el.style.maxWidth = value;
+      });
+    };
+
+    const resetMax = (selector) => {
+      document.querySelectorAll(selector).forEach((el) => {
+        el.style.maxWidth = "";
+      });
+    };
+
+    if (windowWidth >= 1920) {
+      setMax(
+        ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md, .max-content-sm, .max-content",
+        maxContentWidth + "px",
+      );
+
+      if (windowWidth >= 2200) setMax(".max-content-lg", "2018px");
+      if (windowWidth >= 2540) setMax(".max-content-lg", "2180px");
+    } else if (windowWidth >= 1400) {
+      setMax(
+        ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md, .max-content-sm, .max-content",
+        maxContentWidth + "px",
+      );
+    } else if (windowWidth >= 1200) {
+      resetMax(".max-content-xxl");
+      setMax(
+        ".max-content-xl, .max-content-lg, .max-content-md, .max-content-sm, .max-content",
+        maxContentWidth + "px",
+      );
+    } else if (windowWidth >= 992) {
+      resetMax(".max-content-xxl, .max-content-xl");
+      setMax(
+        ".max-content-lg, .max-content-md, .max-content-sm, .max-content",
+        maxContentWidth + "px",
+      );
+    } else if (windowWidth >= 768) {
+      resetMax(".max-content-xxl, .max-content-xl, .max-content-lg");
+      setMax(
+        ".max-content-md, .max-content-sm, .max-content",
+        maxContentWidth + "px",
+      );
+    } else if (windowWidth >= 575) {
+      resetMax(
+        ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md",
+      );
+      setMax(".max-content-sm, .max-content", maxContentWidth + "px");
+    } else {
+      document
+        .querySelectorAll(
+          ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md, .max-content-sm",
+        )
+        .forEach((el) => (el.style.width = ""));
+
+      document.querySelectorAll(".max-content").forEach((el) => {
+        el.style.width = maxContentWidth + "px";
+      });
+    }
+  }
 
 
 
