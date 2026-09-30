@@ -1254,7 +1254,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .icge-about04.highlights-sec h5{padding-bottom:2rem;font:var(--font-26);color:var(--color-4e);text-transform:uppercase;}
 .icge-about04.highlights-sec ul{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;padding-left:0;margin-top:3rem;}
 .icge-about04.highlights-sec ul li{list-style:none;padding:3rem;background-color:var(--color-white);text-align:center;}
-.icge-about04.highlights-sec ul li h4{font:var(--font-18);margin-bottom:3rem;font-weight: 500;}
+.icge-about04.highlights-sec ul li h4{font:var(--font-18);margin-bottom:3rem;font-weight: 700;}
 .icge-about04.highlights-sec ul li p{line-height:2.4rem;margin-bottom:1rem;}
 .icge-about04.highlights-sec ul li .highlight-icon{background:var(--color-9a);display:inline-block;margin-bottom:3rem;border-radius:60px;width:70px;height:70px;}
 .icge-about04.highlights-sec ul li .highlight-icon img{margin-top:1rem;}
@@ -2016,6 +2016,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .research .grands_content{padding-inline:0;padding-top:4rem;}
 .research .grans_tab_mainsec{padding-block:4rem 6rem;}
 .examination-overview .grands_content{padding-inline:0;}
+.examination-overview .grands_content {margin-bottom: 2rem;}
 .examination-overview .grands_maingrid{padding-block:4rem 0;}
 /* .examination-overview .grands_content p:last-child{margin-bottom:0;} */
 .examination-overview .content_col{padding-inline:0;}
@@ -2576,6 +2577,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .icge-contact .internation-about.jss-contact .abt_cntnt > i{font:var(--font-16);}
 .ab_fost_grid{padding-block: 0;}
 .empo_rgt_imgsec>figure>img{width: 100%;height: auto;}
+.examination-overview .publi_title h4{font-size: 2rem;line-height: 1.4;}
 }
 @media(max-width:575px){.institutional-development-plan .amenities_section .grid_group{padding:3rem;}
 .faulty-box{gap:1rem 2rem;}
@@ -2625,9 +2627,11 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .academic-facilities .atm_g_cont{padding-bottom: 2rem;}
 .placement_procedure {grid-template-columns: repeat(1, 1fr);}
 .ad_selec_grid{grid-template-columns:repeat(1,1fr);}
-.eligib_grid_ad .eligib_cont {
-        padding-block: 1rem 0;
-    }
+.eligib_grid_ad .eligib_cont {padding-block: 1rem 0;}
+.examination-overview .image_content_repeat_section {padding: 2rem 0;}
+.pdf_list_section .mainTitle{font-size: 2rem;}
+.careers .add_of_context {max-height: 30rem;}
+.pdf_list_section .mainTitle{font-size: 2rem;}
 }
 @media(max-width:480px){.admission-sec .overview-duration .structure-btns{gap:1.5rem 0;}
 .admission-sec .overview-duration .overview-duration-text{margin-bottom:1.5rem;padding-bottom:1.5rem;}
