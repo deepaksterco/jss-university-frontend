@@ -251,7 +251,7 @@ export default function HeaderOverlays({
       )}
 
       {/* ---------- Admission dropdown ---------- */}
-      {admissionOpen && (
+      {/* {admissionOpen && (
         <div className="admission-dropdown" ref={admissionRef}>
           <span className="dropdown-arrow"></span>
           {!admissionsData ? (
@@ -331,7 +331,7 @@ export default function HeaderOverlays({
             </>
           )}
         </div>
-      )}
+      )} */}
 
       {/* ---------- Search popup ---------- */}
       {globleSearch && (

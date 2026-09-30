@@ -397,65 +397,83 @@
   window.addEventListener("scroll", wipeOn, { passive: true });
   window.addEventListener("resize", wipeOn);
 
-  function adjustMaxContent() {
-    let windowWidth = window.innerWidth;
-    if (windowWidth > 4000) windowWidth = 4000;
 
-    qsa(
-      ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md, .max-content-sm, .max-content",
-    ).forEach(function (el) {
-      const container = el.closest(".container");
-      if (!container) return;
 
-      const containerWidth = container.clientWidth;
-      const maxContentWidth =
-        windowWidth - (windowWidth - containerWidth) / 2 + 16;
 
-      if (windowWidth >= 1920) {
-        el.style.maxWidth = maxContentWidth + "px";
-        if (el.classList.contains("max-content-lg")) {
-          if (windowWidth >= 2540) {
-            el.style.maxWidth = "2180px";
-          } else if (windowWidth >= 2200) {
-            el.style.maxWidth = "2018px";
-          } else {
-            el.style.maxWidth = "1700px";
-          }
-        }
-      } else if (windowWidth >= 1400) {
-        el.style.maxWidth = maxContentWidth + "px";
-      } else if (windowWidth >= 1200) {
-        el.style.maxWidth = el.classList.contains("max-content-xxl")
-          ? ""
-          : maxContentWidth + "px";
-      } else if (windowWidth >= 992) {
-        el.style.maxWidth =
-          !el.classList.contains("max-content-xxl") &&
-          !el.classList.contains("max-content-xl")
-            ? maxContentWidth + "px"
-            : "";
-      } else if (windowWidth >= 768) {
-        el.style.maxWidth =
-          !el.classList.contains("max-content-xxl") &&
-          !el.classList.contains("max-content-xl") &&
-          !el.classList.contains("max-content-lg")
-            ? maxContentWidth + "px"
-            : "";
-      } else if (windowWidth >= 575) {
-        el.style.maxWidth =
-          el.classList.contains("max-content-sm") ||
-          el.classList.contains("max-content")
-            ? maxContentWidth + "px"
-            : "";
-      } else {
-        el.style.maxWidth = "";
-        el.style.width = el.classList.contains("max-content")
-          ? maxContentWidth + "px"
-          : "";
-      }
-    });
-  }
 
+
+  // function adjustMaxContent() {
+  //   let windowWidth = window.innerWidth;
+  //   if (windowWidth > 4000) windowWidth = 4000;
+
+  //   qsa(
+  //     ".max-content-xxl, .max-content-xl, .max-content-lg, .max-content-md, .max-content-sm, .max-content",
+  //   ).forEach(function (el) {
+  //     const container = el.closest(".container");
+  //     if (!container) return;
+
+  //     const containerWidth = container.clientWidth;
+  //     const maxContentWidth =
+  //       windowWidth - (windowWidth - containerWidth) / 2 + 16;
+
+  //     if (windowWidth >= 1920) {
+  //       el.style.maxWidth = maxContentWidth + "px";
+  //       if (el.classList.contains("max-content-lg")) {
+  //         if (windowWidth >= 2540) {
+  //           el.style.maxWidth = "2180px";
+  //         } else if (windowWidth >= 2200) {
+  //           el.style.maxWidth = "2018px";
+  //         } else {
+  //           el.style.maxWidth = "1700px";
+  //         }
+  //       }
+  //     } else if (windowWidth >= 1400) {
+  //       el.style.maxWidth = maxContentWidth + "px";
+  //     } else if (windowWidth >= 1200) {
+  //       el.style.maxWidth = el.classList.contains("max-content-xxl")
+  //         ? ""
+  //         : maxContentWidth + "px";
+  //     } else if (windowWidth >= 992) {
+  //       el.style.maxWidth =
+  //         !el.classList.contains("max-content-xxl") &&
+  //         !el.classList.contains("max-content-xl")
+  //           ? maxContentWidth + "px"
+  //           : "";
+  //     } else if (windowWidth >= 768) {
+  //       el.style.maxWidth =
+  //         !el.classList.contains("max-content-xxl") &&
+  //         !el.classList.contains("max-content-xl") &&
+  //         !el.classList.contains("max-content-lg")
+  //           ? maxContentWidth + "px"
+  //           : "";
+  //     } else if (windowWidth >= 575) {
+  //       el.style.maxWidth =
+  //         el.classList.contains("max-content-sm") ||
+  //         el.classList.contains("max-content")
+  //           ? maxContentWidth + "px"
+  //           : "";
+  //     } else {
+  //       el.style.maxWidth = "";
+  //       el.style.width = el.classList.contains("max-content")
+  //         ? maxContentWidth + "px"
+  //         : "";
+  //     }
+  //   });
+  // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
   function alignEdgeElements() {
     const windowWidth = window.innerWidth;
     if (windowWidth < 768 || windowWidth > 4000) return;

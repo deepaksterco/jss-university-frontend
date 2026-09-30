@@ -551,7 +551,91 @@ export default function HeaderClient({ initialNavLinks = [] }) {
                 </button>
               </div>
             </div>
+
+            {admissionOpen && (
+            <div className="admission-dropdown" ref={admissionRef}>
+              <span className="dropdown-arrow"></span>
+              {!admissionsData ? (
+                <div className="admission-loading-placeholder" style={{ minHeight: "300px" }} />
+              ) : (
+                <>
+                  <div className="ad-left">
+                    <p className="ad-subtitle">{admissionsData.left.subtitle}</p>
+                    <h2 className="ad-title">{admissionsData.left.title}</h2>
+                    <p className="ad-desc">{admissionsData.left.desc}</p>
+                    <div className="ad-contact">
+                      <span> {admissionsData.left.querytext} </span>
+                      <p>
+                        <a className="CTA_Email" href={`mailto:${admissionsData.left.email}`}>
+                          <img src="/images/header/mailicon.svg" className="" alt="Email" />
+                          {admissionsData.left.email}
+                        </a>
+                      </p>
+                      <p>
+                        <a className="CTA_Number" href={`tel:${admissionsData.left.phone}`}>
+                          <img src="/images/header/phoneicon.svg" className="" alt="Phone" />
+                          {admissionsData.left.phone}
+                        </a>
+                      </p>
+                    </div>
+                    <div className="ad-ctas">
+                      {admissionsData.left.ctas.map((cta, idx) => (
+                        <a
+                          key={idx}
+                          target="_blank"
+                          href={`${cta.url || APPLY_NOW}`}
+                          className={`cta applynow ${cta.type} ${cta.text == "APPLY NOW" ? "CTA_Applynow" : "CTA_Brochure"}`}
+                        >
+                          {cta.text}
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="ad-middle">
+                    <ul>
+                      {admissionsData.middle.links.map((link, idx) => (
+                        <li key={idx} className="ad-link">
+                          <Link
+                            href={`${link?.target == "_blank" ? link.url : WEB_URL + link.url}`}
+                            style={{ color: "inherit" }}
+                            onClick={() => setAdmissionOpen(false)}
+                            target={link?.target}
+                            aria-label={`View ${link.title}`}
+                          >
+                            {link.title}
+                            <img src="/images/header/listicon.svg" className="" alt="Arrow" />
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                    <div className="ad-stats">
+                      <h3>{admissionsData.middle.stats.text}</h3>
+                      <p>{admissionsData.middle.stats.subtext}</p>
+                      <Link href={WEB_URL + admissionsData.middle.stats.btnText.url} style={{ color: "inherit" }}>
+                        <button className="stats-btn">{admissionsData.middle.stats.btnText.text}</button>
+                      </Link>
+                    </div>
+                  </div>
+
+                  {admissionsData.right && (
+                    <div className="ad-right">
+                      <Image
+                        src={admissionsData.right.img}
+                        alt={admissionsData.right.alt}
+                        width={400}
+                        height={400}
+                        className="addmision-section-img"
+                      />
+                    </div>
+                  )}
+                </>
+              )}
+            </div>
+          )}
           </div>
+
+          
         </div>
       </div>
 
