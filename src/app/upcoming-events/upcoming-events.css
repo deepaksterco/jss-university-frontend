@@ -4,9 +4,15 @@
 
 
 /* start responsive*/
+@media (max-width: 1024px) {
+    .upcomiRow { grid-template-columns: repeat(2, 1fr); gap: 4rem; align-items: center;}
+
+
+}
 
 @media (max-width: 991px) {
-    .upcomiRow { grid-template-columns: repeat(1, 1fr); }
+    .upcomiRow { grid-template-columns: repeat(1, 1fr); gap: 0; align-items: center;}
     .upcomiRow .eventtop { margin-top: 0rem; }
     .upcom-evenContent { margin-bottom:0 }
+
 }
