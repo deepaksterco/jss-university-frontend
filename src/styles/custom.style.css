@@ -7907,7 +7907,7 @@ hr {
   text-transform: capitalize;
   margin-block: 0rem 3rem;
 }
-
+.dsir .pdf_list_section .mainTitle{text-align: center;font-size: 2rem;margin-bottom: 6rem;}
 @media screen and (max-width: 480px) {
   .inner-title .innnr_head h1 {
     margin-bottom: 0rem;
