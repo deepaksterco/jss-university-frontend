@@ -6574,6 +6574,7 @@ hr {
   .opportunitie-tab {
     margin-block: 3rem;
   }
+ 
 }
 
 @media screen and (max-width: 1280px) {
@@ -6642,6 +6643,10 @@ hr {
   .vision_mission_section .vision {
     padding-right: 6rem;
   }
+   .green-initiative .labs_group_section {padding-block: 6rem 0;}
+  .green-initiative .labs_group_section.about_two .about_two {padding-bottom: 4rem;}
+  .about_f_value .ab_f_content {padding-left: 6.8rem;padding-right: 3rem;}
+  .labs_group_section.about_two .about_two.reverse .early_rgt {padding-left: 0;padding-right: 5rem;}
 }
 
 @media screen and (max-width: 1024px) {
@@ -6735,6 +6740,9 @@ hr {
   .popup-modal {
     max-width: 80rem;
   }
+  .green-initiative .labs_group_section {
+        padding-block: 4rem 0;
+    }
 }
 
 @media (max-width: 991px) {
@@ -6744,7 +6752,6 @@ hr {
     margin-bottom: 2rem;
     padding-inline: 2rem;
   }
-
   .overview-text {
     padding-inline: 0;
   }
@@ -6756,8 +6763,16 @@ hr {
   .core-pdf:after {
     content: none;
   }
-  
-
+  .green-initiative .labs_group_section {
+        padding-block: 4rem 0;
+    }
+    .green-initiative .about_two.labs_group_section .early-slide .early_rgt h4{font-size: 2.5rem;letter-spacing: -1;margin-bottom: 2rem;}
+    .green-initiative .about_two{padding-bottom: 0;}
+.green-initiative .labs_group_section.about_two .about_two{padding-bottom: 0;}
+.green-initiative .about_f_value .ab_f_content h3{font-size: 2.5rem;letter-spacing: -1;padding-bottom: 2rem;}
+.green-initiative .about_f_value .ab_f_content{padding-top: 2rem;}
+.green-initiative .about_four{padding-bottom: 0;}
+.green-initiative .about_two.labs_group_section:last-child .early-slide{padding-bottom: 6rem;}
 }
 
 @media (max-width: 799px) {
@@ -7381,6 +7396,10 @@ hr {
   grid-template-columns: repeat(1,1fr);
 }
 .grid_card_design1_section .heading{margin-bottom:2.5rem;}
+.green-initiative .about_f_value {
+    padding-top: 2rem;
+}
+.green-initiative .labs_group_section.about_two .about_two.reverse .early_rgt{padding-bottom: 0;}
 }
 
 @media (max-width: 480px) {
@@ -7600,6 +7619,8 @@ hr {
     display: block;
     margin-top: 0.5rem;
   }
+  .green-initiative .about_two.labs_group_section .early-slide .early_rgt h4 {letter-spacing: -1px;margin-bottom: 1.5rem;font-size: 2rem;}
+  .green-initiative .about_f_value .ab_f_content h3{letter-spacing: -1px;font-size: 2rem;}
 }
 
 @media screen and (max-width: 767px) {
@@ -8701,114 +8722,32 @@ hr {
   }
 }
 
-
-.headerBottomBanner {
-  width: 100%;
-  /* background: #f5f5f5; */
-  border-bottom: 1px solid #ddd;
-  font-family: Arial, sans-serif;
-  margin-top: 2rem;
-  box-shadow: 0 2px 8px #0000000d;
+.research .top_section {
+    margin-top: 10rem;
 }
-
-.headerBottomBanner__container {
-  flex-wrap: wrap;
-  /* justify-content: space-between; */
-  align-items: center;
-  padding: 15px 19px;
-  display: flex;
-  gap: 5rem;
-}
-
-.headerBottomBanner__left {
-  font: var(--font-21);
-  font-weight: 600;
-  color: #b08f29;
-  border-right: 1px solid #cdcdcd;
-  padding-right: 3rem;
-}
-
-.headerBottomBanner__menu {
-  display: flex;
-  align-items: center;
-  gap: 28px;
-  flex-wrap: wrap;
-  font-size: 14px;
-  color: #555;
-}
-
-.headerBottomBanner__menu a {
-  font: var(--font-18);
-  color: #15354e;
-  font-weight: 500;
-}
-
-.headerBottomBanner__menu a:hover {
-  color: #b08f29;
-}
-
-.headerBottomBanner__menu .dot {
-  width: 5px;
-  height: 5px;
-  background: #c4a000;
-  border-radius: 50%;
-}
-
-.headerBottomBanner__actions {
-  margin-left: auto;
-}
-
-.headerBottomBanner__actions a {
-  background-color: var(--color-100);
-  text-transform: uppercase;
-  color: var(--color-4e);
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-.headerBottomBanner__actions .apply-btn1:hover {
-  background-color: var(--color-4e);
-  color: var(--color-white);
-}
-.schools-humanities-facilities .early_rgt p:first-of-type{
-    font: var(--font-24);
-    font-weight: 300;
-    line-height: 1.4;
-}
+.headerBottomBanner {width: 100%;/* background: #f5f5f5; */border-bottom: 1px solid #ddd;font-family: Arial, sans-serif;margin-top: 2rem;box-shadow: 0 2px 8px #0000000d;}
+.headerBottomBanner__container {flex-wrap: wrap;/* justify-content: space-between; */align-items: center;padding: 15px 19px;display: flex;gap: 5rem;}
+.headerBottomBanner__left {font: var(--font-21);font-weight: 600;color: #b08f29;border-right: 1px solid #cdcdcd;padding-right: 3rem;}
+.headerBottomBanner__menu {display: flex;align-items: center;gap: 28px;flex-wrap: wrap;font-size: 14px;color: #555;}
+.headerBottomBanner__menu a {font: var(--font-18);color: #15354e;font-weight: 500;}
+.headerBottomBanner__menu a:hover {color: #b08f29;}
+.headerBottomBanner__menu .dot {width: 5px;height: 5px;background: #c4a000;border-radius: 50%;}
+.headerBottomBanner__actions {margin-left: auto;}
+.headerBottomBanner__actions a {background-color: var(--color-100);text-transform: uppercase;color: var(--color-4e);font-weight: bold;line-height: 1.5;}
+.headerBottomBanner__actions .apply-btn1:hover {background-color: var(--color-4e);color: var(--color-white);}
+.schools-humanities-facilities .early_rgt p:first-of-type{font: var(--font-24);font-weight: 300;line-height: 1.4;}
 .about-jss-university .grid_card_design1_section {padding-bottom: 0;}
-
-
 .research-achievements .table_section{background: transparent;padding-block: 4rem;}
 .research-achievements .top_section {margin: 0;}
-.research-achievements .amenities_section {
-    padding: 4rem 0;
-}
-
-.research-achievements .pdf_list_section {
-    padding: 4rem 0;
-}
-.research-governance .pdf_list_section {
-    padding: 2rem 0;
-}
-
-.ip-management-cell .about_one .estblish {
-    padding-block: 4rem 0rem;
-}
-.research-governance .table_section {
-    padding-block: 8rem 2rem;
-}
-.research-governance .amenities_section {
-    padding-block: 6rem;
-}
-.phd-scholars-and-guides-list .pdf_list_section {
-    padding: 2rem 0;
-}
-.ip-management-cell .pdf_list_section {
-    padding: 6rem 0;
-}
-.ip-management-cell .about_one .abt_cntnt p {
-    padding-bottom: 2rem;
-}
+.research-achievements .amenities_section {padding: 4rem 0;}
+.research-achievements .pdf_list_section {padding: 4rem 0;}
+.research-governance .pdf_list_section {padding: 2rem 0;}
+.ip-management-cell .about_one .estblish {padding-block: 4rem 0rem;}
+.research-governance .table_section {padding-block: 8rem 2rem;}
+.research-governance .amenities_section {padding-block: 6rem;}
+.phd-scholars-and-guides-list .pdf_list_section {padding: 2rem 0;}
+.ip-management-cell .pdf_list_section {padding: 6rem 0;}
+.ip-management-cell .about_one .abt_cntnt p {padding-bottom: 2rem;}
 
 @media(max-width: 767px){
 .research-achievements .amenities_section, .research-achievements .pdf_list_section {
@@ -8820,5 +8759,8 @@ hr {
 .ip-management-cell .about_one .estblish {
     padding-block: 0rem 0;
 }
+.about_two.labs_group_section .early-slide li{font-size: 1.6rem;}
+.admission .eligib_cont h2{font-size: 3rem;letter-spacing: -0.4;}
 }
 
+   
