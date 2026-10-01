@@ -536,14 +536,58 @@
   }
 
 
+function adjustFacilitiesMaxContent() {
+  const container = document.querySelector(".facilities-max-content");
+  if (!container) return;
+  let windowWidth = document.documentElement.clientWidth;
+
+  if (windowWidth > 4000) {
+    windowWidth = 4000;
+  }
+
+  const baseWindowWidth = 1920;
+  const baseContainerWidth = 1662;
+
+  let maxContentWidth =
+    baseContainerWidth +
+    (windowWidth - baseWindowWidth) / 2;
+
+  if (windowWidth < 1749) {
+    maxContentWidth -= 80;
+  }
+  if (windowWidth < 1549) {
+    maxContentWidth -= 100;
+  }
+ if (windowWidth < 1024) {
+    maxContentWidth -= 140;
+  }
+  container.style.setProperty(
+    "max-width",
+    `${maxContentWidth}px`,
+    "important"
+  );
+}
+
+function initFacilitiesMaxContent() {
+  adjustFacilitiesMaxContent();
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener(
+    "DOMContentLoaded",
+    initFacilitiesMaxContent
+  );
+} else {
+  initFacilitiesMaxContent();
+}
+
+window.addEventListener("load", adjustFacilitiesMaxContent);
+window.addEventListener("resize", adjustFacilitiesMaxContent);
 
 
 
 
-
-
-
-
+  
   
   function alignEdgeElements() {
     const windowWidth = window.innerWidth;

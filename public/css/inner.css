@@ -287,7 +287,7 @@
 
 .about_one .estblish {
   text-align: center;
-  padding-block: 4rem 10rem;
+  padding-block: 4rem 6rem;
   max-width: 90%;
   margin: auto;
 }
@@ -829,7 +829,7 @@
 }
 
 .patent_tab_main {
-  padding: 12rem 0;
+  padding:8rem 0;
 }
 
 .pate_tab_ul {
@@ -4218,7 +4218,7 @@ ul.comon_list li:before {
 .academic-facilities .campu_grid_main.capus_grid_two {
   border: none;
 }
-
+  
 .campu_grid_main.capus_grid_two {
   border-bottom: 0.1rem solid var(--color-d4);
   padding-bottom: 10rem;
@@ -7758,6 +7758,7 @@ ul.comon_list li:before {
 .inner-title .innnr_head ul {
     gap: 2rem;
 }
+.about_f_value .ab_f_content {padding-inline: 8.8rem 0;}
 }
 
 @media screen and (max-width: 1100px) {
@@ -8357,7 +8358,9 @@ ul.comon_list li:before {
 .recent-audit-observations .table_section {
     padding-block: 4rem;
 }
-
+  .atm_g_imgsec {
+    padding-top: 2rem;
+  }
   .message_text {
     padding-inline: 3rem;
   }
@@ -8865,7 +8868,7 @@ ul.comon_list li:before {
   }
 
   .programs-page .core-sec {
-    padding-block: 2rem 5rem;
+    padding-block: 2rem 2rem;
   }
 
   .about_two {
@@ -9626,6 +9629,7 @@ ul.comon_list li:before {
     font-weight: 600;
     line-height: 1.1;
   }
+  
 }
 
 /* Full Page Loader Overlay */
@@ -10169,6 +10173,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .ombudsperson .atm_g_imgsec {padding-top: 0;}
 .ombudsperson .about_one .estblish p, .grid_em_leftsec p {margin-bottom: 4rem;}
 .student-resources .amenities_section .grid_group{gap: 4rem;}
+.schools-about-the-school .about_one .abt_cntnt p {padding-bottom: 0;}
 }
 
 @media(max-width:767px) {
@@ -10292,6 +10297,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .admission .about_f_value {padding-top: 4rem;}
 .best-practices .image_content_repeat_section {padding-block: 4rem 0;}
 .campus-facilities .image_content_repeat_section.hostel_repeatsec .hostel_list {margin: 2rem 0 0;}
+
 
 }
 

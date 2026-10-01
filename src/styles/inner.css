@@ -286,6 +286,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .publications .table_section{padding:0;background:transparent;}
 .publications .pdf_list_section{padding-top:5rem;}
 .publications .table_section .table-lab tbody td:first-child{width:28rem;}
+
 .heri_pri_btm_text{padding-top:4rem;text-align:center;}
 .heri_pri_btm_text{max-width:70%;margin:0 auto;}
 .heri_pri_btm_text h3{font:var(--font-24);text-align:center;padding-bottom:3.2rem;max-width:100%;font-weight:300;line-height:1.4;}
@@ -2578,6 +2579,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .ab_fost_grid{padding-block: 0;}
 .empo_rgt_imgsec>figure>img{width: 100%;height: auto;}
 .examination-overview .publi_title h4{font-size: 2rem;line-height: 1.4;}
+
 }
 @media(max-width:575px){.institutional-development-plan .amenities_section .grid_group{padding:3rem;}
 .faulty-box{gap:1rem 2rem;}
@@ -2957,6 +2959,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .question-paper-sec .cms-tab-box p {color: #555;font-size: 16px;line-height: 1.8;}
 .question-paper-sec .cms-tab-box ul {padding-left: 20px;}
 .question-paper-sec .cms-tab-box li {margin-bottom: 10px;color: #555;}
+
 /* ANIMATION */
 @keyframes cmsTabFade {from {opacity: 0;transform: translateY(8px);}
 to {opacity: 1;transform: translateY(0);}}
@@ -3027,7 +3030,9 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 @media (max-width: 1499px){
 .academic-facilities .atm_mainsec.consultancy_main {margin: 4rem 0 0;}
 .academic-facilities .about_two.labs_group_section {padding-top: 4rem;}
-.academic-facilities .about_four .about_f_value {padding-top: 4rem;}}
+.academic-facilities .about_four .about_f_value {padding-top: 4rem;}
+
+}
 @media (max-width: 1024px) {
 .faci_diff_tabs .faci_accordion {padding-inline: 7.4rem 6.8rem;}
 .amenities_title p{max-width: 100%;}
@@ -3091,9 +3096,7 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .about_subHeading{font-size: 2rem;line-height: 1.4;}
 .research .about_subHeading.less{text-align: left;}
 .research .about_desc{text-align: left;}
-    .research .top_section {
-        margin-top: 4rem;
-    }
+.research .top_section {margin-top: 4rem;}
 
 }
 

@@ -1119,6 +1119,8 @@ gap: 2.7rem;
 .placement_proSec {padding-block: 7.4rem 12rem;}
 .admission .ad_of_conimg{height: 100%;}
 .admission .ad_of_conimg figure ,.admission .ad_of_conimg figure img{height: 100%;object-fit: cover;}
+.schools-research .about_one .estblish {padding-block: 4rem ;}
+.schools-research .image_content_repeat_section {padding-block: 2rem 8rem;}
 
 .jss-step-incubation .placement_proSec {padding-block: 7.4rem 4rem;}
 .procedure_heading {margin-bottom: 5rem;}
@@ -1242,6 +1244,10 @@ to {opacity: 1;transform: translateY(0);}}
 @media (max-width: 1366px) {
 .logo-content img {max-width: 13rem;}
 .containerMD {padding-inline: 4.5rem;}
+.schools-research .image_content_repeat_section {
+    padding-block: 0;
+}
+.schools-research .image_content_repeat_section:last-child{padding-bottom: 8rem;}
 }
 .placement_col .position-relative a img:hover,
 .facilities-module__UE4CmG__bannerContent h2 a img:hover,
@@ -1255,6 +1261,7 @@ to {opacity: 1;transform: translateY(0);}}
 #feestructure .add_btn{display: inline-block;}
 #feestructure .add_btn a {font: var(--font-16);padding: .8rem 2.4rem;font-family: Noto Sans, sans-serif;line-height: 1.5;}
 @media (max-width:767px) {.curriculum_box h3{font: var(--font-18);font-weight: 500;line-height: 1.3;}
+
 .containerMD {padding-inline: 1.5rem;}
 }
 .student-life .faqItem {background: #f7f7f7;}
@@ -1551,7 +1558,7 @@ background:unset;
 .yukti_grid {margin-block: 4rem 0;}
 .yir-yic .top_section + .yukti_section .yukti_grid {margin-block: 4rem 0;}
 .yukti_section {padding-block: 4rem;}
-.faqSection {padding-block: 2rem 8rem;}
+.faqSection {padding-block: 2rem 6rem;}
 
 }
 
@@ -1647,10 +1654,7 @@ background:unset;
 .latest-event.no_upcoming_events{padding-block: 4rem;}
 .coming-container{height: auto; padding: 10rem 0;}
 .coming-container .title{font:var(--font-32); letter-spacing: 0;}
-.about-top-right {
-    padding-inline:0;
-    padding-bottom: 0;
-}
+.about-top-right {padding-inline:0;padding-bottom: 0;}
 .icge-about .about-top-right h5{font-size: 2rem;}
 }
 @media (max-width: 575px){
@@ -1702,7 +1706,7 @@ background:unset;
 .yukti_grid{grid-template-columns: repeat(1, 1fr);gap: 2rem;margin-block: 2rem 0;}
 .yukti_grid .custom-list {padding-top: 2rem;}
 .student-resources .top_section {margin-top: 2rem;}
-
+.schools-research .image_content_repeat_section:last-child {padding-bottom: 4rem;}
 }
 
 

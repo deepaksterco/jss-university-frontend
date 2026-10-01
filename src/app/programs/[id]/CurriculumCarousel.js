@@ -18,7 +18,7 @@ export default function CurriculumCarousel({ curriculum, extraSpace }) {
             <div className="core-box">
               <div className="core-text">
                 <span>Curriculum </span>
-                <h6 className="d-block mb-5">{curriculum?.curriculum_title}</h6>
+                <h6 className="d-block">{curriculum?.curriculum_title}</h6>
                 <blockquote>Core Subjects:</blockquote>
                 <p>{desc[index]}</p>
                 {desc.length > 1 && (

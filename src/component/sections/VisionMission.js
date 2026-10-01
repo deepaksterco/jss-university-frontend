@@ -20,36 +20,37 @@ export default function VisionMission({ data }) {
                           {item?.leftContent && <p dangerouslySetInnerHTML={{ __html: item.leftContent }} />}
                         </div>
                       </div>
-                      <div className="col-lg-6 col-md-12">
-                        <div className="mission-card">
-                          {item?.rightTitle && (
-                            <h2 className="title">{item.rightTitle}</h2>
-                          )}
-                          {item?.para?.map((paraItem, index) => (
-                            <p key={index}>{paraItem?.para}</p>
-                          ))}
-                          {/* {item?.rightLists && (
-                            <ul>
-                              {item.rightLists.map((rightlistItem, listIdx) => (
-                                <li key={listIdx}>
-                                  {rightlistItem.rightLists}
-                                </li>
+                      {item?.rightLists?.some(
+                        (rightlistItem) =>
+                          rightlistItem?.rightContent &&
+                          rightlistItem.rightContent.trim() !== ""
+                      ) && (
+                          <div className="col-lg-6 col-md-12">
+                            <div className="mission-card">
+                              {item?.rightTitle && (
+                                <h2 className="title">{item.rightTitle}</h2>
+                              )}
+
+                              {item?.para?.map((paraItem, index) => (
+                                <p key={index}>{paraItem?.para}</p>
                               ))}
-                            </ul>
-                          )} */}
-                         
-                          {item?.rightLists && (
-                            <ul>
-                              {item.rightLists.map((rightlistItem, listIdx) => (
-                                <li key={listIdx}>
-                                  {rightlistItem.rightContent}
-                                </li>
-                              ))}
-                            </ul>
-                          )}
-                         
-                        </div>
-                      </div>
+
+                              <ul>
+                                {item.rightLists
+                                  .filter(
+                                    (rightlistItem) =>
+                                      rightlistItem?.rightContent &&
+                                      rightlistItem.rightContent.trim() !== ""
+                                  )
+                                  .map((rightlistItem, listIdx) => (
+                                    <li key={listIdx}>
+                                      {rightlistItem.rightContent}
+                                    </li>
+                                  ))}
+                              </ul>
+                            </div>
+                          </div>
+                        )}
                     </div>
                   </div>
                 </section>

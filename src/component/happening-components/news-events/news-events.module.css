@@ -315,6 +315,7 @@
 }
 .eventCard .eventImage {
   object-fit: fill;
+  
 }
 @media (max-width: 1750px) {
 .secondaryText {
@@ -328,7 +329,10 @@
     bottom: 18%;
   }
 
-
+.eventImage {
+  object-fit: cover;
+  height: 100%!important;
+}
   .secondaryText {
     padding-inline: 8rem 10rem;
 
