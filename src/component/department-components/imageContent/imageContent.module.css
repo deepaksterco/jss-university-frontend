@@ -37,6 +37,7 @@
 .content_col.odd {
     padding-left: 0;
     padding-right: 9.4rem;
+    padding-block: 4rem;
 }
 
 .content_col.bg_image_content .heading {
@@ -166,6 +167,18 @@
         margin-top: 0rem;
     }
 }
+@media screen and (max-width:1366px) {
+ .content_col.odd {
+    padding-right: 4.4rem;
+    padding-block: 4rem;
+}
+.content_col {
+    padding-right: 0rem;
+    padding-top: 0;
+}
+}
+
+
 
 @media screen and (max-width:991px) {
     .content_col {
@@ -237,6 +250,9 @@
         margin-top: 2rem;
         padding-top: 4rem;
     }
+     .content_col.odd {
+    padding-block:2rem 4rem;
+}
 }
 
 @media screen and (max-width:575px) {

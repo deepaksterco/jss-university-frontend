@@ -389,6 +389,21 @@
   }
 }
 
+
+@media (max-width: 1366px){
+.title {
+  max-width: 90%;
+}
+.programsText {
+  font-size: 2rem;
+}
+.bannerLabel {
+  bottom: 0;
+}
+}
+
+
+
 @media (max-width: 1024px) {
 
   .departmentSection {
@@ -404,13 +419,13 @@
   }
 
   .courseRow {
-    grid-template-columns: 33.7% 56%;
+    grid-template-columns: 40.7% 50%;
     gap: 8rem;
     padding-block: 6rem 0;
   }
 
   .title {
-    max-width: 90%;
+    max-width: 100%;
   }
 
   .departSec {
@@ -420,6 +435,10 @@
   .departmentRow {
     grid-template-columns: repeat(2, 1fr);
   }
+  .courseItemsRow {
+  grid-template-columns: repeat(2, 1fr);
+
+}
 
 }
 
@@ -461,6 +480,9 @@
   .departSec {
     padding-block: 8rem 6rem;
   }
+  .admistion_heading {
+  margin-top: 1.8rem;
+}
 }
 
 @media (max-width: 768px) {

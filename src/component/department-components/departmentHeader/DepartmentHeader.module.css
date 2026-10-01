@@ -240,7 +240,7 @@
 
 @media (max-width: 1749px) {
  .departmentHeaderWrapper {
-    top: 14vh;
+    top: 12vh;
   }
 }
 
@@ -260,26 +260,27 @@
 }
  
 }
-
-@media (max-width: 1400px) {
+@media (max-width: 1549px) {
    .departmentHeaderWrapper {
-    top: 13vh;
+    top: 12vh;
   }
 }
 
+
+
 @media (max-width: 1366px) {
   .departmentMenu {
-    padding-top: 3.5rem;
+    padding-top: 3rem;
   }
 
   .departmentHeaderWrapper {
-    top: 97px;
+    top: 11vh;
   }
 }
 
 @media (max-width: 1199px) {
   .departmentMenu {
-    padding-top: 2rem;
+    padding-top:1rem;
   }
   .departmentHeaderWrapper {
     top: 10vh;
@@ -323,7 +324,7 @@
 
   .navLinksWrapper {
     position: absolute;
-    top: 8rem;
+    top: 6.5rem;
     left: 0;
     width: 100%;
     background: white;

@@ -18,21 +18,21 @@
   font-weight: 700;
   font: var(--font-60);
   line-height: 1;
-  margin-top: 10px;
+  margin-top: 1rem;
   font-family: var(--font-Condensed);
   letter-spacing: -2.88px;
 }
 
 .description {
   color: #333;
-  font-size: 15px;
-  margin-top: 20px;
-  margin-bottom: 30px;
+  font-size: 1.5rem;
+  margin-top:2rem;
+  margin-bottom:3rem;
   max-width: 45rem;
 }
 
 .arrowButton {
-  font-size: 24px;
+  font-size: 2.4rem;
   color: #994073;
   padding: 0;
   border: none;
@@ -114,7 +114,7 @@
 .cardImage {
   width: 100%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 .school_row{
     display: grid;
@@ -129,17 +129,17 @@
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 10%, rgba(0, 0, 0, 0.2) 80%);
-  border-radius: 20px;
+  border-radius: 2rem;
   z-index: 1;
 }
 
 .statsContainer {
   position: absolute;
-  bottom: 30px;
+  bottom: 3rem;
   left: 6rem;
   color: #fff;
   font-weight: bold;
-  font-size: 32px;
+  font-size:3.2rem;
   z-index: 2;
   display: flex;
   flex-direction: column;
@@ -174,14 +174,14 @@
 
 .badgeContainer {
   position: absolute;
-  bottom: 30px;
-  right: 35px;
+  bottom: 3rem;
+  right: 3rem;
   background-color: #fff;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 8px;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   width: 45%;
   z-index: 2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
@@ -190,11 +190,11 @@
 .badgeLogo {
   width: 40%;
   height: auto;
-  border-radius: 20px;
+  border-radius: 2rem;
 }
 
 .badgeText {
-  font-size: 12px;
+  font-size: 1.2rem;
   color: #000;
   line-height: 1.3;
   margin: 0;
@@ -221,12 +221,28 @@
 
 
 /* Responsive Design */
+@media (max-width: 1749px){
+.aboutSchoolSection {
+  background-color: #e6ffff;
+ padding-block: 10rem 8rem
+}
+
+}
+@media (max-width: 1549px){
+.school_row{grid-template-columns: repeat(1, 49.4% auto);}
+
+}
+
+
 @media (max-width: 1366px) {
   .description {
     max-width: 100%;
   }
+  .school_row{grid-template-columns: repeat(1, 50.4% auto);}
 }
-
+@media (max-width: 1249px){
+ .school_row{grid-template-columns: repeat(1, 53.4% auto);}
+}
 @media (max-width: 1199px) {
   .description {
     max-width: 100%;
@@ -237,13 +253,14 @@
     width: 100%;
     padding: 4rem;
   }
+
+
 }
 
 @media (max-width: 1024px) {
   .description {
     max-width: 100%;
   }
-
   .imageCard {
     margin-left: 0;
   }
@@ -256,27 +273,24 @@
     padding-block: 4rem;
     padding-inline: 0;
   }
+.description {
+  margin-top:1rem;
+  margin-bottom:2rem;
+  max-width: 100%;
+}
 
   .yellowLine {
     left: -1rem;
   }
-  .title {
-    font-weight: 700;
-    font: var(--font-40);
-    line-height: 1;
-    margin-top: 10px;
-    font-family: var(--font-Condensed);
-    letter-spacing: -1.88;
-
-  }
+ 
   .statsContainer {
-    bottom: 30px;
-    left: 30px;
+    bottom: 3rem;
+    left: 3rem;
   }
 
   .badgeContainer {
-    bottom: 30px;
-    right: 25px;
+    bottom: 3rem;
+    right: 2.5rem;
     width: 50%;
   }
 
@@ -289,13 +303,8 @@
   }
 }
 @media (max-width:767px) {
-  .title {
-    /* font-weight: 700; */
-    font: var(--font-30);
-  }
-  .rankNumber{
-    font: var(--font-30);
-  }
+  .title {font: var(--font-32);font-family: var(--font-Condensed);letter-spacing:-1.5px;font-weight: 700;line-height: 1;}
+  .rankNumber{font: var(--font-30);}
 }
 .fifthSectionSlider {
   margin-top: 6.7rem;
@@ -339,17 +348,14 @@
  right: -4.5rem;
  top: 0;
 }
-@media (max-width: 1749px){
-.aboutSchoolSection {
-  background-color: #e6ffff;
- padding-block: 10rem 8rem
-}
-}
+
+
+
 
 
 @media (max-width: 1024px) {
 .school_row{
-  grid-template-columns:repeat(1, 56.4% auto);
+  display: block;
  }
  .fifthSectionSlider {
   margin-top: 2rem;
@@ -373,4 +379,8 @@
  }
 
 }
-
+@media (max-width: 575px){
+.aboutSchoolSection {
+ padding-block: 3rem
+}
+}
