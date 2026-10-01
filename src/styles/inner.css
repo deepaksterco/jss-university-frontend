@@ -735,7 +735,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 /* .grid_emaboutjss .empo_rgt_imgsec figure img{}
 */
 .ab_jss_coutsec{display:flex;margin-top:2.2rem;}
-.ab_jss_c_col{flex:1;max-width:27.4rem;padding:4.3rem 5.5rem;text-align:center;border:1px solid var(--color-d4);}
+.ab_jss_c_col{flex:1;max-width:100%;padding:4.3rem 5.5rem;text-align:center;border:1px solid var(--color-d4);}
 .ab_jss_c_col:last-child{border-left:none;}
 .ab_jss_c_col:first-child{border:1px solid var(--color-d4);}
 .ab_jss_c_col h4{font:var(--font-48);color:var(--color-4e);font-family:var(--font-main);font-weight:600;letter-spacing:-0.12rem;}

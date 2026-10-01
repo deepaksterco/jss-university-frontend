@@ -130,48 +130,55 @@ export default function AboutSchool({ data }) {
           </div>
         </div>
 
-        <div
-          className={styles.fifthSectionSlider}
-          data-aos="fade-up"
-          data-aos-delay="700"
-        >
-          <Swiper
-            modules={[Autoplay, Pagination]}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            spaceBetween={100}
-            pagination={{ clickable: true, el: ".about-pagination" }}
-            slidesPerView={3}
-            breakpoints={{
-              0: { slidesPerView: 1 },
-              576: { slidesPerView: 1 },
-              800: { slidesPerView: 2 },
-              992: { slidesPerView: 2 },
-              1280: { slidesPerView: 3 },
-            }}
+       {data?.items?.some((item) => item?.content?.trim()) && (
+          <div
+            className={styles.fifthSectionSlider}
+            data-aos="fade-up"
+            data-aos-delay="700"
           >
-            {data?.items?.map((singleItem, itemIdx) => (
-              <SwiperSlide key={itemIdx} className={styles.accreditationSlide}>
-                <div className="gap-5 d-flex align-items-center content">
-                  {singleItem.logo && (
-                    <Image
-                      src={singleItem.logo}
-                      alt="NAAC"
-                      width={80}
-                      height={80}
-                      className={styles.accreditationLogo}
-                    />
-                  )}
-                  <p className={styles.small}>{singleItem.content}</p>
-                </div>
-              </SwiperSlide>
-            ))}
+            <Swiper
+              modules={[Autoplay, Pagination]}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+              }}
+              spaceBetween={100}
+              pagination={{ clickable: true, el: ".about-pagination" }}
+              slidesPerView={3}
+              breakpoints={{
+                0: { slidesPerView: 1 },
+                576: { slidesPerView: 1 },
+                800: { slidesPerView: 2 },
+                992: { slidesPerView: 2 },
+                1280: { slidesPerView: 3 },
+              }}
+            >
+              {data.items.map((singleItem, itemIdx) => (
+                <SwiperSlide
+                  key={itemIdx}
+                  className={styles.accreditationSlide}
+                >
+                  <div className="gap-5 d-flex align-items-center content">
+                    {singleItem.logo && (
+                      <Image
+                        src={singleItem.logo}
+                        alt="NAAC"
+                        width={80}
+                        height={80}
+                        className={styles.accreditationLogo}
+                      />
+                    )}
 
-            <div className="about-pagination"></div>
-          </Swiper>
-        </div>
+                    <p className={styles.small}>{singleItem.content}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+
+              <div className="about-pagination"></div>
+            </Swiper>
+          </div>
+        )}
+
       </div>
     </div>
   );

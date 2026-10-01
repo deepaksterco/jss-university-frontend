@@ -1033,24 +1033,25 @@ gap: 2.7rem;
 @media (max-width: 2550px) {.grid_2 {grid-template-columns: 20% 75%;}}
 @media (max-width: 1199px) {.about_school_left {padding-right: 0rem !important;margin-bottom: 4rem;border: none !important;}.description {max-width: 100%;}}
 @media (max-width: 1366px) {.school_row {grid-template-columns: repeat(1, 50% auto);}}
-@media (max-width: 1200px) {.logo-content img {width: 12rem;height: auto;}
+@media (max-width: 1200px) {.logo-content img {width: 10rem;height: auto;}
 .cource-sec .cource_top {padding-top: 6rem;margin-bottom: 2rem;}
 .programsList_row {grid-template-columns: repeat(1, 50% auto);gap: 8.5rem;}
 .explore-program-section {grid-template-columns: repeat(2, 1fr);}
-.nav-link.nav-lists {
-display: block;
-font: var(--font-18);
-font-weight: bold;
-text-transform: uppercase;
-letter-spacing: 0.8px;
-font-family: var(--font-Condensed);
-}
+.nav-link.nav-lists {display: block;font: var(--font-18);font-weight: bold;text-transform: uppercase;letter-spacing: 0.8px;font-family: var(--font-Condensed);}
 
 }
-@media (max-width: 1100px) {.school_row {display: block;}
+@media (max-width: 1110px) {.school_row {display: block;}
 .dashbord-logo .uniname {font: var(--font-30);letter-spacing: -1px;font-weight: 700;font-family: var(--font-Condensed);text-transform: uppercase;margin-bottom: 1.5rem;line-height: 0.9;}
 .logo-content img {width: 10rem;height: auto;}
-.inner_sub_header {margin-top: 14.5rem;}}
+.inner_sub_header {margin-top: 14.5rem;}
+.dashbord-logo .uniname{font-size: 3rem;}
+.dashbord-logo .uni_addrese{font-size: 2rem;}
+
+}
+@media (max-width: 1024px){
+.dashbord-logo .uniname{font-size: 2.8rem;}
+.dashbord-logo .uni_addrese{font-size: 1.8rem;}
+}
 /* ========================== GLOBAL ANIMATION WRAPPER
 ========================== */
 .animated-hover .second-section-cards-image {position: relative;overflow: hidden;transition:transform 0.5s ease,box-shadow 0.5s ease;}
@@ -1187,7 +1188,7 @@ font-family: var(--font-Condensed);
 .faqItem[open] .faqQuestion {color: #fff;}
 .faqQuestion::-webkit-details-marker {display: none;}
 .faqQuestion .icon {font-size: 24px;color: #0b2545;transition:transform 0.3s ease,color 0.3s ease;}
-.faqQuestion .icon::after {content: "+";display: flex;align-items: center;justify-content: center;width: 32px;height: 32px;font-size: 32px;font-weight: 300;line-height: 1;color: #000;}
+.faqQuestion .icon::after {content: "+";display: flex;align-items: center;justify-content: center;width: 3.2rem;height: 3.2rem;font-size: 3.2rem;font-weight: 300;line-height: 1;color: #000;}
 .faqItem[open] .icon::after {content: "−";color: #fff;}
 .faqAnswer {padding: 2.5rem;background: #fff;border-top: 1px solid #ddd;animation: fadeIn 0.3s ease;width: 94%;}
 .department-placements .faqAnswer {width: 100%;}
@@ -1525,7 +1526,10 @@ background:unset;
 .kapila-scheme .top_section {margin-top: 8rem;}
 .kapila-scheme .labs_group_section.about_two .about_two {padding-bottom: 4rem;}
 .kapila-scheme .labs_group_section {padding-top: 4rem;}
-.kapila-scheme .yukti_section {padding-block: 2rem;}}
+.kapila-scheme .yukti_section {padding-block: 2rem;}
+.program-detail-img figure > * {min-height: 35rem;}
+
+}
 
 @media (max-width: 1024px){
 .ieee .about_f_value {gap: 5rem;padding-top: 4rem;display: flex;flex-direction: column-reverse;}
@@ -1547,6 +1551,8 @@ background:unset;
 .yukti_grid {margin-block: 4rem 0;}
 .yir-yic .top_section + .yukti_section .yukti_grid {margin-block: 4rem 0;}
 .yukti_section {padding-block: 4rem;}
+.faqSection {padding-block: 2rem 8rem;}
+
 }
 
 
@@ -1586,7 +1592,9 @@ background:unset;
 .events .research_labmain .research_grid_one {margin-bottom: 0;}
 .events .hostel_list_cont{gap: 4rem;}
 .kapila-scheme .labs_group_section{padding-top: 0;}
-.campus-facilities .content_col {padding-inline: 0;}}
+.campus-facilities .content_col {padding-inline: 0;}
+.program-detail-img figure > *{min-height: 25rem;}
+}
 @media (max-width: 767px){
 .ieee .placement_page {padding-block: 4rem;}
 .ieee .top_section .container {padding-bottom: 4rem;}
