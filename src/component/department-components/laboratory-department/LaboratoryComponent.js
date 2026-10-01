@@ -67,7 +67,7 @@ export default function Laboratories({ data }) {
 
   return (
     <div className={styles.dep_cutting_edge}>
-      <div className="container max-content-lg pe-lg-0 me-lg-0">
+      <div className="container facilities-max-content pe-lg-0 me-lg-0">
         {/* Header Section */}
         <div className={styles.headerSection}>
           {laboratoriesData.subtitle && (

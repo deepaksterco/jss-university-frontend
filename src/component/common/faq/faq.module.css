@@ -3,3 +3,11 @@
     color: #16344E;
     margin-bottom: 4rem;
 }
+
+
+@media (max-width:575px){
+    .faq_heading{
+    margin-bottom: 2.5rem;
+    font-size: 2rem;
+}
+}
