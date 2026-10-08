@@ -1197,3 +1197,86 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     }
 
 })();
+
+
+document.addEventListener("click", function (e) {
+
+    const tab = e.target.closest(".degree-tab");
+
+    if (!tab) {
+        return;
+    }
+
+    e.preventDefault();
+
+    const branch = tab.closest(".branch-content");
+
+    if (!branch) {
+        return;
+    }
+
+    const degree = tab.getAttribute("data-degree");
+
+    // Sirf current branch ke tabs reset karo
+    branch.querySelectorAll(".degree-tab").forEach(function (item) {
+        item.classList.remove("active");
+    });
+
+    branch.querySelectorAll(".degree-content").forEach(function (item) {
+        item.classList.remove("active");
+    });
+
+    // Clicked tab active
+    tab.classList.add("active");
+
+    const content = branch.querySelector("#" + degree);
+
+    if (content) {
+        content.classList.add("active");
+    }
+});
+
+
+document.addEventListener("change", function (e) {
+
+    if (!e.target.matches('input[name="cms-tabs"]')) {
+        return;
+    }
+
+    const radio = e.target;
+
+    // Radio number nikalo
+    const branchNumber = radio.id.replace("cms-tab-radio-", "");
+
+    const branch = document.querySelector(
+        ".cms-tab-content .branch-" + branchNumber
+    );
+
+    if (!branch) {
+        return;
+    }
+
+    // Is branch ke saare right tabs reset
+    branch.querySelectorAll(".degree-tab").forEach(function (tab) {
+        tab.classList.remove("active");
+    });
+
+    branch.querySelectorAll(".degree-content").forEach(function (content) {
+        content.classList.remove("active");
+    });
+
+    // FIRST right tab active
+    const firstTab = branch.querySelector(".degree-tab");
+
+    if (firstTab) {
+        firstTab.classList.add("active");
+
+        const firstDegree = firstTab.getAttribute("data-degree");
+        const firstContent = branch.querySelector("#" + firstDegree);
+
+        if (firstContent) {
+            firstContent.classList.add("active");
+        }
+    }
+});
+
