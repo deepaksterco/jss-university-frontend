@@ -1749,5 +1749,49 @@ background:unset;
 }
 
 
+/* RIGHT TABS */
+.degree-tabs {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.degree-tab {
+    padding: 1rem 2.5rem;
+    border: 0.1rem solid #ddd;
+    background: #f5f5f5;
+    cursor: pointer;
+}
+
+.degree-tab.active {
+    background:#1b4797;
+    color: #fff;
+}
+
+.degree-content {
+    display: none;
+}
+
+.degree-content.active {
+    display: block;
+}
+
+
+.branch-content {
+    display: none;
+}
+.cms-left-tabs:has(#cms-tab-radio-1:checked) .branch-1,
+.cms-left-tabs:has(#cms-tab-radio-2:checked) .branch-2,
+.cms-left-tabs:has(#cms-tab-radio-3:checked) .branch-3,
+.cms-left-tabs:has(#cms-tab-radio-4:checked) .branch-4,
+.cms-left-tabs:has(#cms-tab-radio-5:checked) .branch-5,
+.cms-left-tabs:has(#cms-tab-radio-6:checked) .branch-6,
+.cms-left-tabs:has(#cms-tab-radio-7:checked) .branch-7,
+.cms-left-tabs:has(#cms-tab-radio-8:checked) .branch-8,
+.cms-left-tabs:has(#cms-tab-radio-9:checked) .branch-9,
+.cms-left-tabs:has(#cms-tab-radio-10:checked) .branch-10 {
+ display: block;
+}
+
 
 
