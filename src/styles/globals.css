@@ -1749,7 +1749,50 @@ background:unset;
 }
 
 
-/* RIGHT TABS */
+
+.cms-left-tabs {
+    display: flex;
+    gap: 3rem;
+}
+
+.cms-tab-nav {
+    width: 28rem;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.cms-tab-button {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 1.5rem;
+    border: 0.1rem solid #ddd;
+    background: #f5f5f5;
+    color: #333;
+    cursor: pointer;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.cms-tab-button.active {
+    background:#1b4797;
+    color: #fff;
+    border-color:#1b4797;
+}
+
+
+.cms-tab-content {
+    flex: 1;
+}
+
+.branch-content {
+    display: none;
+}
+
+.branch-content.active {
+    display: block;
+}
+
 .degree-tabs {
     display: flex;
     gap: 2rem;
@@ -1757,15 +1800,18 @@ background:unset;
 }
 
 .degree-tab {
-    padding: 1rem 2.5rem;
+    padding: 1.5rem 2.5rem;
     border: 0.1rem solid #ddd;
     background: #f5f5f5;
+    color: #333;
     cursor: pointer;
+    font-size: 1.5rem;
 }
 
 .degree-tab.active {
-    background:#1b4797;
+    background: #1b4797;
     color: #fff;
+    border-color: #1b4797;
 }
 
 .degree-content {
@@ -1777,21 +1823,15 @@ background:unset;
 }
 
 
-.branch-content {
-    display: none;
-}
-.cms-left-tabs:has(#cms-tab-radio-1:checked) .branch-1,
-.cms-left-tabs:has(#cms-tab-radio-2:checked) .branch-2,
-.cms-left-tabs:has(#cms-tab-radio-3:checked) .branch-3,
-.cms-left-tabs:has(#cms-tab-radio-4:checked) .branch-4,
-.cms-left-tabs:has(#cms-tab-radio-5:checked) .branch-5,
-.cms-left-tabs:has(#cms-tab-radio-6:checked) .branch-6,
-.cms-left-tabs:has(#cms-tab-radio-7:checked) .branch-7,
-.cms-left-tabs:has(#cms-tab-radio-8:checked) .branch-8,
-.cms-left-tabs:has(#cms-tab-radio-9:checked) .branch-9,
-.cms-left-tabs:has(#cms-tab-radio-10:checked) .branch-10 {
- display: block;
-}
+@media (max-width: 47.9375rem) {
 
+    .cms-left-tabs {
+        flex-direction: column;
+    }
 
+    .cms-tab-nav {
+        width: 100%;
+    }
+
+}
 
