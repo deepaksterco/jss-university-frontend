@@ -792,6 +792,17 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .ameniti_item_col:hover p{color:var(--color-4e);font-weight:500;}
 /* .ameniti_item_col p{padding-top:2rem;color:var(--color-44);}
 */
+.research :nth-child(1 of .ameminites_listmain) {
+    border-bottom: none;
+    background-color: #e6ffff;
+    padding-block: 8rem;
+  
+}
+.research :nth-child(1 of .ameminites_listmain) .amenities_gridmain {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 2rem;
+    display: grid;
+}
 
 .research .amenities_gridmain {grid-template-columns: repeat(4, 1fr);gap: 4rem 2rem;display: grid;}
 .ameniti_item_col figure img{border-radius:0.8rem;}
@@ -1819,7 +1830,7 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 */
 .academic-facilities .research_labmain{padding:10rem 0;}
 .academic-facilities .research_labmain .re_lab_objective{margin:5rem 0 0 0;}
-.academic-facilities .about_two.labs_group_section{padding-top:10rem;}
+.academic-facilities .about_two.labs_group_section{padding-block:4rem;}
 .academic-facilities .lib_cen_main .campu_grid_main.capus_grid_two{padding-bottom:0;}
 .academic-facilities .about_two.labs_group_section .about_two{padding-bottom:0;}
 .academic-facilities .atm_mainsec.consultancy_main{margin:10rem 0 0 0;}
@@ -2506,6 +2517,7 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .academic-facilities .research_labmain.section_right{margin-bottom:5rem;}
 .campus-facilities .ameminites_listmain .bottom_dec{padding-bottom:0;}
 .campus-facilities .about_two.labs_group_section video,.campus-facilities .image_content_repeat_section video{height:100%;object-fit:cover;}
+
 .jss-news-letter .pdf_list_section li p{padding-right:4rem;}
 .internation-conference .conference_section .grid{grid-template-columns:repeat(2,1fr);}
 .main-container.placement .iqac_master{padding-bottom:6rem;}
@@ -3051,7 +3063,7 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .single_lab_card .image_col figure video{height: auto;}
 .acade_lab_slider figcaption{font-size: 2rem;}}
 .research .about_one .estblish{padding-bottom: 0;}
-.research .ameminites_listmain {padding-block: 0rem 6rem;border-bottom: solid 1px #ddd;}
+.research .ameminites_listmain {padding-block: 8rem;border-bottom: solid 1px #ddd;}
 .research .ameminites_listmain .bottom_dec{padding: 0;margin: 0;}
 .research .amenities_section {padding-block: 8rem 0;}
 .research  .grans_tab_mainsec {padding-block: 6rem 10rem;}
@@ -3061,9 +3073,7 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .research .resea_facili_main {padding-block: 2.6rem 0;}
 .events .about_f_value {padding-top: 4rem;display: block;padding-inline: 0;}
 .events .about_f_value .ab_f_content{padding-left: 0;}
-.events .about_four {
-    padding-bottom: 4rem;
-}
+.events .about_four {padding-bottom: 4rem;}
 }
 @media(max-width: 767px){
 .research .ameminites_listmain {padding-block: 0 4rem;}
