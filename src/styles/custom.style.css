@@ -2591,16 +2591,16 @@
 .common_read_more_btn img{
   margin-left: 1rem;
 }
-
+.research  .single_image_content .inner_bottom_data{margin: 0;}
+.research .single_image_content .hostel_list{margin: 0;}
+.research .image_content_repeat_section .hostel-rules{margin: 0;}
+.research  .hostel-rules p{text-align: left;}
+.research  .hostel-rules p:last-child{margin-top: 3rem;}
 @media (min-width: 1700px) and (max-width: 1900px) {
-.homeSlider{
-  min-height: 666px;
-}
+.homeSlider{min-height: 666px;}
 }
 @media (min-width: 1400px) and (max-width: 1699px) {
-.homeSlider{
-  min-height: 587px;
-}
+.homeSlider{min-height: 587px;}
 }
 @media (min-width: 1023px) and (max-width: 1399px) {
 .homeSlider{
@@ -2728,9 +2728,7 @@
     padding-top: 7rem;
   }
 
-  .main-container .container.inner_labs_container {
-    /* padding-inline:0; */
-  }
+
 
   .topBanner_para {
     text-align: left;
