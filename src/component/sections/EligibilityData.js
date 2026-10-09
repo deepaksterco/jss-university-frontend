@@ -131,9 +131,8 @@ export default function EligibilityPrograms({ data }) {
     <section className="eligibilty_main" id={eligibilityItem?.sectionId}>
       <div className="container">
         <div
-          className={`eligib_grid_ad ${
-            eligibilityItem?.type == "programs" ? "programs" : null
-          }`}
+          className={`eligib_grid_ad ${eligibilityItem?.type == "programs" ? "programs" : null
+            }`}
         >
           <div className="eligib_cont">
             {eligibilityItem?.subheading && (
@@ -187,8 +186,8 @@ export default function EligibilityPrograms({ data }) {
                           setOpenAccordion(tab.tabName);
                           setActiveTab(tab.tabName);
 
-                          setTimeout(()=>{
-                            e.target.scrollIntoView({behavior:"smooth", block:"start"})
+                          setTimeout(() => {
+                            e.target.scrollIntoView({ behavior: "smooth", block: "start" })
                           }, 100)
                         } else if (openAccordion === tab.tabName) {
                           setOpenAccordion(null);
@@ -210,6 +209,8 @@ export default function EligibilityPrograms({ data }) {
               )}
 
             </div>
+
+            {eligibilityItem?.button_url && eligibilityItem?.button_name && (<div className="eligibility_btn"> <a href={eligibilityItem.button_url} className="btn btn-warning CTA_Applynow" > {eligibilityItem.button_name} </a> </div>)}
           </div>
 
           {/* ── Eligibility Image ── */}
