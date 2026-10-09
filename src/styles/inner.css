@@ -3107,21 +3107,20 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
   .research .amenities_gridmain {grid-template-columns: repeat(1, 1fr);gap: 1rem;}
   .research .amenities_section {padding-block: 3rem 0;}
   .research .ameminites_listmain {padding-block: 0 2rem;}
-  .amenities_title p{font-size: 1.8rem;;line-height: 1.4;padding-bottom: 3rem;}
+  .amenities_title p{font-size: 1.8rem;line-height: 1.4;padding-bottom: 3rem;}
   .research_labmain .research_grid_one {margin-bottom: 3rem;}
   .academic-facilities .about_two.labs_group_section, .academic-facilities .about_four .about_f_value {padding-block: 3rem 0;}
   .academic-facilities .about_two.labs_group_section, .academic-facilities .about_four .about_f_value { padding-block: 2rem 0;}
   .labs_group_section.about_two .about_two.reverse .early_rgt{padding-bottom: 2rem;}
   .faci_diff_tabs .faci_acc_header{font-size: 2rem;}
   .events .about_four {padding-bottom: 2rem;}
-.events .image_content_repeat_section{padding-block: 2rem 4rem;}
-.single_image_content .content_col{display: none;}
-.student-resources .amenities_section .grid_group {gap: 2rem;}
-.about_subHeading{font-size: 2rem;line-height: 1.4;}
-.research .about_subHeading.less{text-align: left;}
-.research .about_desc{text-align: left;}
-.research .top_section {margin-top: 4rem;}
-
+  .events .image_content_repeat_section{padding-block: 2rem 4rem;}
+  .single_image_content .content_col{display: none;}
+  .student-resources .amenities_section .grid_group {gap: 2rem;}
+  .about_subHeading{font-size: 2rem;line-height: 1.4;}
+  .research .about_subHeading.less{text-align: left;}
+  .research .about_desc{text-align: left;}
+  .research .top_section {margin-top: 4rem;}
 }
 
 @media(max-width: 420px){
@@ -3129,3 +3128,831 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .campus-facilities .sports_fac_slider:after{content: none;}
 }
 
+.research .eligibility_btn {
+    display: inline-block;
+    position: relative;
+    border-radius: 0;
+}
+
+.research  .eligibility_btn a {
+  font: var(--font-16);
+  color: var(--color-4e);
+  font-weight: 400;
+  border: none;
+  border-radius: 0;
+  padding: .5rem 1.5rem;
+}
+.research  .eligibility_btn a:hover{
+    color: var(--color-white);
+}
+.research  .eligi_tab_con {
+    padding-left: 0;
+}
+.research .edigiblity_tabs .eligi_tab_con p {
+    font: var(--font-16);
+    color: var(--color-white);
+    margin-block: 5rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+.phd-and-postdoc .re_obj_grid {
+ display: grid;
+ grid-template-columns: repeat(3,1fr);
+ gap: 1.5rem;
+}
+
+/* .phd-and-postdoc .exte_mainsec .exten_grid {display: block;}
+.phd-and-postdoc .exten_listyle{padding-inline: 0;} */
+.phd-and-postdoc .table_section {
+    padding-block: 8rem;
+}
+.phd-and-postdoc .amenities_section {
+    padding:  0;
+    background-color: #fff;
+}
+.phd-and-postdoc .table_section>h5{font: var(--font-16);
+  color: var(--color-4e);margin-bottom: 3rem;}
+
+
+.phd-and-postdoc .phd_fee_section {
+    margin-bottom: 3rem;
+}
+
+.phd-and-postdoc .phd_fee_section > .heading {
+    margin-bottom: 3rem;
+}
+
+.phd-and-postdoc .fee_subheading {
+   font: var(--font-26);
+    color: #16344e;
+    text-align: left;
+    letter-spacing: 0;
+    margin-block: 3rem;
+    font-weight: bold;
+}
+
+
+.phd-and-postdoc .fee_content_section p {
+      font: var(--font-16);
+    color: var(--color-44);
+    margin-bottom: 2rem;
+}
+
+.phd-and-postdoc .fellowship_conditions {
+    padding-left:0;
+    margin-bottom: 0;
+}
+.phd-and-postdoc .fellowship_conditions li {
+    font: var(--font-16);
+    color: var(--color-44);
+    margin-bottom: 2.3rem;
+    padding-left: 2rem;
+    list-style: none;
+    position: relative;
+}
+.phd-and-postdoc .fellowship_conditions li:before {
+    content: "";
+    background-color: var(--color-100);
+    border-radius: 5rem;
+    width: .7rem;
+    height: .7rem;
+    position: absolute;
+    top: .4rem;
+    left: 0;
+}
+
+.phd-and-postdoc .resea_facili_main .exte_mainsec h6{
+    text-align: center;
+}
+.phd-and-postdoc .top_section {
+    margin-top: 6rem;
+}
+.phd-and-postdoc .pdf_list_section{padding-top: 6rem;}
+.phd-and-postdoc .research_contact_list {
+    padding-left: 0;
+    margin-bottom: 0;
+    padding-left: 3rem;
+}
+.phd-and-postdoc .about_one .abt_cntnt{padding: 0;}
+.phd-and-postdoc .about_top{padding: 0;}
+
+.phd-and-postdoc .research_contact_list li {
+    margin-bottom: 2rem;
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+/* ==============================
+   POSTDOC PAGE
+============================== */
+
+.phd-and-postdoc .amenities_section{padding-block: 10rem;}
+.postdoc-page {
+    padding-block: 10rem;
+}
+
+.phd-and-postdoc .postdoc-container {
+    width: 100%;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+
+.phd-and-postdoc .postdoc-hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.1875rem;
+    min-height: 21.875rem;
+    padding: 4.0625rem 4.375rem;
+    overflow: hidden;
+    background: var(--color-4e);
+    color: var(--color-white);
+}
+
+.postdoc-hero::after {
+    content: "";
+    position: absolute;
+    top: -8.75rem;
+    right: 5.625rem;
+    width: 21.875rem;
+    height: 21.875rem;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 50%;
+    box-shadow:
+        0 0 0 2.1875rem rgba(255, 255, 255, 0.025),
+        0 0 0 4.6875rem rgba(255, 255, 255, 0.025);
+    pointer-events: none;
+}
+
+.postdoc-hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 45.625rem;
+}
+
+.postdoc-eyebrow,
+.postdoc-kicker {
+    display: block;
+    margin-bottom: 0.9375rem;
+    color: var(--color-e8);
+    font: var(--font-16);
+    font-weight: 800;
+    font-family: var(--font-Condensed);
+    letter-spacing: 0.125rem;
+    line-height: 1.6;
+}
+.postdoc-eyebrow{color: var(--color-white);}
+.postdoc-hero h1 {
+    margin-bottom: 2.75rem;
+    color: var(--color-white);
+    font: var(--font-42);
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+.postdoc-hero h1 span {
+    color: var(--color-e8);
+}
+
+.postdoc-hero-content > p {
+    margin-bottom: 1.625rem;
+    color: rgba(255, 255, 255, 0.83);
+    font: var(--font-20);
+    line-height: 1.7;
+}
+
+/* HERO BUTTONS */
+
+.postdoc-hero-actions,
+.postdoc-cta-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.postdoc-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5625rem;
+    min-height: 3rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: 0;
+    font: var(--font-14);
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+.postdoc-btn:hover {
+    transform: translateY(-0.125rem);
+}
+
+.postdoc-btn-primary,
+.postdoc-btn-light {
+    background: var(--color-100);
+    color: var(--color-black);
+}
+
+.postdoc-btn-primary:hover,
+.postdoc-btn-light:hover {
+    background: #dfbb60;
+    color: var(--color-black);
+}
+
+.postdoc-btn-outline {
+    border-color: rgba(255, 255, 255, 0.55);
+    color: var(--color-white);
+}
+
+.postdoc-btn-outline:hover {
+    border-color: var(--color-100);
+    color: var(--color-100);
+}
+
+/* FELLOWSHIP COUNT */
+
+.postdoc-hero-number {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10.9375rem;
+    height: 10.9375rem;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    border-radius: 50%;
+    text-align: center;
+}
+
+.postdoc-hero-number strong {
+    color: var(--color-100);
+    font: var(--font-42);
+    font-weight: 500;
+    line-height: 1;
+}
+
+.postdoc-hero-number span {
+    margin-top: 0.5rem;
+    color: var(--color-white);
+    font: var(--font-14);
+    line-height: 1.45;
+}
+
+/* ==============================
+   APPLICATION NOTICE
+============================== */
+
+.postdoc-notice {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    margin: 1.75rem 0 5.3125rem;
+    padding: 1.875rem 2.1875rem;
+    border: 1px solid #eadfc5;
+    border-left: 0.25rem solid var(--color-100);
+    background: var(--color-white);
+    box-shadow: 0 0.5rem 1.875rem rgba(21, 53, 78, 0.035);
+}
+
+.postdoc-notice-icon {
+    display: flex;
+    flex: 0 0 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: #f8f3e8;
+    color: var(--color-4e);
+    font: var(--font-14);
+}
+
+.postdoc-notice h3 {
+    margin-bottom: 0.4375rem;
+    color: var(--color-4e);
+    font: var(--font-21);
+}
+
+.postdoc-notice p {
+    margin-bottom: 0.5rem;
+}
+
+.postdoc-notice a,
+.postdoc-text-link {
+    color: var(--color-4e);
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+.postdoc-text-link {
+    display: inline-block;
+    margin-top: 1.25rem;
+    text-decoration: none;
+}
+
+.postdoc-text-link:hover,
+.postdoc-notice a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   SECTION HEADINGS
+============================== */
+
+.postdoc-section {
+    margin-bottom: 5.3125rem;
+}
+
+.postdoc-section-heading {
+    max-width: 45rem;
+    margin-bottom: 2rem;
+}
+
+.postdoc-section-heading .postdoc-kicker {
+    margin-bottom: 0.5625rem;
+}
+
+.postdoc-section-heading h2 {
+    margin-bottom: 2.75rem;
+    color: var(--color-4e);
+    font: var(--font-24);
+    font-family: var(--font-Condensed);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.postdoc-section-heading > p {
+    margin-bottom: 0;
+    color: var(--color-4e);
+    font: var(--font-16);
+    line-height: 1.7;
+}
+
+/* ==============================
+   ELIGIBILITY CARDS
+============================== */
+
+.postdoc-two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 1.5rem;
+}
+
+.postdoc-card {
+    padding: 2rem;
+    border: 1px solid #e5e9ed;
+    border-top: 0.1875rem solid var(--color-4e);
+    background: var(--color-white);
+    box-shadow: 0 0.625rem 2.1875rem rgba(21, 53, 78, 0.035);
+}
+
+.postdoc-card-accent {
+    border-top-color: var(--color-100);
+}
+
+.postdoc-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    margin-bottom: 1.375rem;
+}
+
+.postdoc-icon {
+    display: flex;
+    flex: 0 0 2.625rem;
+    align-items: center;
+    justify-content: center;
+    width: 2.625rem;
+    height: 2.625rem;
+    background: #edf2f6;
+    color: var(--color-4e);
+    font: var(--font-20);
+}
+
+.postdoc-card-accent .postdoc-icon {
+    background: #f8f3e8;
+    color: #99721d;
+}
+
+.postdoc-card-heading h3 {
+    margin-bottom: 0;
+    color: var(--color-4e);
+    font: var(--font-21);
+    line-height: 1.35;
+}
+
+.postdoc-list {
+    display: grid;
+    gap: 1.0625rem;
+    margin: 0;
+    padding-left: 1.375rem;
+}
+
+.postdoc-list li {
+    padding-left: 0.3125rem;
+    color: var(--color-black);
+    font: var(--font-16);
+    line-height: 1.8;
+}
+
+.postdoc-list li::marker {
+    color: #16344e;
+    font-weight: 800;
+}
+
+/* ==============================
+   MENTOR CRITERIA
+============================== */
+
+.postdoc-mentor-section {
+    padding: 3.125rem;
+    background: #eef3f7;
+}
+
+.postdoc-mentor-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0 2.1875rem;
+}
+
+.postdoc-mentor-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.125rem;
+    padding: 1.375rem 0;
+    border-bottom: 1px solid #d8e0e7;
+}
+
+.postdoc-mentor-item > span {
+    flex: 0 0 2.6875rem;
+    color: var(--color-4e);
+    font: var(--font-16);
+    font-family: var(--font-Condensed);
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+.postdoc-mentor-item p {
+    margin: 0;
+    color: var(--color-black);
+    font: var(--font-14);
+    line-height: 1.75;
+}
+
+/* ==============================
+   APPLICATION PROCEDURE
+============================== */
+
+.postdoc-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 2.1875rem;
+    margin-bottom: 2.5rem;
+}
+
+.postdoc-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.125rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid #e5e9ed;
+}
+
+.postdoc-step-no {
+    display: flex;
+    flex: 0 0 2.875rem;
+    align-items: center;
+    justify-content: center;
+    width: 2.875rem;
+    height: 2.875rem;
+    background: #f8f3e8;
+    color: #99721d;
+    font: var(--font-18);
+    font-family: var(--font-Condensed);
+}
+
+.postdoc-step > div {
+    min-width: 0;
+}
+
+.postdoc-step p {
+    margin-bottom: 0.75rem;
+    color: var(--color-4e);
+    font: var(--font-14);
+    line-height: 1.8;
+}
+
+.postdoc-step p:last-child {
+    margin-bottom: 0;
+}
+
+.postdoc-step .postdoc-list {
+    margin: 0.75rem 0 1rem;
+}
+
+/* ==============================
+   FINAL CTA
+============================== */
+
+.postdoc-final-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.875rem;
+    padding: 2.625rem;
+    background: var(--color-4e);
+}
+
+.postdoc-final-cta h2 {
+    margin-bottom: 0.5rem;
+    color: var(--color-white);
+    font: var(--font-21);
+    line-height: 1.3;
+}
+
+.postdoc-final-cta p {
+    margin-bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    font: var(--font-14);
+    line-height: 1.7;
+}
+
+.postdoc-final-cta .postdoc-kicker {
+    margin-bottom: 0.5625rem;
+}
+
+/* ==============================
+   ACCESSIBILITY
+============================== */
+
+.postdoc-page a:focus-visible {
+    outline: 0.1875rem solid #d5a62e;
+    outline-offset: 0.25rem;
+}
+
+/* ==============================
+   TABLET
+============================== */
+
+@media screen and (max-width: 61.9375rem) {
+    .postdoc-page {
+        padding: 2.8125rem 0 3.75rem;
+    }
+
+    .postdoc-container {
+        padding: 0 1.375rem;
+    }
+
+    .postdoc-hero {
+        min-height: auto;
+        gap: 1.375rem;
+        padding: 2.8125rem 2.1875rem;
+    }
+
+    .postdoc-hero-number {
+        width: 8.4375rem;
+        height: 8.4375rem;
+    }
+
+    .postdoc-hero-number strong {
+        font-size: 3.5rem;
+    }
+
+    .postdoc-hero h1 {
+        font-size: 3rem;
+    }
+
+    .postdoc-notice {
+        margin-bottom: 3.75rem;
+        padding: 1.5625rem;
+    }
+
+    .postdoc-section {
+        margin-bottom: 3.75rem;
+    }
+
+    .postdoc-card {
+        padding: 1.5625rem;
+    }
+
+    .postdoc-mentor-section {
+        padding: 2.1875rem 1.75rem;
+    }
+
+    .postdoc-final-cta {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2rem;
+    }
+}
+
+/* ==============================
+   MOBILE
+============================== */
+
+@media screen and (max-width: 47.9375rem) {
+    .postdoc-page {
+        padding: 1.5625rem 0 2.5rem;
+        font: var(--font-15);
+    }
+
+    .postdoc-container {
+        padding: 0 0.9375rem;
+    }
+
+    .postdoc-hero {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 2.1875rem 1.5rem;
+    }
+
+    .postdoc-hero::after {
+        right: -11.25rem;
+    }
+
+    .postdoc-eyebrow,
+    .postdoc-kicker {
+        font: var(--font-14);
+        font-family: var(--font-Condensed);
+        letter-spacing: 0.09375rem;
+    }
+
+    .postdoc-hero h1 {
+        font: clamp(2.25rem, 9vw, 2.875rem);
+        line-height: 1.15;
+    }
+
+    .postdoc-hero-content > p {
+        font: var(--font-16);
+    }
+
+    .postdoc-hero-number {
+        flex-direction: row;
+        gap: 0.8125rem;
+        width: auto;
+        height: auto;
+        padding: 0.75rem 1.125rem;
+        border-radius: 0.1875rem;
+    }
+
+    .postdoc-hero-number strong {
+        font: var(--font-16);
+    }
+
+    .postdoc-hero-number span {
+        margin-top: 0;
+        text-align: left;
+    }
+
+    .postdoc-hero-actions,
+    .postdoc-cta-actions {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .postdoc-hero-actions .postdoc-btn,
+    .postdoc-cta-actions .postdoc-btn {
+        width: 100%;
+    }
+
+    .postdoc-notice {
+        gap: 0.875rem;
+        margin: 1.125rem 0 3rem;
+        padding: 1.375rem 1.0625rem;
+    }
+
+    .postdoc-notice-icon {
+        flex-basis: 2.375rem;
+        width: 2.375rem;
+        height: 2.375rem;
+        font: var(--font-18);
+    }
+
+    .postdoc-notice h3 {
+        font: var(--font-18);
+    }
+
+    .postdoc-notice p {
+        font: var(--font-14);
+    }
+
+    .postdoc-section {
+        margin-bottom: 3rem;
+    }
+
+    .postdoc-section-heading {
+        margin-bottom: 1.4375rem;
+    }
+
+    .postdoc-section-heading h2 {
+        font: var(--font-21);
+        font-family: var(--font-Condensed);
+    }
+
+    .postdoc-section-heading > p {
+        font: var(--font-14);
+    }
+
+    .postdoc-two-col,
+    .postdoc-mentor-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .postdoc-card {
+        padding: 1.4375rem 1.1875rem;
+    }
+
+    .postdoc-card-heading {
+        gap: 0.75rem;
+        margin-bottom: 1.0625rem;
+    }
+
+    .postdoc-list {
+        gap: 0.8125rem;
+    }
+
+    .postdoc-list li {
+        font: var(--font-14);
+        line-height: 1.75;
+    }
+
+    .postdoc-mentor-section {
+        padding: 1.75rem 1.25rem;
+    }
+
+    .postdoc-mentor-item {
+        gap: 0.8125rem;
+        padding: 1.1875rem 0;
+    }
+
+    .postdoc-mentor-item > span {
+        flex-basis: 2.1875rem;
+        font-size: var(--font-18);
+    }
+
+    .postdoc-step {
+        gap: 0.875rem;
+        padding: 1.25rem 0;
+    }
+
+    .postdoc-step-no {
+        flex-basis: 2.5rem;
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .postdoc-step ol li {
+        font: var(--font-14);
+        line-height: 1.75;
+    }
+
+    .postdoc-final-cta {
+        gap: 1.375rem;
+        padding: 1.6875rem 1.25rem;
+    }
+}
+
+/* ==============================
+   SMALL MOBILE
+============================== */
+
+@media screen and (max-width: 23.75rem) {
+    .postdoc-container {
+        padding: 0 0.6875rem;
+    }
+
+    .postdoc-hero {
+        padding: 1.75rem 1.125rem;
+    }
+
+    .postdoc-hero-actions .postdoc-btn {
+        padding: 0.75rem 0.625rem;
+    }
+
+    .postdoc-notice {
+        padding: 1.125rem 0.75rem;
+    }
+
+    .postdoc-card {
+        padding: 1.25rem 0.9375rem;
+    }
+}
