@@ -6,12 +6,90 @@ export default function PdfLists({ data }) {
   const renderSection = (section, sectionIndex) => {
     switch (section.type) {
       case "pdf_lists":
+        // return (
+        //   <div key={sectionIndex} className="pdfs_row">
+        //     {section?.items?.map((item, idx) => (
+        //       <React.Fragment key={idx}>
+        //         {item?.mainTitle && (
+        //           <h3 className="mainTitle">{item.mainTitle}</h3>
+        //         )}
+
+        //         <ul>
+        //           {item?.pdfs?.map((singlePdf, pdfIdx) => {
+        //             const fileUrl =
+        //               singlePdf?.pdf ||
+        //               singlePdf?.url ||
+        //               singlePdf?.link ||
+        //               singlePdf?.pdf_url || 
+        //               "";
+
+        //             const isPdf =
+        //               fileUrl.toLowerCase().includes(".pdf");
+
+        //             if(!singlePdf?.pdf && !singlePdf?.pdf_url){
+        //               return(
+        //                 <li key={pdfIdx}>
+        //                     <p>{singlePdf?.pdf_type}</p>
+        //                 </li>
+        //               )
+        //             }else{
+        //               return (
+        //                 <li key={pdfIdx}>
+        //                   <Link
+        //                     href={fileUrl}
+        //                     target={(singlePdf?.pdf || singlePdf?.pdf_url) ? '_blank' : '_self'}
+        //                     rel="noopener noreferrer"
+        //                   >
+        //                     <p>{singlePdf?.pdf_type}</p>
+
+        //                     {singlePdf?.pdf && (
+        //                         <Image
+        //                       src={
+        //                         isPdf
+        //                           ? "/images/icons/pdf.png"
+        //                           : "/images/icons/link.png"
+        //                       }
+        //                       width={20}
+        //                       height={20}
+        //                       loading="lazy"
+        //                       alt={isPdf ? "pdf" : "link"}
+        //                     />
+        //                     )}
+
+
+        //                   </Link>
+        //                 </li>
+        //               );
+        //             }
+
+
+        //           })}
+        //         </ul>
+        //       </React.Fragment>
+        //     ))}
+        //   </div>
+        // );
+
         return (
-          <div key={sectionIndex} className="pdfs_row">
+          <div
+            key={sectionIndex}
+            className="pdfs_row"
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-once="true"
+          >
             {section?.items?.map((item, idx) => (
               <React.Fragment key={idx}>
                 {item?.mainTitle && (
-                  <h3 className="mainTitle">{item.mainTitle}</h3>
+                  <h3
+                    className="mainTitle"
+                    data-aos="fade-up"
+                    data-aos-duration="800"
+                    data-aos-delay={Math.min(idx * 100, 500)}
+                    data-aos-once="true"
+                  >
+                    {item.mainTitle}
+                  </h3>
                 )}
 
                 <ul>
@@ -20,49 +98,60 @@ export default function PdfLists({ data }) {
                       singlePdf?.pdf ||
                       singlePdf?.url ||
                       singlePdf?.link ||
-                      singlePdf?.pdf_url || 
+                      singlePdf?.pdf_url ||
                       "";
 
-                    const isPdf =
-                      fileUrl.toLowerCase().includes(".pdf");
+                    const isPdf = fileUrl.toLowerCase().includes(".pdf");
 
-                    if(!singlePdf?.pdf && !singlePdf?.pdf_url){
-                      return(
-                        <li key={pdfIdx}>
-                            <p>{singlePdf?.pdf_type}</p>
-                        </li>
-                      )
-                    }else{
+                    if (!singlePdf?.pdf && !singlePdf?.pdf_url) {
                       return (
-                        <li key={pdfIdx}>
+                        <li
+                          key={pdfIdx}
+                          data-aos="fade-up"
+                          data-aos-duration="800"
+                          data-aos-delay={Math.min(pdfIdx * 100, 500)}
+                          data-aos-once="true"
+                        >
+                          <p>{singlePdf?.pdf_type}</p>
+                        </li>
+                      );
+                    } else {
+                      return (
+                        <li
+                          key={pdfIdx}
+                          data-aos="fade-up"
+                          data-aos-duration="800"
+                          data-aos-delay={Math.min(pdfIdx * 100, 500)}
+                          data-aos-once="true"
+                        >
                           <Link
                             href={fileUrl}
-                            target={(singlePdf?.pdf || singlePdf?.pdf_url) ? '_blank' : '_self'}
+                            target={
+                              singlePdf?.pdf || singlePdf?.pdf_url
+                                ? "_blank"
+                                : "_self"
+                            }
                             rel="noopener noreferrer"
                           >
                             <p>{singlePdf?.pdf_type}</p>
-  
+
                             {singlePdf?.pdf && (
-                                <Image
-                              src={
-                                isPdf
-                                  ? "/images/icons/pdf.png"
-                                  : "/images/icons/link.png"
-                              }
-                              width={20}
-                              height={20}
-                              loading="lazy"
-                              alt={isPdf ? "pdf" : "link"}
-                            />
+                              <Image
+                                src={
+                                  isPdf
+                                    ? "/images/icons/pdf.png"
+                                    : "/images/icons/link.png"
+                                }
+                                width={20}
+                                height={20}
+                                loading="lazy"
+                                alt={isPdf ? "pdf" : "link"}
+                              />
                             )}
-  
-                            
                           </Link>
                         </li>
                       );
                     }
-
-                    
                   })}
                 </ul>
               </React.Fragment>
