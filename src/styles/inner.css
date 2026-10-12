@@ -3300,6 +3300,12 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .phd-and-postdoc .amenities_section, .postdoc-page {padding-block: 6rem;}
 .phd-and-postdoc .top_section{padding-top: 4rem;}
 .phd-and-postdoc .pdf_list_section {padding-top: 4rem;}
+.research-facilities .singleImageContent .row {flex-direction: column-reverse;}
+.research-facilities .content_col{padding-left: 0;padding-bottom: 3rem;}
+.research-facilities .about_top{padding-top: 0;}
+.research-facilities .about_one .abt_cntnt p {padding-bottom: 0;}
+.research-facilities .amenities_section {padding: 4rem 0;}
+
 }
 
 @media(max-width: 767px){
@@ -3325,6 +3331,11 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .phd-and-postdoc .postdoc-notice {margin: 2rem 0 2rem;}
 .postdoc-section-heading h2{font: var(--font-21);font-weight: 600;font-family: var(--font-Condensed);}
 .research-achievements .about_subtitle {margin-bottom: 0rem;}
+.research-facilities  .about_two.labs_group_section {padding-bottom: 2rem;}
+    .research-facilities .labs_group_section.about_two .about_two.reverse .early_rgt {
+        padding-bottom: 0;
+    }
+    .research-facilities .about_one{padding-top: 2rem;}
 }
 @media(max-width: 575px){
 .research .ameminites_listmain {padding-block: 4rem;}
@@ -3351,6 +3362,14 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .postdoc-section-heading h2{margin-bottom: 0;}
 .postdoc-step .fellowship_conditions {margin-block: 2rem;}
 .phd-and-postdoc .about_subtitle {margin-bottom: 1.5rem;text-align: left;}
+.mission-grid{grid-template-columns: repeat(1,1fr);gap: 1.5rem;}
+.research-facilities .mission-grid{margin-bottom: 2rem;}
+.idea-lab-mission h3, .idea-lab-objectives h3 {
+    font: var(--font-21);
+    font-family: var(--font-Condensed);
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
 }
 @media(max-width: 480px){
 .research .about_one .abt_cntnt p {padding-bottom: 0;}
