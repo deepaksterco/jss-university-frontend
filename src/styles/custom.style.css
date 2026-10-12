@@ -4898,7 +4898,7 @@ hr {
 /* pdf_list_section */
 
 .pdf_list_section {
-  padding: 10rem 0;
+  padding: 8rem 0;
 }
 
 .pdf_list_section .mainTitle {
@@ -8737,7 +8737,6 @@ height: auto;
 .ip-management-cell .about_one .estblish {padding-block: 4rem 0rem;}
 .research-governance .table_section {padding-block: 8rem 2rem;}
 .research-governance .amenities_section {padding-block: 6rem;}
-.phd-scholars-and-guides-list .pdf_list_section {padding: 2rem 0;}
 .ip-management-cell .pdf_list_section {padding: 6rem 0;}
 .ip-management-cell .about_one .abt_cntnt p {padding-bottom: 2rem;}
 

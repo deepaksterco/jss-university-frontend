@@ -1198,24 +1198,28 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
 })();
 
 
+
+// Question paper tab js 
+
 (function () {
     function initQuestionPaperTabs() {
-        var leftTabs = document.querySelectorAll(".cms-tab-button");
-        var branches = document.querySelectorAll(".branch-content");
-        if (!leftTabs.length || !branches.length) {
+        if (document.body.dataset.questionTabsInitialized === "true") {
             return;
         }
-
-        leftTabs.forEach(function (tab) {
-            tab.addEventListener("click", function () {
-                var branchNumber = this.getAttribute("data-branch");
+        document.body.dataset.questionTabsInitialized = "true";
+        document.addEventListener("click", function (event) {
+            var leftTab = event.target.closest(".cms-tab-button");
+            if (leftTab) {
+                var branchNumber = leftTab.getAttribute("data-branch");
                 if (!branchNumber) {
                     return;
                 }
-                leftTabs.forEach(function (item) {
-                    item.classList.remove("active");
+                var leftTabs = document.querySelectorAll(".cms-tab-button");
+                var branches = document.querySelectorAll(".branch-content");
+                leftTabs.forEach(function (tab) {
+                    tab.classList.remove("active");
                 });
-                this.classList.add("active");
+                leftTab.classList.add("active");
                 branches.forEach(function (branch) {
                     branch.classList.remove("active");
                 });
@@ -1228,13 +1232,11 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
                 selectedBranch.classList.add("active");
                 var rightTabs =
                     selectedBranch.querySelectorAll(".degree-tab");
-
                 var rightContents =
                     selectedBranch.querySelectorAll(".degree-content");
                 rightTabs.forEach(function (tab) {
                     tab.classList.remove("active");
                 });
-
                 rightContents.forEach(function (content) {
                     content.classList.remove("active");
                 });
@@ -1242,53 +1244,39 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
                 if (rightTabs.length > 0) {
                     rightTabs[0].classList.add("active");
                 }
+
                 if (rightContents.length > 0) {
                     rightContents[0].classList.add("active");
                 }
-            });
-        });
-        document.addEventListener("click", function (event) {
-
+                return;
+            }
             var degreeTab = event.target.closest(".degree-tab");
-
             if (!degreeTab) {
                 return;
             }
             var branch = degreeTab.closest(".branch-content");
-
             if (!branch) {
                 return;
             }
-            var degreeId =
-                degreeTab.getAttribute("data-degree");
-
+            var degreeId = degreeTab.getAttribute("data-degree");
             if (!degreeId) {
                 return;
             }
-            var tabs =
-                branch.querySelectorAll(".degree-tab");
-
-            var contents =
-                branch.querySelectorAll(".degree-content");
+            var tabs = branch.querySelectorAll(".degree-tab");
+            var contents = branch.querySelectorAll(".degree-content");
             tabs.forEach(function (tab) {
                 tab.classList.remove("active");
             });
-
             contents.forEach(function (content) {
                 content.classList.remove("active");
             });
             degreeTab.classList.add("active");
-            var selectedContent =
-                branch.querySelector("#" + degreeId);
-
-            if (selectedContent) {
+            var selectedContent = document.getElementById(degreeId);
+            if (selectedContent && branch.contains(selectedContent)) {
                 selectedContent.classList.add("active");
             }
-
         });
-
     }
-
     if (document.readyState === "loading") {
         document.addEventListener(
             "DOMContentLoaded",
@@ -1297,5 +1285,4 @@ if (typeof gsap !== "undefined" && typeof ScrollTrigger !== "undefined") {
     } else {
         initQuestionPaperTabs();
     }
-
 })();

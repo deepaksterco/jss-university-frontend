@@ -1,14 +1,3 @@
-/**
- * Swiper 4.1.6
- * Most modern mobile touch slider and framework with hardware accelerated transitions
- * http://www.idangero.us/swiper/
- *
- * Copyright 2014-2018 Vladimir Kharlampidi
- *
- * Released under the MIT License
- *
- * Released on: February 11, 2018
- */
 
 (function (global, factory) {
 	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
@@ -16,17 +5,6 @@
 	(global.Swiper = factory());
 }(this, (function () { 'use strict';
 
-/**
- * SSR Window 1.0.0
- * Better handling for window object in SSR environment
- * https://github.com/nolimits4web/ssr-window
- *
- * Copyright 2018, Vladimir Kharlampidi
- *
- * Licensed under MIT
- *
- * Released on: February 10, 2018
- */
 var d;
 if (typeof document === 'undefined') {
   d = {
@@ -65,7 +43,7 @@ if (typeof document === 'undefined') {
     location: { hash: '' },
   };
 } else {
-  // eslint-disable-next-line
+
   d = document;
 }
 
@@ -99,25 +77,11 @@ if (typeof window === 'undefined') {
     clearTimeout: function clearTimeout() {},
   };
 } else {
-  // eslint-disable-next-line
   w = window;
 }
 
 var win = w;
 
-/**
- * Dom7 2.0.2
- * Minimalistic JavaScript library for DOM manipulation, with a jQuery-compatible API
- * http://framework7.io/docs/dom.html
- *
- * Copyright 2018, Vladimir Kharlampidi
- * The iDangero.us
- * http://www.idangero.us/
- *
- * Licensed under MIT
- *
- * Released on: February 10, 2018
- */
 var Dom7 = function Dom7(arr) {
   var self = this;
   // Create array-like object
