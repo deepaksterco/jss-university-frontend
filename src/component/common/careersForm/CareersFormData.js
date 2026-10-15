@@ -1,15 +1,24 @@
 "use client";
-import React, { useState, useRef } from "react";
+import React, {useEffect, useState, useRef } from "react";
 
 import styles from "./CareersFormData.module.css";
 import { BASE_URL } from "@/config/config.mjs";
 
+
+
 export default function CareersFormData() {
+  const API = "https://backoffice.jssuninoida.edu.in/";
+
     const [loading, setLoading] = useState(false);
     const [message, setMessage] = useState("");
     const [errors, setErrors] = useState({});
     const [showPopup, setShowPopup] = useState(false);
     const fileInputRef = useRef(null);
+   
+    const [schools, setSchools] = useState([]);
+    const [departments, setDepartments] = useState([]);
+    const [loadingSchools, setLoadingSchools] = useState(false);
+    const [schoolsError, setSchoolsError] = useState("");
 
     const [formData, setFormData] = useState({
         full_name: null,
@@ -35,6 +44,48 @@ export default function CareersFormData() {
         declaration_accepted: false,
         terms_accepted: false,
     });
+
+    useEffect(() => {
+        const fetchSchools = async () => {
+            setLoadingSchools(true);
+            setSchoolsError("");
+
+            try {
+                const response = await fetch(
+                    `${API}api/school-department-list`,
+                    { headers: { Accept: "application/json" } }
+                );
+
+                if (!response.ok) {
+                    throw new Error("Unable to load schools");
+                }
+
+                const result = await response.json();
+
+                if (!result.status || !Array.isArray(result.data)) {
+                    throw new Error("Invalid school list response");
+                }
+
+                setSchools(result.data);
+
+        
+                const selectedSchool = result.data.find(
+                    (school) => school.name === formData.school || String(school.id) === String(formData.school)
+                );
+                setDepartments(selectedSchool?.departments || []);
+            } catch (error) {
+                console.error("Error fetching school/department list:", error);
+                setSchools([]);
+                setDepartments([]);
+                setSchoolsError("Unable to load schools. Please refresh the page and try again.");
+            } finally {
+                setLoadingSchools(false);
+            }
+        };
+
+        fetchSchools();
+   
+    }, []);
 
     const [academicQualifications, setAcademicQualifications] = useState([
         {
@@ -106,6 +157,22 @@ export default function CareersFormData() {
 
     const handleChange = (e) => {
         const { name, value, type, checked } = e.target;
+
+        if (name === "school") {
+            const selectedSchool = schools.find(
+                (school) => school.name === value || String(school.id) === value
+            );
+
+            setDepartments(selectedSchool?.departments || []);
+            setFormData((prev) => ({
+                ...prev,
+                school: selectedSchool ? selectedSchool.name : "",
+                department: "",
+            }));
+            setErrors((prev) => ({ ...prev, school: undefined, department: undefined }));
+            return;
+        }
+
         setFormData((prev) => ({
             ...prev,
             [name]: type === "checkbox" ? checked : value,
@@ -121,13 +188,12 @@ export default function CareersFormData() {
 
         const form = new FormData();
 
-        // Flat fields
+
         Object.entries(formData).forEach(([key, value]) => {
-            if (value === null || value === undefined) return; // skip nulls
+            if (value === null || value === undefined) return; 
             form.append(key, typeof value === "boolean" ? (value ? 1 : 0) : value);
         });
 
-        // Academic qualifications — bracket notation so Laravel parses it as a nested array
         academicQualifications.forEach((qualification, index) => {
             Object.entries(qualification).forEach(([key, value]) => {
                 if (value === null || value === undefined || value === "") return;
@@ -135,7 +201,6 @@ export default function CareersFormData() {
             });
         });
 
-        // Professional experience — backend field is singular "professional_experience"
         professionalExperiences.forEach((exp, index) => {
             Object.entries(exp).forEach(([key, value]) => {
                 if (value === null || value === undefined || value === "") return;
@@ -155,8 +220,7 @@ export default function CareersFormData() {
                     method: "POST",
                     headers: {
                         Accept: "application/json",
-                        // Do NOT set Content-Type manually — the browser sets the
-                        // correct multipart boundary automatically for FormData
+                       
                     },
                     body: form,
                 }
@@ -173,6 +237,7 @@ export default function CareersFormData() {
                 }, 3000);
 
                 // reset form
+                setDepartments([]);
                 setFormData({
                     full_name: null,
                     email: null,
@@ -236,6 +301,11 @@ export default function CareersFormData() {
             setLoading(false);
         }
     };
+
+
+
+
+
 
     return (
         <div className={`container ${styles.formContainer}`}>
@@ -353,20 +423,25 @@ export default function CareersFormData() {
                                 className={styles.input}
                                 value={formData.school || ""}
                                 onChange={handleChange}
+                                disabled={loadingSchools}
                             >
-                                <option value="">Select School</option>
-                                <option value="School of Engineering">School of Engineering</option>
-                                <option value="College of Pharmacy">College of Pharmacy</option>
-                                <option value="School of Management">School of Management</option>
-                                <option value="School of Computer Applications">School of Computer Applications</option>
-                                <option value="School of Applied Sciences">School of Applied Sciences</option>
-                                <option value="School of Humanities and Social Sciences">School of Humanities and Social Sciences</option>
-                                <option value="School of Life Sciences">School of Life Sciences</option>
+                                <option value="">
+                                    {loadingSchools ? "Loading Schools..." : "Select School"}
+                                </option>
+                                {schools.map((school) => (
+                                    <option key={school.id} value={school.name}>
+                                        {school.name}
+                                    </option>
+                                ))}
                             </select>
+                            {schoolsError && (
+                                <p className={styles.error}>{schoolsError}</p>
+                            )}
                             {errors.school && (
                                 <p className={styles.error}>{errors.school[0]}</p>
                             )}
                         </div>
+
                         <div className={styles.fieldGroup}>
                             <span className={styles.fieldLabel}>Department Applying For</span>
                             <select
@@ -374,20 +449,26 @@ export default function CareersFormData() {
                                 className={styles.input}
                                 onChange={handleChange}
                                 value={formData.department || ""}
+                                disabled={!formData.school || loadingSchools || departments.length === 0}
                             >
-                                <option value="">Select Department</option>
-                                <option value="Aerospace Engineering">Aerospace Engineering</option>
-                                <option value="Artificial Intelligence and Machine Learning">Artificial Intelligence and Machine Learning</option>
-                                <option value="Civil Engineering">Civil Engineering</option>
-                                <option value="Electrical and Electronics Engineering">Electrical and Electronics Engineering</option>
-                                <option value="Electrical Engineering">Electrical Engineering</option>
-                                <option value="Electronics And Communication Engineering">Electronics And Communication Engineering</option>
-                                <option value="Mechanical Engineering">Mechanical Engineering</option>
+                                <option value="">
+                                    {!formData.school
+                                        ? "Select School First"
+                                        : departments.length === 0
+                                            ? "No Departments Available"
+                                            : "Select Department"}
+                                </option>
+                                {departments.map((department) => (
+                                    <option key={department.id} value={department.name}>
+                                        {department.name}
+                                    </option>
+                                ))}
                             </select>
                             {errors.department && (
                                 <p className={styles.error}>{errors.department[0]}</p>
                             )}
                         </div>
+
                         <div className={styles.fieldGroup}>
                             <span className={styles.fieldLabel}>Post Applying For</span>
                             <select
