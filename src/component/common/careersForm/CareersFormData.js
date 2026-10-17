@@ -753,7 +753,6 @@ export default function CareersFormData() {
 
                 <section className={styles.FormSec}>
                     <h2 className={styles.sectionTitle}>Patents / IPR</h2>
-
                     <div className={styles.formGrid}>
                         <div className={styles.fieldGroup}>
                             <span className={styles.fieldLabel}>Number of Utility Patents Filed</span>

@@ -3380,3 +3380,273 @@ h5.icge-heading.gallery-module  { font: var(--font-26);color: var(--color-4e);ma
 .phd-and-postdoc .atm_g_imgsec{display: none;}
 .postdoc-card{padding: 2rem;}
 }
+.research .ameminites_listmain +.about_one .about_top{padding-top: 0;padding-bottom: 6rem;}
+.research .ameminites_listmain +.about_one .about_top .image-overlay-figure img{
+    max-width: 80rem;
+}
+.research .about_one .atm_g_imgsec{padding: 0;}
+
+
+
+.labs_group_section + .amenities_section {
+  padding-top: 0;
+}
+.rnd-page {
+  width: 100%;
+}
+
+.amenities_section{border-top: 1px solid #ddd;}
+.department{padding-block: 6rem;}
+
+.department + .department {
+  border-top: 1px solid #ddd;
+}
+
+.department-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.8rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+.department-number {
+  display: grid;
+  place-items: center;
+  flex: 0 0 4.8rem;
+  width: 4.8rem;
+  height: 4.8rem;
+  color: var(--color-ff);
+  background: var(--navy);
+  border-radius: 4px;
+  font: var(--font-20);
+}
+
+.department-heading h2 {
+  margin: 0;
+  color: var(--color-4e);
+  font: var(--font-30);
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+.department-heading h2>span {
+  color: var(--color-ff);
+}
+.department-heading p {
+  margin: 0.8rem 0 0;
+  color: var(--muted);
+  font: var(--font-15);
+  line-height: 1.6;
+  text-transform: uppercase;
+}
+
+/* Zig-zag facility rows */
+.facility {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  align-items: center;
+  gap: 0;
+  margin-bottom: 0
+}
+
+.facility:last-child {
+  margin-bottom: 3rem;
+}
+
+.facility.reverse .facility-visual {
+  order: 0;
+}
+
+.facility.reverse .facility-content {
+  order: 1;
+}
+
+.facility-content {
+  min-width: 0;
+  padding: 0.8rem 0;
+  padding-inline: 10rem;
+}
+
+.facility-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1.6rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  color: var(--color-9a);
+  background: var(--color-white);
+  font: var(--font-12);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.facility-tag::before {
+  content: "";
+  width: 0.7rem;
+  height: 0.7rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--gold);
+}
+
+.facility-content h3 {
+  margin: 0 0 1.6rem;
+  color:var(--color-4e);
+  font: var(--font-28);
+  line-height: 1.3;
+}
+
+.facility-content p {
+  margin: 0;
+  color: #4F5C67;
+  font: var(--font-16);
+  line-height: 1.8;
+}
+
+
+
+.visual-caption {
+  position: absolute;
+  left: 1.6rem;
+  bottom: 1.6rem;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid var(--color-d4);
+  border-radius: 3px;
+  color: var(--navy);
+  background: var(--color-white);
+  font: var(--font-12);
+}
+
+/* Footer */
+.rnd-note {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2.4rem 3rem;
+  color: var(--muted);
+  font: var(--font-14);
+  line-height: 1.7;
+}
+
+.rnd-footer {
+  padding: 3rem 2.4rem;
+  text-align: center;
+  color: var(--color-white);
+  background: var(--navy);
+}
+
+.rnd-footer strong {
+  font: var(--font-20);
+  line-height: 1.5;
+}
+
+.rnd-footer p {
+  margin: 0.8rem 0 0;
+  color: #DDEBF5;
+  font: var(--font-14);
+}
+
+
+
+
+
+/* Responsive layout */
+@media (max-width: 1366px){
+.facility-content {
+    min-width: 0;
+    padding: .8rem 0;
+    padding-inline: 4rem;
+}
+}
+
+
+
+@media (max-width: 991px) {
+ .department-heading{justify-content: left;}
+  .rnd-intro {
+    padding: 3rem 2rem 1rem;
+  }
+.facility-content{padding-inline: 0;}
+  .rnd-intro p {
+    font: var(--font-16);
+    line-height: 1.7;
+  }
+
+  .department {
+    padding: 3rem 0rem 1rem;
+  }
+
+  .department-heading {
+    gap: 1.2rem;
+    margin-bottom: 3rem;
+  }
+
+  .department-number {
+    flex-basis: 4rem;
+    width: 4rem;
+    height: 4rem;
+    font: var(--font-18);
+  }
+
+  .department-heading h2 {
+    font: var(--font-24);
+    line-height: 1.35;
+  }
+
+  .department-heading p {
+    font: var(--font-14);
+  }
+
+  .facility,
+  .facility.reverse {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-bottom: 4.2rem;
+  }
+
+  .facility .facility-visual,
+  .facility.reverse .facility-visual {
+    order: 0;
+    min-height: 22rem;
+  }
+
+  .facility .facility-content,
+  .facility.reverse .facility-content {
+    order: 1;
+  }
+
+  .facility-content h3 {
+    font: var(--font-24);
+    line-height: 1.35;
+  }
+
+  .facility-content p {
+    font: var(--font-16);
+    line-height: 1.7;
+  }
+
+  .facility-visual svg {
+    max-height: 24.5rem;
+  }
+  .research .ameminites_listmain + .about_one .about_top {
+    padding-top: 0;
+    padding-bottom: 2rem;
+}
+}
+
+@media (max-width: 575px){
+.facility, .facility.reverse {
+        gap: 1rem;
+        margin-bottom: 2.2rem;
+    }
+        .department-heading h2 {
+        font: var(--font-18);
+        font-weight: bold;
+    }
+    .facility-content h3{
+         font: var(--font-18);
+         font-weight: bold;
+    }
+}
+    
