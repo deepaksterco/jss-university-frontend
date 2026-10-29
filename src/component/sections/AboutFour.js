@@ -26,7 +26,9 @@ export default function AboutFour({ data }) {
                 const uid = `${sectionIndex}-${idx}-aboutfour`;
 
                 return (
+                  
                   <div key={idx} className="about_f_value">
+                    
                     {(item.image || item.imageVideo?.length > 0) && (
                       <div
                         className="ab_fo_imgsec"
@@ -66,6 +68,7 @@ export default function AboutFour({ data }) {
                       data-aos="fade-up"
                       data-aos-delay="400"
                     >
+                      
                       {item.title && (
                         <h3 dangerouslySetInnerHTML={{ __html: item.title }} />
                       )}
