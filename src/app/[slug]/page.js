@@ -1,16 +1,16 @@
 
 import dynamic from "next/dynamic";
 import AboutFive from "@/component/sections/AboutFive";
-const AboutFour = dynamic(()=>import("@/component/sections/AboutFour"));
-const AboutOne = dynamic(()=>import("@/component/sections/AboutOne"))
+const AboutFour = dynamic(() => import("@/component/sections/AboutFour"));
+const AboutOne = dynamic(() => import("@/component/sections/AboutOne"))
 import AboutThree from "@/component/sections/AboutThree";
-const AboutTwo = dynamic(()=>import("@/component/sections/AboutTwo"));
+const AboutTwo = dynamic(() => import("@/component/sections/AboutTwo"));
 import ComingSoon from "@/component/sections/ComingSoon";
-const FacilityFive = dynamic(()=>import("@/component/sections/FacilityFive"));
+const FacilityFive = dynamic(() => import("@/component/sections/FacilityFive"));
 import FacilityFour from "@/component/sections/FacilityFour";
 import FacilityOne from "@/component/sections/FacilityOne";
 import FacilitySix from "@/component/sections/FacilitySix";
-const FacilityThree = dynamic(()=>import("@/component/sections/FacilityThree"));
+const FacilityThree = dynamic(() => import("@/component/sections/FacilityThree"));
 import FacilityTwo from "@/component/sections/FacilityTwo";
 import TabSection from "@/component/sections/TabSection";
 import Placements from "@/component/sections/Placements";
@@ -21,12 +21,12 @@ import PlacementRequest from "@/component/sections/PlacementRequest";
 import FacilitySeven from "@/component/sections/FacilitySeven";
 import HeritageSection from "@/component/sections/HeritageSection";
 import { notFound, redirect } from "next/navigation";
-const EmpowringPeople = dynamic(()=>import("@/component/sections/EmpowringPeople"));
-const Fosteringcreativity = dynamic(()=>import("@/component/sections/Fosteringcreativity"));
-const AcademicLabs = dynamic(()=>import("@/component/sections/AcademicLabs"));
-const ResearchLabs = dynamic(()=>import("@/component/sections/ResearchLabs"));
+const EmpowringPeople = dynamic(() => import("@/component/sections/EmpowringPeople"));
+const Fosteringcreativity = dynamic(() => import("@/component/sections/Fosteringcreativity"));
+const AcademicLabs = dynamic(() => import("@/component/sections/AcademicLabs"));
+const ResearchLabs = dynamic(() => import("@/component/sections/ResearchLabs"));
 import SelectionProcess from "@/component/sections/SelectionProcess";
-const RightCounterSection = dynamic(()=>import("@/component/sections/RightCounterSection"));
+const RightCounterSection = dynamic(() => import("@/component/sections/RightCounterSection"));
 import EligibilityData from "@/component/sections/EligibilityData";
 import AdmissionTableSection from "@/component/sections/AdmissionTableSection";
 import AdmissionOffice from "@/component/sections/AdmissionOffice";
@@ -43,7 +43,7 @@ import UniversityGreen from "@/component/sections/UniversityGreen";
 import Transportation from "@/component/sections/Transportation";
 import CountAlumni from "@/component/sections/CountAlumni";
 // import DepartmentHeader from "@/component/department-components/departmentHeader/DepartmentHeader";
-const ImageContentRepeat = dynamic(()=>import("@/component/sections/ImageContentRepeat"));
+const ImageContentRepeat = dynamic(() => import("@/component/sections/ImageContentRepeat"));
 import GridCardDesign1 from "@/component/sections/GridCardDesign1";
 import VisionMission from "@/component/sections/VisionMission";
 // import HODMessage from "@/component/department-components/hod-message-component/HodMessageComponent";
@@ -60,7 +60,7 @@ import ResearchPatents from "@/component/sections/ResearchPatents";
 import FacilityTab from "@/component/sections/FacilityTab";
 import StudentClub from "@/component/sections/StudentClub";
 import AmenitiesList from "@/component/sections/AmenitiesList";
-const LabCard = dynamic(()=>import("@/component/sections/LabCard"));
+const LabCard = dynamic(() => import("@/component/sections/LabCard"));
 import BgImageContent from "@/component/sections/BgImageContent";
 import GridDepartment from "@/component/sections/GridDepartment";
 import InnovationPanel from "@/component/sections/InnovationPanel";
@@ -74,7 +74,7 @@ import { getPageSEO } from "@/lib/seo";
 import TabsDataContent from "@/component/sections/TabsDataContents";
 import TabTableMultiple from "@/component/sections/TabTableMultiple";
 // import ResearchLabsSecond from "@/component/sections/ResearchLabsSecond";
-const IICActivities = dynamic(()=>import("@/component/sections/IICActivities"));
+const IICActivities = dynamic(() => import("@/component/sections/IICActivities"));
 import societiesFculties from "@/component/sections/SocietiesFculties";
 import AchievementsRecognitions from "@/component/sections/AchievementsRecognitions";
 import Yukti from "@/component/sections/Yukti";
@@ -99,11 +99,11 @@ async function fetchPageData(slug) {
       `${BASE_URL}pages/${slug}`,
       isDev
         ? {
-            cache: "no-store",
-          }
+          cache: "no-store",
+        }
         : {
-            next: { revalidate: 60 },
-          },
+          next: { revalidate: 60 },
+        },
     );
     if (!res.ok) return null;
     return await res.json();
@@ -239,7 +239,7 @@ export default async function DynamicPage({ params }) {
     AchievementsRecognitions: AchievementsRecognitions,
     Yukti: Yukti,
     IICActivities: IICActivities,
-    editor: Editor, 
+    editor: Editor,
   };
 
   const cmsContainerId = `cms-page-${data.slug
@@ -271,7 +271,7 @@ export default async function DynamicPage({ params }) {
         {groupedSections?.map((section, index) => {
           const Component =
             sectionComponents[
-              section.type === "facilityGroup" ? "facilityGroup" : section.type
+            section.type === "facilityGroup" ? "facilityGroup" : section.type
             ];
           if (Component === FacilityOne) {
             return <Component key={index} data={section.sections} />;
