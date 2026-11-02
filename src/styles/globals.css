@@ -1766,11 +1766,9 @@ background:unset;
 .faculty-achievements .about_subtitle{display: none;}
 .faculty-achievements .about_one img{max-width: 120rem;}
 @media (max-width: 47.9375rem) {
-
     .cms-left-tabs {
         flex-direction: column;
     }
-
     .cms-tab-nav {
         width: 100%;
     }
