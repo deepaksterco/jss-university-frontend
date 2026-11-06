@@ -85,8 +85,9 @@ export default function ProgramDetailContent({ data }) {
             <figcaption>
               <div className="program-detail-text">
                 <div className="innnr_head">
-                    <h1 className="sub_heading">PROGRAMMES</h1>
-                    {name && <h2 className="heading">{name}</h2>}
+                   
+                    <div className="sub_heading"> PROGRAMMES</div>
+                    {name && <h1 className="heading">{name}</h1>}
                 </div>
               </div>
             </figcaption>
