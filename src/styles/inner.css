@@ -889,7 +889,7 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .ac_swi_btn{background-color:transparent;border:none;}
 .ac_swi_btn img{width:2.5rem;height:2.5rem;border-radius:0;}
 .ac_pagination{display:flex;margin-top:2.2rem;gap:0.8rem;flex-direction:row-reverse;justify-content:flex-end;}
-.research_labmain{padding-block:15rem;}
+.research_labmain{padding-block:10rem;}
 .research_grid_one,.research_grid_two{display:grid;grid-template-columns:49.4% 48.6%;align-items:center;gap:2.7rem;}
 .research_grid_one .research_cont{padding-left:9rem;padding-right:1.5rem;}
 .research_grid_one .research_cont{padding-left: 5rem;}
@@ -1197,7 +1197,8 @@ ul.comon_list li:before{content:"";background-color:var(--color-100);border-radi
 .grands_content{padding-left:8.3rem;padding-right:6rem;}
 .downlo_guides a{display:flex;align-items:center;gap:1rem;font:var(--font-18);font-weight:bold;color:var(--color-33);}
 .grands_mainsec{padding-block:9.5rem 0rem;}
-.grans_tab_mainsec{padding-block:15rem 15rem;}
+.grans_tab_mainsec{padding-block:8rem 15rem;}
+.grand_tabs_main.faci_diff_tabs ul{display: none;}
 .grand_tabs_main .growth-tabs{margin-bottom:5rem;text-align:center;}
 .grand_tab_panel{display:none;}
 .grand_tab_panel.active{display:block;}
@@ -1847,10 +1848,10 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 .campus-facilities .about_two.labs_group_section{padding-bottom:10rem;}
 .academic-facilities .academic_labmain{padding-block:10rem;}
 .academic-facilities .about_one .estblish p{margin-bottom:0;}
-.research_labmain .research_grid_one{margin-bottom:10rem;}
+.research_labmain .research_grid_one{margin-bottom:4rem;}
 .academic-facilities .about_four .about_f_value{padding-top:10rem;}
 .campus-facilities .image_content_repeat_section.hostel_repeatsec .singleImageContent:not(:last-child){margin-bottom:6rem;}
-.image_content_repeat_section .hostel-rules{margin:6rem 0 0;}
+.image_content_repeat_section .hostel-rules{margin: 0;}
 .image_content_repeat_section.image-repeat-test .single_image_content .singleImageContent:not(:last-child){margin-bottom:6rem;}
 .campus-facilities .image_content_repeat_section.image-repeat-test{padding-bottom:6rem;}
 .image-repeat-test .rep_border,.image-repeat-test .rep_border .research_swiper_wrapper,.image-repeat-test .rep_border .research_swiper_wrapper .swiper-wrapper,.image-repeat-test .rep_border .research_swiper_wrapper .swiper-wrapper .swiper-slide,.image-repeat-test .rep_border .research_swiper_wrapper .swiper-wrapper .swiper-slide video{height:100%;}
@@ -1873,6 +1874,9 @@ main.main-container.department-about-us.department-page.department-chemistry-abo
 }
 @media (max-width:1199px){.icge-about04.highlights-sec ul{grid-template-columns:repeat(3,1fr);}
 .icge-about07 .placement-module__VSLvPW__eachSlide{gap:2rem;}
+.research_grid_one .research_cont {
+    padding-right: 10.5rem;
+}
 }
 .ac_pagination .ac_swi_btn img:hover{filter:invert(41%) sepia(94%) saturate(707%) hue-rotate(9deg) brightness(101%) contrast(102%);}
 .society_tables_depart{margin-top:5rem;}
@@ -2035,6 +2039,9 @@ h5.text-center.event_org_orojo{padding-block:4rem 0;}
 .examination-overview .amenities_section .grid_group{gap:2rem;}
 .alumni .labs_group_section.about_two .about_two.reverse .early_rgt{padding-top:0;padding-inline:0 2rem;}
 .alumni .about_one .abt_cntnt p{padding-bottom:0;}
+.research_grid_one .research_cont {
+        padding-right: 0;
+    }
 }
 @media(max-width:991px){.inner-title{padding-top:10rem;}
 .department-master-of-computer-applications-about-us .grid_card_design1_section{padding-block:5rem;}

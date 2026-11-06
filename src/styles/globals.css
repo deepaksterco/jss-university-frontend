@@ -1293,16 +1293,17 @@ to {opacity: 1;transform: translateY(0);}}
 .events .department-facilities .about_one .overlap_contents:before, .about_one .overlap_contents:before{display: none;}
 .events .about_one .estblish{padding-bottom: 0;}
 .events .about_f_value { padding-top: 8rem;}
-.events .research_labmain {padding-block: 0;}
+
 .events .research_grid_one .research_cont {padding-right: 10.5rem;}
 .events .image_content_repeat_section {padding-block: 0 8rem;}
 .events .single_image_content .inner_bottom_data{margin: 0;}
 .events .image_content_repeat_section .hostel-rules {margin: 0;}
-.events .about_four {padding-bottom: 8rem;}
+.events .about_four {padding-bottom: 4rem;}
 .overview .resea_facili_main .exten_listyle ul li:before{display: none;}
 .overview .exten_listyle ul li {padding-left: 0;}
 .overview .curriculum_box .box_ul li:before {display: none;}
 .overview .curriculum_box .box_ul li {padding-left: 0;}
+.student-resources .amenities_section{border: none;padding-bottom: 4rem;}
 .student-resources .amenities_section .grid_group {background-color: var(--color-white);padding: 6rem;}
 .student-resources .amenities_section .grid_group h5 {font: var(--font-22);color: #16344e;text-align: left;letter-spacing: 0;margin-bottom: 4rem;font-weight: 600;}
 .student-resources .amenities_section ul {padding-left: 0;}
@@ -1765,16 +1766,47 @@ background:unset;
 .faculty-achievements .about_one{margin-bottom: 10rem;}
 .faculty-achievements .about_subtitle{display: none;}
 .faculty-achievements .about_one img{max-width: 120rem;}
-@media (max-width: 47.9375rem) {
-    .cms-left-tabs {
-        flex-direction: column;
-    }
-    .cms-tab-nav {
-        width: 100%;
-    }
-.faculty-achievements .about_one{margin-bottom:6rem;}
-}
+@media (max-width: 47.9375rem) {.cms-left-tabs {flex-direction: column;}.cms-tab-nav {width: 100%;}
+.faculty-achievements .about_one{margin-bottom:6rem;}}
 
 .department-engineering-aiml-society .left_side_content .heading{text-align: center;}
 .department-computer-science-and-engineering-society .left_side_content .heading{text-align: center;}
 .department-maths-society .left_side_content .heading{text-align: center;}
+
+
+
+.section-title {text-align: center;margin-bottom: 30px;color: #173b68;}
+.section-title h2 {font-size: 30px;margin-bottom: 10px;}
+/* Main Container */
+.testimonial-container {display: flex;align-items: stretch;background: #fff;border: 1px solid #e3e7ed;border-radius: 12px;overflow: hidden;margin-bottom: 2.5rem;box-shadow: 0 4px 15px rgba(0,0,0,0.07);}
+/* Left Image Section */
+.testimonial-image {padding: 3rem;display: flex;align-items: center;justify-content: center;background: #fff;border-right: 0.1rem solid #eee;}
+.testimonial-image img {width: 100%;height: auto;}
+/* Right Content Section */
+.testimonial-content {flex: 1;padding: 3rem 3.5rem;position: relative;}
+.student-name {color: #16344e;text-transform: uppercase;font: var(--font-24);margin-top: 5rem;margin-bottom: 1.3rem;font-weight: 700;}
+.student-details {font: var(--font-14);color: #018ce8;margin-top: 1.5rem;margin-bottom: 0;font-weight: 600;margin-bottom: 2.5rem;}
+.testimonial-content p {font: var(--font-16);font-weight: 400;font-family: var(--font-Roboto);color: var(--color-black);margin-bottom: 3rem;line-height: 2.8rem;text-align: justify;}
+.amenities_section:has(.award-section) {border: none;padding-top: 4rem;}
+.award-section {display: grid;grid-template-columns: repeat(3, 1fr);gap: 2.5rem;}
+.award-card {background: #fff;border: 1px solid #e5eaf0;border-top: 0.4rem solid #d49b32;border-radius: 1rem;padding:2.8rem 1.5rem;text-align: center;box-shadow: 0 5px 18px rgba(0,0,0,0.07);transition: 0.3s;}
+.award-card:hover {transform: translateY(-6px);box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.12);}
+.award-number {font: var(--font-30);font-weight: 700;color: #173b68;margin-bottom: 1.5rem}
+.award-card h3 {font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+.award-card .line {width: 4.5rem;height: 0.4rem;background: #d49b32;margin: 1.5rem auto 0;}
+.singleImageContent .pdf_link{text-align: center;}
+.events .pdf_link{text-align: center;}
+.singleImageContent .pdf_link>a{font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+.singleImageContent .pdf_link>a:hover{color:var(--color-e8);}
+.events .amenities_section {padding-block:0 6rem;border-bottom:1px solid #ddd;border-top: none;}
+.events .amenities_section  .pdf_link>a:hover{color:var(--color-e8);}
+.events .amenities_section .pdf_link>a{font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+.training-programs  .pdf_link{text-align: center;}
+.training-programs .amenities_section {padding-block:0 6rem;border-bottom:1px solid #ddd;border-top: none;}
+.training-programs .amenities_section  .pdf_link>a:hover{color:var(--color-e8);}
+.training-programs .amenities_section .pdf_link>a{font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+.student-resources  .pdf_link{text-align: center;}
+.student-resources .amenities_section {padding-block:4rem 0;border-top: none;}
+.student-resources .amenities_section  .pdf_link>a:hover{color:var(--color-e8);}
+.student-resources .amenities_section .pdf_link>a{font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+@media(max-width: 650px) {.award-section {grid-template-columns: 1fr;padding:0;}.amenities_section:has(.award-section) {padding-block: 2rem 4rem;}}

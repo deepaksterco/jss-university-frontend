@@ -1071,7 +1071,7 @@
 }
 
 .image_content_repeat_section {
-  padding: 8rem 0;
+  padding-block: 4rem 8rem;
 }
 
 .image_content_repeat_section .swiper-slide img,
@@ -1439,7 +1439,7 @@
 }
 
 .labs_group_section.about_two .about_two {
-  padding-bottom: 7rem;
+  padding-bottom: 4rem;
 }
 
 .labs_group_section .about_two .early-slide {
@@ -2505,7 +2505,7 @@
 }
 
 .single_image_content .inner_bottom_data {
-  margin-top: 4rem;
+  margin-top:0;
 }
 
 .hostel-rules {
@@ -8746,6 +8746,12 @@ height: auto;
 .ip-management-cell .about_one .estblish {padding-block: 0rem 0;}
 .about_two.labs_group_section .early-slide li{font-size: 1.6rem;}
 .admission .eligib_cont h2{font-size: 3rem;letter-spacing: -0.4;}
+.top_section {
+    margin-top: 6rem;
+}
+.hostel_list {
+    margin: 4rem 0 0;
+}
 }
 @media(max-width: 375px){
  .profile-email a {
