@@ -83,6 +83,8 @@ export default function Placements({ data }) {
                                   className="designation"
                                 />
                               )}
+
+
                               {box.mail && (
                                 <Link
                                   href={`mailto:${box.mail}`}
@@ -93,6 +95,20 @@ export default function Placements({ data }) {
                                 />
                               )}
                               {box.subtitle && <p>{box.subtitle}</p>}
+
+
+                              {box.mail_second && (
+                                <Link
+                                  href={`mailto:${box.mail_second}`}
+                                  className="mail CTA_Email"
+                                  dangerouslySetInnerHTML={{
+                                    __html: box.mail_second,
+                                  }}
+                                />
+                              )}
+
+
+
                               {box.eligibility && (
                                 <p>
                                   <strong>Eligibility : </strong>{" "}

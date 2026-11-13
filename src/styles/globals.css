@@ -1809,4 +1809,5 @@ background:unset;
 .student-resources .amenities_section {padding-block:4rem 0;border-top: none;}
 .student-resources .amenities_section  .pdf_link>a:hover{color:var(--color-e8);}
 .student-resources .amenities_section .pdf_link>a{font: var(--font-16);color: #173b68;font-weight: 600;line-height: 1.5;}
+.contact-details .curriculum_box .content>a{display: block;}
 @media(max-width: 650px) {.award-section {grid-template-columns: 1fr;padding:0;}.amenities_section:has(.award-section) {padding-block: 2rem 4rem;}}
